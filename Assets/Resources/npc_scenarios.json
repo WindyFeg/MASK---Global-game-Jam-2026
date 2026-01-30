@@ -1,0 +1,279 @@
+{
+  "data": [
+    {
+      "npcType": "Mom",
+      "emotion": "Overjoyed",
+      "dialogues": [
+        "My precious son! I just won the lottery! We're having a feast tonight!",
+        "I heard about your promotion! I'm so proud, I've already told all the neighbors!",
+        "Your father and I are in such good health, our family is truly blessed!",
+        "Seeing you so successful makes me feel ten years younger!",
+        "I just found my old wedding ring that I lost years ago! What a miracle!"
+      ]
+    },
+    {
+      "npcType": "Mom",
+      "emotion": "Happy",
+      "dialogues": [
+        "I cooked your favorite meal today, come in and eat while it's hot.",
+        "The neighbor just complimented how handsome and polite you are.",
+        "The house is so clean today, it really lifts my spirits.",
+        "My garden is blooming beautifully this season, come take a look.",
+        "It was so nice talking to your aunt on the phone today."
+      ]
+    },
+    {
+      "npcType": "Mom",
+      "emotion": "Neutral",
+      "dialogues": [
+        "Remember to bring an umbrella, the forecast says rain this afternoon.",
+        "Are you free to come home for dinner this weekend?",
+        "Prices at the market are going up again, be careful with your spending.",
+        "Don't forget to take your vitamins, son.",
+        "Have you called your grandmother lately? She was asking about you."
+      ]
+    },
+    {
+      "npcType": "Mom",
+      "emotion": "Sad",
+      "dialogues": [
+        "You rarely call home these days, I feel a bit lonely.",
+        "My back is hurting again... getting old is really hard.",
+        "Your father has been so grumpy lately, I'm exhausted.",
+        "I cooked too much food and no one is here to eat it.",
+        "Sometimes I feel like a burden to you children."
+      ]
+    },
+    {
+      "npcType": "Mom",
+      "emotion": "Angry",
+      "dialogues": [
+        "Where have you been until this hour? Do you treat this house like a hotel?",
+        "Asking for money again? How old are you? Can't you take care of yourself?",
+        "Look at your cousin! Now look at yourself! What a disappointment.",
+        "I told you to clean your room a thousand times! Why don't you listen?",
+        "Don't you dare raise your voice at me! I am your mother!"
+      ]
+    },
+    {
+      "npcType": "Girlfriend",
+      "emotion": "Overjoyed",
+      "dialogues": [
+        "Honey! I just got accepted into my dream company! Let's go celebrate!",
+        "This gift is amazing! You know exactly what I wanted. I love you so much!",
+        "I feel like the luckiest woman in the world when I'm with you.",
+        "We just won the couple's contest! We are the best team ever!",
+        "I can't stop smiling today, everything is just perfect!"
+      ]
+    },
+    {
+      "npcType": "Girlfriend",
+      "emotion": "Happy",
+      "dialogues": [
+        "You look so handsome today, you're making my heart skip a beat.",
+        "Thanks for the romantic dinner last night, it was lovely.",
+        "I just learned a new recipe, want to be my taste tester?",
+        "Just holding your hand makes my day better.",
+        "I found a great movie for us to watch tonight."
+      ]
+    },
+    {
+      "npcType": "Girlfriend",
+      "emotion": "Neutral",
+      "dialogues": [
+        "What should we eat tonight? I'm too lazy to cook.",
+        "Are you done with work yet? I'm waiting at the coffee shop.",
+        "We need to go grocery shopping this weekend.",
+        "Did you remember to pay the electric bill?",
+        "I'm going to hang out with my friends for a bit, okay?"
+      ]
+    },
+    {
+      "npcType": "Girlfriend",
+      "emotion": "Sad",
+      "dialogues": [
+        "You seem so distant lately, do you even care about how I feel?",
+        "My boss yelled at me today... I just want a hug.",
+        "I feel like we are slowly drifting apart.",
+        "You forgot to text me goodnight yesterday...",
+        "I saw a sad movie and now I can't stop crying."
+      ]
+    },
+    {
+      "npcType": "Girlfriend",
+      "emotion": "Angry",
+      "dialogues": [
+        "You forgot our anniversary again, didn't you?",
+        "Who is that girl texting you at midnight? Explain yourself!",
+        "It's always games, games, and games! Do you love your PC more than me?",
+        "I waited for two hours! Why didn't you pick up the phone?",
+        "I am sick of your excuses! Take some responsibility!"
+      ]
+    },
+    {
+      "npcType": "Friend",
+      "emotion": "Overjoyed",
+      "dialogues": [
+        "Dude! I just won the jackpot! Drinks are on me tonight!",
+        "I just bought a beast of a PC! Come over and game!",
+        "My crush actually said yes! My life is complete!",
+        "My favorite team just won the championship! Let's goooo!",
+        "I got that promotion I was telling you about! Finally!"
+      ]
+    },
+    {
+      "npcType": "Friend",
+      "emotion": "Happy",
+      "dialogues": [
+        "That match last night was epic! Want to grab a coffee?",
+        "Long time no see, bro. I'm actually free today.",
+        "I found a cheap but amazing restaurant nearby.",
+        "Just got paid, let's go grab a beer.",
+        "You won't believe the funny thing that happened to me today."
+      ]
+    },
+    {
+      "npcType": "Friend",
+      "emotion": "Neutral",
+      "dialogues": [
+        "Hey, can I borrow 20 bucks? I'll pay you back tomorrow.",
+        "Up for a few ranked matches tonight?",
+        "Have you heard about Mike? Rumor has it he's getting married.",
+        "Do you know a good place to fix my phone?",
+        "I'm thinking of joining a gym, want to come with?"
+      ]
+    },
+    {
+      "npcType": "Friend",
+      "emotion": "Sad",
+      "dialogues": [
+        "I just got fired, man... This sucks.",
+        "My girlfriend just broke up with me. I need a drink.",
+        "I'm completely broke, I can't even afford instant noodles.",
+        "I failed my driving test again... I feel so stupid.",
+        "My dog is really sick, I'm worried."
+      ]
+    },
+    {
+      "npcType": "Friend",
+      "emotion": "Angry",
+      "dialogues": [
+        "You played dirty back there, I won't forget that!",
+        "I called you ten times and you ignored me? Are we even friends?",
+        "Pay me back my money! You promised last week!",
+        "Stop flirting with my ex! That's not cool, man.",
+        "You bailed on us at the last minute again? Unbelievable."
+      ]
+    },
+    {
+      "npcType": "Boss",
+      "emotion": "Overjoyed",
+      "dialogues": [
+        "The project is a massive success! Record profits! Everyone gets a bonus!",
+        "You are a rare talent! I'm promoting you to manager immediately.",
+        "I just signed a million-dollar contract! I'm in a fantastic mood!",
+        "Our stock price just doubled! Champagne for everyone!",
+        "We just crushed our biggest competitor! Good job team!"
+      ]
+    },
+    {
+      "npcType": "Boss",
+      "emotion": "Happy",
+      "dialogues": [
+        "Great report, keep up the good work.",
+        "You're always the first one here, I appreciate your dedication.",
+        "I'm buying coffee for the whole office today, enjoy.",
+        "The client was very impressed with your presentation.",
+        "You can leave early today, you've earned it."
+      ]
+    },
+    {
+      "npcType": "Boss",
+      "emotion": "Neutral",
+      "dialogues": [
+        "Send me the weekly report before 4 PM.",
+        "What's the status of the project? Update me ASAP.",
+        "Prepare the documents for the upcoming meeting.",
+        "Make sure to cc me on that email.",
+        "We have a team building event next Friday."
+      ]
+    },
+    {
+      "npcType": "Boss",
+      "emotion": "Sad",
+      "dialogues": [
+        "Company stocks are plummeting... I have a migraine.",
+        "Too many customer complaints lately, I'm disappointed in this team.",
+        "We might have to downsize next quarter...",
+        "I lost a major client today. This is bad.",
+        "I haven't had a vacation in three years..."
+      ]
+    },
+    {
+      "npcType": "Boss",
+      "emotion": "Angry",
+      "dialogues": [
+        "What kind of work is this? How could you submit such garbage?",
+        "If you don't hit your KPI this month, write your resignation letter!",
+        "Who authorized you to leave early? This is unacceptable!",
+        "You just cost the company a fortune with that mistake!",
+        "Stop making excuses and get it done! Now!"
+      ]
+    },
+    {
+      "npcType": "Colleague",
+      "emotion": "Overjoyed",
+      "dialogues": [
+        "The boss just announced a 5-month bonus! Party time!",
+        "Finally finished this nightmare project! Freedom!",
+        "My vacation to Europe just got approved!",
+        "I just got the 'Employee of the Month' award! Woohoo!",
+        "The cafeteria is serving free pizza today! Run!"
+      ]
+    },
+    {
+      "npcType": "Colleague",
+      "emotion": "Happy",
+      "dialogues": [
+        "The boss is out today, the office is so chill.",
+        "Thanks for helping me with that Excel sheet, lunch is on me.",
+        "Payday is finally here! Ka-ching!",
+        "I love the new coffee machine they installed.",
+        "Hey, nice tie! Looking sharp today."
+      ]
+    },
+    {
+      "npcType": "Colleague",
+      "emotion": "Neutral",
+      "dialogues": [
+        "The printer is jammed again, can you take a look?",
+        "What's for lunch? Bento or sandwiches?",
+        "Have you seen my stapler anywhere?",
+        "Is the air conditioning too cold or is it just me?",
+        "Can you cover for me for 10 minutes?"
+      ]
+    },
+    {
+      "npcType": "Colleague",
+      "emotion": "Sad",
+      "dialogues": [
+        "Overtime again... I miss my bed.",
+        "The boss rejected my idea, all that effort for nothing.",
+        "I got my pay docked for being late. I'm broke.",
+        "I think I'm coming down with the flu...",
+        "This commute is draining the life out of me."
+      ]
+    },
+    {
+      "npcType": "Colleague",
+      "emotion": "Angry",
+      "dialogues": [
+        "Who ate my lunch from the fridge?! I labeled it!",
+        "Why are you pushing all the hard work onto me? Not cool!",
+        "Don't go snitching to the boss about me sleeping! Traitor.",
+        "Can you stop typing so loudly? I can't concentrate!",
+        "You took credit for my work again! We need to talk."
+      ]
+    }
+  ]
+}
