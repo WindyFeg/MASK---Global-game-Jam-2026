@@ -20,13 +20,13 @@ public abstract class HumanBase {
 
     public void AddHappiness(int value) {
         Stats.Happiness += value;
+        ValidateStat();
     }
 
     public void AddMoney(int value) {
         Stats.Money += value;
+        ValidateStat();
     }
 
-    public void ValidateStat() {
-        // if (Stats.Happiness < BaseStat.)
-    }
+    public abstract void ValidateStat();
 }
