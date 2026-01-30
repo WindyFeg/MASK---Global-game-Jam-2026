@@ -18,10 +18,15 @@ public abstract class HumanBase {
         return Stats.IsFull();
     }
 
-    public void ChangeStat(BaseStat change) {
-        Stats.Happiness += change.Happiness;
-        Stats.Money += change.Money;
-        // Debug cho tiện theo dõi
-        Debug.Log($"{Name} stats changed: HP={Stats.Happiness}, Money={Stats.Money}");
+    public void AddHappiness(int value) {
+        Stats.Happiness += value;
+    }
+
+    public void AddMoney(int value) {
+        Stats.Money += value
+    }
+
+    public void ValidateStat() {
+        // if (Stats.Happiness < BaseStat.)
     }
 }
