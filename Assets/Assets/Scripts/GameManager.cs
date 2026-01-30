@@ -5,7 +5,6 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    [SerializeField] private CardManager CardManager;
     [SerializeField] private GameObject cardPrefab;
     [SerializeField] private List<CardUI> onHandCards = new List<CardUI>();
     [SerializeField] private GameObject cardLayout;
@@ -24,20 +23,26 @@ public class GameManager : MonoBehaviour
         instance = this;
 
         // Giữ object này khi chuyển scene
-        OnStart();
         DontDestroyOnLoad(gameObject);
+    }
+    void Start()
+    {
+        OnStart();
     }
 
     public void OnStart()
     {
         for (int i = 0; i < 3; i++)
         {
-            Card card = CardManager.GetRandomCard();
+
+            BaseCard card = CardManager.Instance.GetRandomCard();
+            Card newCard = new Card();
+            newCard.cardData = card;
             var obj = Instantiate(cardPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             obj.transform.SetParent(cardLayout.transform, false);
-            obj.GetComponent<CardUI>().OnSet(card);
+            obj.GetComponent<CardUI>().OnSet(newCard);
             onHandCards.Add(obj.GetComponent<CardUI>());
-  
+
         }
     }
 

@@ -1,13 +1,13 @@
 using UnityEngine;  
 using System.Collections.Generic;
 
-public class CardManager {
-    public List<Card> allCards = new List<Card>();
-    public List<Card> curCards = new List<Card>();
+public class CardManager : MonoBehaviour {
+    public List<BaseCard> allCards = new List<BaseCard>();
+    public List<BaseCard> curCards = new List<BaseCard>();
 
     public static CardManager Instance;
 
-    private void Start()
+    private void Awake()
     {
         if (Instance == null)
         {
@@ -15,16 +15,16 @@ public class CardManager {
         }
     }
     
-    public List<Card> GetAllCards() {
+    public List<BaseCard> GetAllCards() {
         // Return all card data
         return allCards;
     }
 
-    public List<Card> GetCurrentCards() {
+    public List<BaseCard> GetCurrentCards() {
         return curCards;
     }
 
-    public Card GetRandomCard() {
+    public BaseCard GetRandomCard() {
         // Get random card from pool
         if (allCards.Count == 0) return null;
         var rnd = Random.Range(0, allCards.Count - 1);

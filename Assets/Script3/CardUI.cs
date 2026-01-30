@@ -63,10 +63,10 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
         cardNameText.text = card.cardName;
         cardDescriptionText.text = card.description;
         cardImage.sprite = card.artwork;
-        cardStatHeartTopLeft.text = card.stat.Happiness.ToString();
-        cardStatMoneyTopRight.text = card.stat.Money.ToString();
-        cardStatHeartBottomLeft.text = card.stat.Happiness.ToString();
-        cardStatMoneyBottomRight.text = card.stat.Money.ToString();
+        cardStatHeartTopLeft.text = card.cardData.opponentStat.Happiness.ToString();
+        cardStatMoneyTopRight.text = card.cardData.opponentStat.Money.ToString();
+        cardStatHeartBottomLeft.text = card.cardData.selfStat.Happiness.ToString();
+        cardStatMoneyBottomRight.text = card.cardData.selfStat.Money.ToString();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
