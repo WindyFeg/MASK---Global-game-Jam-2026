@@ -88,9 +88,9 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
             return;
         }
 
-        cardNameText.text = card.cardName;
-        cardDescriptionText.text = card.description;
-        cardImage.sprite = card.artwork;
+        cardNameText.text = card.cardData.cardName;
+        cardDescriptionText.text = card.cardData.description;
+        cardImage.sprite = card.cardData.artwork;
         cardStatHeartTopLeft.text = card.cardData.opponentStat.Happiness.ToString();
         cardStatMoneyTopRight.text = card.cardData.opponentStat.Money.ToString();
         cardStatHeartBottomLeft.text = card.cardData.selfStat.Happiness.ToString();
