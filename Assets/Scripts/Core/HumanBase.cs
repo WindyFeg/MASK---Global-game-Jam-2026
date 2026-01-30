@@ -21,5 +21,17 @@ public abstract class HumanBase {
         ValidateStat();
     }
 
+    public int GetMoney() {
+        return data.stat.Money;
+    }
+
+    public int GetHappiness() {
+        return data.stat.Happiness;
+    }
+
+    public int GetSanity() {
+        return data.stat.Sanity;
+    }
+
     public abstract void ValidateStat();
 }
