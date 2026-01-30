@@ -30,8 +30,7 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-            Debug.Log("Start");
-            Card card = CardManager.GetRandomCard();
+            // Card card = CardManager.GetRandomCard();
             var obj = Instantiate(cardPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             obj.GetComponent<CardUI>().OnSet();
   
