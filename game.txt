@@ -1,104 +1,94 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Balancer: The Card Game</title>
+    <title>Life Balancer: Survival</title>
     <style>
         :root {
-            --bg-color: #2c3e50;
-            --card-bg: #ecf0f1;
-            --text-color: #2c3e50;
-            --happy: #e67e22;
-            --money: #27ae60;
-            --danger: #c0392b;
+            --bg-color: #1a1a2e;
+            --panel-bg: #16213e;
+            --card-bg: #e94560;
+            --text-main: #ecf0f1;
+            --happy-color: #f1c40f;
+            --money-color: #2ecc71;
+            --danger-color: #e74c3c;
+            --accent-color: #0f3460;
+            --penalty-bg: #4a0e0e; /* Màu nền cho lá bài bị phạt */
         }
-
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--bg-color);
-            color: white;
+            color: var(--text-main);
             margin: 0;
             padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
+            user-select: none;
         }
 
-        h1 {
-            margin-bottom: 10px;
-            font-size: 1.5rem;
-        }
-
-        /* Stats Container */
-        .stats-container {
+        /* --- Header & Stats --- */
+        .top-bar {
+            width: 100%;
+            max-width: 600px;
             display: flex;
-            gap: 20px;
-            width: 100%;
-            max-width: 600px;
             justify-content: space-between;
-            background: rgba(0, 0, 0, 0.3);
-            padding: 15px;
-            border-radius: 10px;
             margin-bottom: 20px;
+            background: var(--panel-bg);
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border: 1px solid #333;
         }
 
-        .stat-box {
-            text-align: center;
-        }
+        .stat-group { text-align: center; flex: 1; }
+        .stat-label { font-size: 0.9rem; color: #aaa; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px;}
+        .stat-display { font-size: 1.4rem; font-weight: bold; display: flex; justify-content: center; gap: 15px; }
+        .icon { margin-right: 5px; }
 
-        .stat-value {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        .stat-money {
-            color: #2ecc71;
-        }
-
-        .stat-happy {
-            color: #f1c40f;
-        }
-
-        /* NPC Section */
-        .npc-section {
-            background: #34495e;
-            padding: 20px;
-            border-radius: 10px;
+        /* --- NPC Section --- */
+        .npc-container {
+            background: linear-gradient(145deg, #1f4068, #162447);
             width: 100%;
             max-width: 600px;
+            padding: 20px;
+            border-radius: 15px;
             text-align: center;
-            margin-bottom: 20px;
-            border: 2px solid #7f8c8d;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            border: 2px solid #0f3460;
+            position: relative;
+            overflow: hidden;
         }
-
-        .npc-name {
-            font-size: 1.5rem;
-            color: #3498db;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        .npc-dialog {
+        
+        .npc-avatar { font-size: 3rem; margin-bottom: 5px; display: block; animation: bounce 2s infinite; }
+        .npc-name { font-size: 1.5rem; font-weight: bold; color: #4db8ff; }
+        .npc-status { font-size: 0.85rem; color: #ff9f43; margin-bottom: 10px; font-style: italic; background: rgba(0,0,0,0.3); padding: 2px 10px; border-radius: 10px; display: inline-block;}
+        .dialog-box {
+            background: rgba(0,0,0,0.3);
+            padding: 15px;
+            border-radius: 8px;
             font-style: italic;
-            color: #bdc3c7;
-            margin-bottom: 15px;
-            font-size: 1.1rem;
+            color: #ddd;
+            margin: 10px 0;
+            border-left: 4px solid var(--happy-color);
         }
-
-        .npc-request {
-            background: #e74c3c;
+        .request-tag {
+            background: var(--danger-color);
             color: white;
-            padding: 5px 15px;
+            padding: 5px 12px;
             border-radius: 20px;
-            display: inline-block;
             font-weight: bold;
+            font-size: 0.9rem;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
         }
 
-        /* Cards Area */
-        .cards-area {
+        /* --- Cards --- */
+        .cards-wrapper {
             display: flex;
             gap: 15px;
             justify-content: center;
@@ -108,434 +98,391 @@
         }
 
         .card {
-            background: var(--card-bg);
-            color: var(--text-color);
+            background: white;
+            color: #333;
             width: 140px;
-            height: 200px;
-            border-radius: 10px;
-            padding: 10px;
+            height: 220px;
+            border-radius: 12px;
+            padding: 12px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: all 0.2s ease;
             position: relative;
-            border: 3px solid transparent;
+            border: 4px solid #bdc3c7;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
 
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        .card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 15px 30px rgba(0,0,0,0.5); }
+        .card:active { transform: scale(0.95); }
+
+        .card-header { font-weight: 800; font-size: 1rem; text-align: center; padding-bottom: 8px; border-bottom: 1px solid #eee; margin-bottom: 8px;}
+        
+        .card-body { font-size: 0.85rem; }
+        .effect-line { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+        .badge { font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.8rem; }
+        .badge-player { background: #dff9fb; color: #2980b9; }
+        .badge-npc { background: #ffeaa7; color: #d35400; }
+
+        /* Penalty State */
+        .card.penalty {
+            background: var(--penalty-bg);
+            color: #ecf0f1;
+            border-color: #c0392b;
+            animation: pulse-red 2s infinite;
+        }
+        .card.penalty .badge-player { background: #c0392b; color: white; }
+        .card.penalty .badge-npc { background: #c0392b; color: white; }
+        .penalty-warning {
+            font-size: 0.7rem; color: #ff6b6b; text-align: center; 
+            font-weight: bold; margin-top: 5px; text-transform: uppercase;
         }
 
-        .card-title {
-            font-weight: bold;
-            font-size: 1rem;
-            text-align: center;
-            margin-bottom: 5px;
-            border-bottom: 1px solid #bdc3c7;
-            padding-bottom: 5px;
-        }
+        /* --- Animations --- */
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+        @keyframes pulse-red { 0% { box-shadow: 0 0 0 0 rgba(192, 57, 43, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(192, 57, 43, 0); } 100% { box-shadow: 0 0 0 0 rgba(192, 57, 43, 0); } }
 
-        .card-effect {
-            font-size: 0.85rem;
-            line-height: 1.4;
-        }
-
-        .effect-row {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 3px;
-        }
-
-        .p-stat {
-            color: #2980b9;
-            font-weight: bold;
-        }
-
-        .n-stat {
-            color: #d35400;
-            font-weight: bold;
-        }
-
-        /* Logs */
-        .log-area {
-            width: 100%;
-            max-width: 600px;
-            height: 150px;
-            overflow-y: auto;
-            background: rgba(0, 0, 0, 0.5);
-            margin-top: 20px;
-            padding: 10px;
-            border-radius: 5px;
-            font-family: monospace;
-            font-size: 0.9rem;
-        }
-
-        .log-entry {
-            margin-bottom: 5px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 2px;
-        }
-
-        .log-turn {
-            color: #f1c40f;
-        }
-
-        .log-danger {
-            color: #e74c3c;
-        }
-
-        .log-info {
-            color: #3498db;
-        }
-
-        /* Game Over Overlay */
-        #gameOverScreen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
+        /* --- Overlays --- */
+        .overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.95);
             display: none;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            z-index: 100;
-        }
-
-        button {
-            padding: 15px 30px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            background: #27ae60;
+            z-index: 1000;
+            text-align: center;
             color: white;
-            border: none;
-            border-radius: 5px;
         }
+        .overlay h1 { font-size: 3rem; margin: 0; }
+        .overlay p { font-size: 1.2rem; max-width: 600px; line-height: 1.6; }
+        .btn {
+            margin-top: 20px; padding: 15px 40px; font-size: 1.2rem; font-weight: bold;
+            border: none; border-radius: 50px; cursor: pointer; transition: 0.2s;
+        }
+        .btn-restart { background: #e74c3c; color: white; }
+        .btn-restart:hover { background: #c0392b; }
+        .btn-win { background: #f1c40f; color: #2c3e50; }
+
+        /* --- Toast Notification --- */
+        #toast {
+            visibility: hidden; min-width: 250px; background-color: #333; color: #fff; text-align: center; border-radius: 2px; padding: 16px; position: fixed; z-index: 1; left: 50%; bottom: 30px; transform: translateX(-50%); font-size: 17px;
+        }
+        #toast.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+        @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
+        @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
+
     </style>
 </head>
-
 <body>
 
-    <h1>Life Balancer: Turn <span id="turnCount">1</span></h1>
-
-    <div class="stats-container">
-        <div class="stat-box">
-            <div>YOU</div>
-            <div class="stat-value stat-money">Money: <span id="pMoney">3</span>/5</div>
-            <div class="stat-value stat-happy">Happy: <span id="pHappy">3</span>/5</div>
+    <div class="top-bar">
+        <div class="stat-group" style="border-right: 1px solid #444;">
+            <div class="stat-label">BẠN (PLAYER)</div>
+            <div class="stat-display">
+                <span id="pMoneyVal" style="color:var(--money-color)">💰 3</span>
+                <span id="pHappyVal" style="color:var(--happy-color)">😂 3</span>
+            </div>
         </div>
-        <div class="stat-box">
-            <div id="npcNameDisplay">NPC</div>
-            <div class="stat-value stat-money">Money: <span id="nMoney">3</span>/5</div>
-            <div class="stat-value stat-happy">Happy: <span id="nHappy">3</span>/5</div>
+        <div class="stat-group">
+            <div class="stat-label">ĐỐI TƯỢNG (NPC)</div>
+            <div class="stat-display">
+                <span id="nMoneyVal" style="color:var(--money-color)">💰 3</span>
+                <span id="nHappyVal" style="color:var(--happy-color)">😂 3</span>
+            </div>
         </div>
     </div>
 
-    <div class="npc-section">
-        <div class="npc-name" id="npcName">Đang tải...</div>
-        <div class="npc-dialog" id="npcDialog">"..."</div>
-        <div>Mục tiêu: <span class="npc-request" id="npcRequest">...</span></div>
+    <div class="npc-container">
+        <div class="npc-avatar" id="npcIcon">👵</div>
+        <div class="npc-name" id="npcName">Mẹ</div>
+        <div class="npc-status" id="npcContext">Đang bình thường</div>
+        <div class="dialog-box" id="npcDialog">"Con trai, mẹ cần tiền sửa lại cái mái nhà..."</div>
+        <div>Mục tiêu: <span class="request-tag" id="npcRequest">CẦN +TIỀN</span></div>
     </div>
 
-    <div class="cards-area" id="cardsArea">
+    <div class="cards-wrapper" id="cardsArea">
+        </div>
+
+    <div id="gameOverOverlay" class="overlay">
+        <h1 style="color: #e74c3c">THẤT BẠI</h1>
+        <p id="failReason">Bạn đã hết tiền.</p>
+        <button class="btn btn-restart" onclick="initGame()">Chơi Lại Từ Đầu</button>
     </div>
 
-    <div class="log-area" id="gameLog">
-        <div class="log-entry">Chào mừng đến với Life Balancer!</div>
+    <div id="winOverlay" class="overlay">
+        <h1 style="color: #f1c40f">CHIẾN THẮNG!</h1>
+        <p>Tuyệt vời! Bạn đã đạt đỉnh cao danh vọng (5 Tiền) và hạnh phúc viên mãn (5 Vui).<br>Mọi người đều sống sót.</p>
+        <button class="btn btn-win" onclick="initGame()">Sống Lại Cuộc Đời Mới</button>
     </div>
 
-    <div id="gameOverScreen">
-        <h1 style="color: #e74c3c; font-size: 3rem;">GAME OVER</h1>
-        <p id="deathReason" style="font-size: 1.5rem; margin-bottom: 20px;">...</p>
-        <button onclick="startGame()">Chơi Lại</button>
-    </div>
+    <div id="toast">Thông báo...</div>
 
-    <script>
-        // --- DATA ---
-        const CARD_LIBRARY = [
-            { name: "Từ Thiện", desc: "Giúp người", pM: -2, pH: 0, nM: 1, nH: 1 },
-            { name: "Trấn Lột", desc: "Lấy tiền", pM: 2, pH: 0, nM: -1, nH: -1 },
-            { name: "Tấu Hài", desc: "Mua vui", pM: 0, pH: -2, nM: 0, nH: 2 },
-            { name: "Cà Khịa", desc: "Cười nhạo", pM: 0, pH: 2, nM: 0, nH: -2 },
-            { name: "Mua Quà", desc: "Tặng quà", pM: -1, pH: 0, nM: 0, nH: 1 }, // Adjusted for variety
-            { name: "Làm Thêm", desc: "Cày cuốc", pM: 1, pH: -1, nM: 0, nH: 0 }, // Self focus
-            { name: "Tiệc Tùng", desc: "Xả láng", pM: -1, pH: 1, nM: -1, nH: 1 },
-            { name: "Tranh Cãi", desc: "Gay gắt", pM: 0, pH: -1, nM: 0, nH: -1 } // Sometimes lose-lose
-        ];
+<script>
+    // --- DATA CONFIGURATION ---
+    const NPC_ICONS = {
+        'mom': '👵',
+        'gf': '💃',
+        'boss': '🤵',
+        'friend': '🍺',
+        'colleague': '💼'
+    };
 
-        // Cập nhật lại list bài để đảm bảo logic cân bằng như prompt yêu cầu (Balance P vs N)
-        // Sửa lại theo prompt: "Chẳng hạn, -2 tiền của player sẽ đổi lại 2 tiền của NPC hoặc 1 tiền và 1 hạnh phúc."
-        const DECK = [
-            { name: "Từ Thiện", pM: -2, pH: 0, nM: 1, nH: 1 },
-            { name: "Cướp Bóc", pM: 2, pH: 0, nM: -1, nH: -1 },
-            { name: "Mua Vui", pM: 0, pH: -2, nM: 0, nH: 2 },
-            { name: "Cà Khịa", pM: 0, pH: 2, nM: 0, nH: -2 },
-            { name: "Trao Đổi", pM: -1, pH: 1, nM: 1, nH: -1 }, // P mất tiền được vui, N được tiền mất vui
-            { name: "Lừa Đảo", pM: 1, pH: -1, nM: -1, nH: 1 },  // P được tiền mất vui, N mất tiền được vui
-            { name: "Sòng Phẳng", pM: -1, pH: 0, nM: 1, nH: 0 }, // Đơn giản chuyển tiền
-            { name: "Chia Sẻ", pM: 0, pH: -1, nM: 0, nH: 1 }    // Đơn giản chuyển vui
-        ];
+    const DECK_TEMPLATE = [
+        { name: "Từ Thiện", pM: -2, pH: 0, nM: 1, nH: 1, desc: "Giúp người" },
+        { name: "Trấn Lột", pM: 2, pH: 0, nM: -1, nH: -1, desc: "Cướp bóc" },
+        { name: "Tấu Hài", pM: 0, pH: -2, nM: 0, nH: 2, desc: "Làm trò" },
+        { name: "Cà Khịa", pM: 0, pH: 2, nM: 0, nH: -2, desc: "Châm chọc" },
+        { name: "Mua Quà", pM: -1, pH: 1, nM: 0, nH: 1, desc: "Tặng quà" }, 
+        { name: "Bán Máu", pM: 2, pH: -2, nM: 0, nH: 0, desc: "Cày cuốc" }, // New Hardcore
+        { name: "Tiệc Tùng", pM: -1, pH: 1, nM: -1, nH: 1, desc: "Xả láng" },
+        { name: "Tranh Cãi", pM: 0, pH: -1, nM: 0, nH: -1, desc: "Gây gổ" },
+        { name: "Vay Mượn", pM: 2, pH: -1, nM: -2, nH: 0, desc: "Mượn tiền" }, // New
+        { name: "An Ủi", pM: 0, pH: 1, nM: 0, nH: 1, desc: "Chia sẻ" }
+    ];
 
-        const NPCS_DATA = [
-            { id: 'mom', name: "Mẹ", money: 3, happy: 3 },
-            { id: 'gf', name: "Bạn Gái", money: 3, happy: 3 },
-            { id: 'friend', name: "Bạn Thân", money: 3, happy: 3 },
-            { id: 'boss', name: "Sếp", money: 3, happy: 3 },
-            { id: 'colleague', name: "Đồng Nghiệp", money: 3, happy: 3 }
-        ];
+    const NPCS_DATA = [
+        { id: 'mom', name: "Mẹ", money: 3, happy: 3 },
+        { id: 'gf', name: "Bạn Gái", money: 3, happy: 3 },
+        { id: 'friend', name: "Bạn Thân", money: 3, happy: 3 },
+        { id: 'boss', name: "Sếp", money: 3, happy: 3 },
+        { id: 'colleague', name: "Đồng Nghiệp", money: 3, happy: 3 }
+    ];
 
-        // --- GAME STATE ---
-        let player = { money: 3, happy: 3 };
-        let npcs = []; // will be cloned from NPCS_DATA
-        let turn = 1;
-        let currentNPC = null;
-        let currentRequest = null; // { type: 'money'/'happy', val: 1/-1 }
+    // --- STATE VARIABLES ---
+    let player = { money: 3, happy: 3 };
+    let npcs = [];
+    let currentHand = []; // Stores the 3 active cards
+    let currentNPC = null;
+    let currentRequest = null;
+    let turnCount = 1;
 
-        // --- LOGIC ---
+    // --- INITIALIZATION ---
+    function initGame() {
+        document.getElementById('gameOverOverlay').style.display = 'none';
+        document.getElementById('winOverlay').style.display = 'none';
+        
+        player = { money: 3, happy: 3 };
+        npcs = JSON.parse(JSON.stringify(NPCS_DATA));
+        turnCount = 1;
 
-        function log(msg, type = '') {
-            const div = document.createElement('div');
-            div.className = 'log-entry ' + type;
-            div.innerText = `Turn ${turn}: ${msg}`;
-            const area = document.getElementById('gameLog');
-            area.insertBefore(div, area.firstChild);
+        // Init Hand with 3 random cards
+        currentHand = [getRandomCard(), getRandomCard(), getRandomCard()];
+
+        nextTurn();
+    }
+
+    // --- CORE LOOP ---
+    function nextTurn() {
+        // 1. Pick NPC
+        currentNPC = npcs[Math.floor(Math.random() * npcs.length)];
+        
+        // 2. Generate Request
+        generateRequest(currentNPC);
+
+        // 3. Render
+        renderUI();
+    }
+
+    function generateRequest(npc) {
+        const types = ['money', 'happy'];
+        const type = types[Math.floor(Math.random() * types.length)];
+        let val = Math.random() > 0.4 ? 1 : -1; // 60% chance asking for +
+
+        // Custom Logic for Personality
+        if (npc.id === 'mom' && Math.random() > 0.5) val = -1; // Mom likes to give
+        if (npc.id === 'boss') val = 1; // Boss usually takes
+
+        currentRequest = { type, val };
+        
+        // Generate Dialog based on NPC status
+        let dialog = "...";
+        const needsMoney = npc.money < 3;
+        const needsHappy = npc.happy < 3;
+
+        if (type === 'money' && val === 1) dialog = needsMoney ? "Tao đói quá, cho xin ít tiền..." : "Đang cần vốn làm ăn lớn.";
+        if (type === 'money' && val === -1) dialog = "Cầm lấy ít tiền tiêu vặt đi.";
+        if (type === 'happy' && val === 1) dialog = needsHappy ? "Dạo này trầm cảm quá..." : "Làm gì cho vui đi!";
+        if (type === 'happy' && val === -1) dialog = "Tao nhường mày vui đó.";
+
+        document.getElementById('npcDialog').innerText = `"${dialog}"`;
+        document.getElementById('npcIcon').innerText = NPC_ICONS[npc.id];
+    }
+
+    function renderUI() {
+        // Player Stats
+        document.getElementById('pMoneyVal').innerHTML = `💰 ${player.money}`;
+        document.getElementById('pHappyVal').innerHTML = `😂 ${player.happy}`;
+        
+        // NPC Stats
+        document.getElementById('nMoneyVal').innerHTML = `💰 ${currentNPC.money}`;
+        document.getElementById('nHappyVal').innerHTML = `😂 ${currentNPC.happy}`;
+        document.getElementById('npcName').innerText = currentNPC.name;
+
+        // Context Badge
+        let contextText = "Bình thường";
+        if (currentNPC.money <= 1) contextText = "Đang nghèo túng";
+        else if (currentNPC.money >= 5) contextText = "Đại gia";
+        else if (currentNPC.happy <= 1) contextText = "Trầm cảm";
+        else if (currentNPC.happy >= 5) contextText = "Hạnh phúc tột đỉnh";
+        document.getElementById('npcContext').innerText = contextText;
+
+        // Request Tag
+        const reqEl = document.getElementById('npcRequest');
+        if (currentRequest.type === 'money') {
+            reqEl.innerText = currentRequest.val > 0 ? "CẦN: + TIỀN" : "CẦN: - TIỀN";
+            reqEl.style.backgroundColor = currentRequest.val > 0 ? '#27ae60' : '#e67e22';
+        } else {
+            reqEl.innerText = currentRequest.val > 0 ? "CẦN: + VUI" : "CẦN: - VUI";
+            reqEl.style.backgroundColor = currentRequest.val > 0 ? '#f1c40f' : '#8e44ad';
         }
 
-        function startGame() {
-            document.getElementById('gameOverScreen').style.display = 'none';
-            player = { money: 3, happy: 3 };
-            // Deep copy NPCs to reset stats
-            npcs = JSON.parse(JSON.stringify(NPCS_DATA));
-            turn = 1;
-            document.getElementById('gameLog').innerHTML = '<div class="log-entry">Bắt đầu game mới! Cố gắng sống sót.</div>';
-            nextTurn();
-        }
+        renderCards();
+    }
 
-        function nextTurn() {
-            document.getElementById('turnCount').innerText = turn;
-            updateUI();
+    function renderCards() {
+        const area = document.getElementById('cardsArea');
+        area.innerHTML = '';
 
-            // 1. Pick Random NPC
-            currentNPC = npcs[Math.floor(Math.random() * npcs.length)];
+        currentHand.forEach((card, index) => {
+            const el = document.createElement('div');
+            
+            // Check Penalty Logic for Styling
+            const isPenalty = checkPenalty(card);
+            
+            el.className = `card ${isPenalty ? 'penalty' : ''}`;
+            el.onclick = () => playCard(index);
 
-            // 2. Generate Context & Request
-            generateContext(currentNPC);
-
-            // 3. Update NPC UI
-            document.getElementById('npcNameDisplay').innerText = currentNPC.name;
-            document.getElementById('npcName').innerText = currentNPC.name;
-            updateUI(); // Refresh stats display
-
-            // 4. Deal Cards
-            dealCards();
-        }
-
-        function generateContext(npc) {
-            // Random request type: Money or Happy
-            const types = ['money', 'happy'];
-            const type = types[Math.floor(Math.random() * types.length)];
-
-            // Random direction: +1 (Want more) or -1 (Want less/Give away)
-            // Weighting: Usually people want + (+1). 
-            // Mom might want - (give away).
-            let val = Math.random() > 0.3 ? 1 : -1;
-
-            // Logic fix: NPC wants (-Money) means NPC stat decreases. 
-            // Text should reflect WHY.
-
-            let text = "";
-
-            if (npc.id === 'mom') {
-                if (type === 'money' && val === 1) text = "Mẹ cần tiền sửa mái nhà.";
-                if (type === 'money' && val === -1) text = "Mẹ muốn cho con ít tiền tiêu vặt.";
-                if (type === 'happy' && val === 1) text = "Mẹ thấy buồn, kể chuyện cho mẹ nghe đi.";
-                if (type === 'happy' && val === -1) text = "Mẹ lo cho con quá, mẹ chịu khổ chút cũng được.";
-            } else if (npc.id === 'gf') {
-                if (type === 'money' && val === 1) text = "Em thấy cái túi này đẹp quá anh ơi!";
-                if (type === 'money' && val === -1) text = "Em trả lại tiền anh mượn hôm nọ nè."; // Hiếm
-                if (type === 'happy' && val === 1) text = "Anh chẳng quan tâm em gì cả! Làm em vui đi.";
-                if (type === 'happy' && val === -1) text = "Em muốn chia sẻ nỗi buồn cùng anh.";
-            } else if (npc.id === 'boss') {
-                if (type === 'money' && val === 1) text = "Tháng này doanh số kém, cắt giảm lương nhé?"; // Boss wants money (keep money) => P loses money? No, Boss +Money means Boss gets richer.
-                if (type === 'money' && val === 1) text = "Sếp cần vốn đầu tư dự án riêng, chú góp nhé?";
-                if (type === 'money' && val === -1) text = "Thưởng nóng cho chú nè!";
-                if (type === 'happy' && val === 1) text = "Sếp đang stress, chú làm trò gì vui xem nào.";
-                if (type === 'happy' && val === -1) text = "Sếp đang vui, chú cứ xả stress lên sếp đi (Sếp say rượu).";
-            } else {
-                // Generic
-                if (type === 'money' && val === 1) text = `Cho tao vay ít tiền (${npc.name}).`;
-                if (type === 'money' && val === -1) text = `Trả mày tiền nè (${npc.name}).`;
-                if (type === 'happy' && val === 1) text = `Tao đang chán, đi chơi không? (${npc.name})`;
-                if (type === 'happy' && val === -1) text = `Tao nhường niềm vui cho mày đó (${npc.name}).`;
-            }
-
-            currentRequest = { type, val };
-
-            document.getElementById('npcDialog').innerText = `"${text}"`;
-
-            // Display Request
-            let reqText = "";
-            if (type === 'money') reqText = val > 0 ? "NPC Muốn: + Tiền" : "NPC Muốn: - Tiền";
-            else reqText = val > 0 ? "NPC Muốn: + Vui" : "NPC Muốn: - Vui";
-
-            document.getElementById('npcRequest').innerText = reqText;
-        }
-
-        function dealCards() {
-            const area = document.getElementById('cardsArea');
-            area.innerHTML = '';
-
-            // Pick 3 random cards
-            for (let i = 0; i < 3; i++) {
-                const cardData = DECK[Math.floor(Math.random() * DECK.length)];
-                const el = document.createElement('div');
-                el.className = 'card';
-                el.innerHTML = `
-                <div class="card-title">${cardData.name}</div>
-                <div class="card-effect">
-                    <div class="effect-row p-stat">
-                        <span>Bạn:</span>
-                        <span>${formatStat(cardData.pM, 'Tiền')} ${formatStat(cardData.pH, 'Vui')}</span>
+            el.innerHTML = `
+                <div class="card-header">${card.name}</div>
+                <div class="card-body">
+                    <div class="effect-line">
+                        <span class="badge badge-player">Bạn</span>
+                        <span>
+                            ${formatStat(card.pM, '💰')} 
+                            ${formatStat(card.pH, '😂')}
+                        </span>
                     </div>
-                    <div class="effect-row n-stat">
-                        <span>NPC:</span>
-                        <span>${formatStat(cardData.nM, 'Tiền')} ${formatStat(cardData.nH, 'Vui')}</span>
+                    <div class="effect-line">
+                        <span class="badge badge-npc">NPC</span>
+                        <span>
+                            ${formatStat(card.nM, '💰')} 
+                            ${formatStat(card.nH, '😂')}
+                        </span>
                     </div>
+                    ${isPenalty ? '<div class="penalty-warning">⚠️ Phạt -1 Tiền</div>' : ''}
                 </div>
-                <div style="font-size:0.7rem; text-align:center; color:#7f8c8d; margin-top:5px;">(Click chọn)</div>
             `;
-                el.onclick = () => playCard(cardData);
-                area.appendChild(el);
-            }
+            area.appendChild(el);
+        });
+    }
+
+    // --- GAME LOGIC HELPERS ---
+
+    function getRandomCard() {
+        return DECK_TEMPLATE[Math.floor(Math.random() * DECK_TEMPLATE.length)];
+    }
+
+    function formatStat(val, icon) {
+        if (val === 0) return "";
+        return `${val > 0 ? '+' : ''}${val}${icon}`;
+    }
+
+    function checkPenalty(card) {
+        // Logic: Unhappy (0,1,2) but choose +Happy card -> Penalty
+        // Logic: Happy (3,4,5) but choose -Happy card -> Penalty
+        if (player.happy < 3 && card.pH > 0) return true;
+        if (player.happy >= 3 && card.pH < 0) return true;
+        return false;
+    }
+
+    function playCard(index) {
+        const card = currentHand[index];
+        
+        // 1. Penalty Check
+        let penaltyCost = 0;
+        if (checkPenalty(card)) {
+            penaltyCost = 1;
+            showToast("Giả bộ cảm xúc! Bạn bị phạt 1 Tiền.");
         }
 
-        function formatStat(val, name) {
-            if (val === 0) return "";
-            return (val > 0 ? "+" + val : val) + " " + name;
+        // 2. Request Satisfaction Check
+        let satisfied = false;
+        if (currentRequest.type === 'money') {
+            if (currentRequest.val > 0 && card.nM > 0) satisfied = true;
+            if (currentRequest.val < 0 && card.nM < 0) satisfied = true;
+        } else {
+            if (currentRequest.val > 0 && card.nH > 0) satisfied = true;
+            if (currentRequest.val < 0 && card.nH < 0) satisfied = true;
         }
 
-        function playCard(card) {
-            log(`Bạn chọn lá bài: [${card.name}]`);
-
-            // 1. Check Request Satisfaction
-            let isSatisfied = false;
-            if (currentRequest.type === 'money') {
-                // If Request is +Money, Card must give NPC > 0 Money
-                if (currentRequest.val > 0 && card.nM > 0) isSatisfied = true;
-                if (currentRequest.val < 0 && card.nM < 0) isSatisfied = true;
-            } else {
-                if (currentRequest.val > 0 && card.nH > 0) isSatisfied = true;
-                if (currentRequest.val < 0 && card.nH < 0) isSatisfied = true;
-            }
-
-            if (!isSatisfied) {
-                log(`Không thoả mãn yêu cầu! ${currentNPC.name} bị -1 Happy.`, 'log-danger');
-                currentNPC.happy -= 1;
-            } else {
-                log(`Đã thoả mãn yêu cầu của ${currentNPC.name}.`, 'log-info');
-            }
-
-            // 2. Mood Penalty Logic (The "Pretending" Mechanic)
-            // Rule: Happy < 3 (Unhappy) -> Choosing +PlayerHappy -> Penalty
-            // Rule: Happy >= 3 (Happy) -> Choosing -PlayerHappy -> Penalty
-
-            let penalty = 0;
-            if (player.happy < 3) { // Unhappy
-                if (card.pH > 0) {
-                    penalty = 1;
-                    log(`Đang buồn mà phải giả vui (+Happy) -> Bị phạt -1 Tiền.`, 'log-danger');
-                }
-            } else { // Happy (3,4,5)
-                if (card.pH < 0) {
-                    penalty = 1;
-                    log(`Đang vui mà phải giả buồn (-Happy) -> Bị phạt -1 Tiền.`, 'log-danger');
-                }
-            }
-            player.money -= penalty;
-
-            // 3. Apply Card Stats
-            player.money += card.pM;
-            player.happy += card.pH;
-            currentNPC.money += card.nM;
-            currentNPC.happy += card.nH;
-
-            // 4. Clamp Stats (0-5)
-            // Note: We check death BEFORE clamping at 0? 
-            // Usually clamp logic: min 0, max 5.
-            // If it drops below 0, it becomes 0 and triggers death.
-
-            clampStats(player);
-            clampStats(currentNPC);
-
-            updateUI();
-
-            // 5. Check Game Over
-            if (checkGameOver()) return;
-
-            turn++;
-            nextTurn();
+        if (!satisfied) {
+            currentNPC.happy -= 1;
+            showToast(`${currentNPC.name} thất vọng (-1 Vui)`);
         }
 
-        function clampStats(entity) {
-            if (entity.money > 5) entity.money = 5;
-            if (entity.money < 0) entity.money = 0;
-            if (entity.happy > 5) entity.happy = 5;
-            if (entity.happy < 0) entity.happy = 0;
+        // 3. Apply Stats
+        player.money = player.money - penaltyCost + card.pM;
+        player.happy += card.pH;
+        currentNPC.money += card.nM;
+        currentNPC.happy += card.nH;
+
+        // 4. Clamp & Check Win/Loss
+        clampStats(player);
+        clampStats(currentNPC);
+
+        if (checkEndGame()) return;
+
+        // 5. Update Hand (Replace used card only)
+        currentHand[index] = getRandomCard();
+        
+        turnCount++;
+        nextTurn();
+    }
+
+    function clampStats(entity) {
+        if (entity.money > 5) entity.money = 5;
+        if (entity.money < 0) entity.money = 0;
+        if (entity.happy > 5) entity.happy = 5;
+        if (entity.happy < 0) entity.happy = 0;
+    }
+
+    function checkEndGame() {
+        // VICTORY
+        if (player.money === 5 && player.happy === 5) {
+            document.getElementById('winOverlay').style.display = 'flex';
+            return true;
         }
 
-        function checkGameOver() {
-            let deadReason = null;
+        // DEFEAT
+        let reason = null;
+        if (player.money <= 0) reason = "Bạn đã phá sản.";
+        else if (player.happy <= 0) reason = "Bạn đã tuyệt vọng.";
+        
+        npcs.forEach(npc => {
+            if (npc.money <= 0) reason = `${npc.name} đã chết đói.`;
+            if (npc.happy <= 0) reason = `${npc.name} đã tự tử vì buồn.`;
+        });
 
-            // Check Player
-            if (player.money <= 0) deadReason = "Bạn đã phá sản (Hết tiền).";
-            else if (player.happy <= 0) deadReason = "Bạn đã tuyệt vọng (Hết vui).";
-
-            // Check ALL NPCs (Persistant world)
-            npcs.forEach(npc => {
-                if (npc.money <= 0) deadReason = `${npc.name} đã chết vì đói (Hết tiền).`;
-                if (npc.happy <= 0) deadReason = `${npc.name} đã chết vì trầm cảm (Hết vui).`;
-            });
-
-            if (deadReason) {
-                document.getElementById('deathReason').innerText = deadReason;
-                document.getElementById('gameOverScreen').style.display = 'flex';
-                return true;
-            }
-            return false;
+        if (reason) {
+            document.getElementById('failReason').innerText = reason;
+            document.getElementById('gameOverOverlay').style.display = 'flex';
+            return true;
         }
+        return false;
+    }
 
-        function updateUI() {
-            document.getElementById('pMoney').innerText = player.money;
-            document.getElementById('pHappy').innerText = player.happy;
+    function showToast(text) {
+        const x = document.getElementById("toast");
+        x.innerText = text;
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
 
-            if (currentNPC) {
-                document.getElementById('nMoney').innerText = currentNPC.money;
-                document.getElementById('nHappy').innerText = currentNPC.happy;
-            }
+    // Start
+    initGame();
 
-            // Color coding stats
-            colorStat('pMoney', player.money);
-            colorStat('pHappy', player.happy);
-            if (currentNPC) {
-                colorStat('nMoney', currentNPC.money);
-                colorStat('nHappy', currentNPC.happy);
-            }
-        }
-
-        function colorStat(id, val) {
-            const el = document.getElementById(id);
-            if (val <= 1) el.style.color = '#e74c3c'; // red
-            else if (val <= 2) el.style.color = '#e67e22'; // orange
-            else el.style.color = 'inherit';
-        }
-
-        // Start
-        startGame();
-
-    </script>
+</script>
 </body>
-
 </html>
