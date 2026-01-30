@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: cd3b9183ce5da4f7fbd1b605fe04c1d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8874627317897224159
+    second: mp_cs_props_0
+  - first:
+      213: -4906571581497132971
+    second: mp_cs_props_1
+  - first:
+      213: 8681617973090585939
+    second: mp_cs_props_2
+  - first:
+      213: -6045156114395870260
+    second: mp_cs_props_3
+  - first:
+      213: 3425242967736376773
+    second: mp_cs_props_4
+  - first:
+      213: 9083006732151074936
+    second: mp_cs_props_5
+  - first:
+      213: 3455017415966937453
+    second: mp_cs_props_6
+  - first:
+      213: 1506752619075951106
+    second: mp_cs_props_7
+  - first:
+      213: 4617331950869283471
+    second: mp_cs_props_8
+  - first:
+      213: -7071820198775876219
+    second: mp_cs_props_9
+  - first:
+      213: -6827230098755849130
+    second: mp_cs_props_10
+  - first:
+      213: -7215786217524715485
+    second: mp_cs_props_11
+  - first:
+      213: 5432044561564297597
+    second: mp_cs_props_12
+  - first:
+      213: 3278405632753803225
+    second: mp_cs_props_13
+  - first:
+      213: -6624604669967325534
+    second: mp_cs_props_14
+  - first:
+      213: 1576393056829636193
+    second: mp_cs_props_15
+  - first:
+      213: 2119746023308073910
+    second: mp_cs_props_16
+  - first:
+      213: -7179984738437500819
+    second: mp_cs_props_17
+  - first:
+      213: -2077328170753668613
+    second: mp_cs_props_18
+  - first:
+      213: 4138846045931614944
+    second: mp_cs_props_19
+  - first:
+      213: -1089120342185744548
+    second: mp_cs_props_20
+  - first:
+      213: 8646519497759594590
+    second: mp_cs_props_21
+  - first:
+      213: -8860510993764695930
+    second: mp_cs_props_22
+  - first:
+      213: 7852733075287069535
+    second: mp_cs_props_23
+  - first:
+      213: -7099439157536095809
+    second: mp_cs_props_24
+  - first:
+      213: -995612544085545044
+    second: mp_cs_props_25
+  - first:
+      213: -7518591048002390855
+    second: mp_cs_props_26
+  - first:
+      213: -1810821286486851885
+    second: mp_cs_props_27
+  - first:
+      213: 7774892621881478410
+    second: mp_cs_props_28
+  - first:
+      213: -1598670504529852258
+    second: mp_cs_props_29
+  - first:
+      213: -5583835684466191056
+    second: mp_cs_props_30
+  - first:
+      213: 8824608588640690609
+    second: mp_cs_props_31
+  - first:
+      213: 9213332783950859550
+    second: mp_cs_props_32
+  - first:
+      213: 7515525123797057794
+    second: mp_cs_props_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mp_cs_props_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 223
+        width: 30
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdfdd3d9682092b70800000000000000
+      internalID: 8874627317897224159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 223
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55836db842b58ebb0800000000000000
+      internalID: -4906571581497132971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 271
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d06b1ac8d4b7870800000000000000
+      internalID: 8681617973090585939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 271
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb47a5ea8a4b1ca0800000000000000
+      internalID: -6045156114395870260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_4
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 255
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cdd459d458e88f20800000000000000
+      internalID: 3425242967736376773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_5
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 255
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870b852cf725d0e70800000000000000
+      internalID: 9083006732151074936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 255
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d615f7bc800b2ff20800000000000000
+      internalID: 3455017415966937453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 223
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a5960268f09e410800000000000000
+      internalID: 1506752619075951106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 223
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8200a512fe041040800000000000000
+      internalID: 4617331950869283471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_9
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 223
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58518805ff8dbdd90800000000000000
+      internalID: -7071820198775876219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_10
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 223
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6547dcbb56ec041a0800000000000000
+      internalID: -6827230098755849130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_11
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 223
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320a7418aa06cdb90800000000000000
+      internalID: -7215786217524715485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_12
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 223
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79e120afbf726b40800000000000000
+      internalID: 5432044561564297597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_13
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 143
+        width: 85
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df1ee1ad8c3f7d20800000000000000
+      internalID: 3278405632753803225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_14
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 194
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6243db62da014a0800000000000000
+      internalID: -6624604669967325534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_15
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 198
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ef8b2122970e510800000000000000
+      internalID: 1576393056829636193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_16
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 193
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb135df6c9da6d10800000000000000
+      internalID: 2119746023308073910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_17
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 191
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60f4bcebe19b5c90800000000000000
+      internalID: -7179984738437500819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_18
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 191
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9c05ce809db23e0800000000000000
+      internalID: -2077328170753668613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_19
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 191
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2b8cbdc82207930800000000000000
+      internalID: 4138846045931614944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_20
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 143
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57ed56b1daa2e0f0800000000000000
+      internalID: -1089120342185744548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_21
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 159
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5813770cab9ef770800000000000000
+      internalID: 8646519497759594590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_22
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 143
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68046383234290580800000000000000
+      internalID: -8860510993764695930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 159
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53527c50238afc60800000000000000
+      internalID: 7852733075287069535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_24
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 143
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb1009e53b9b97d90800000000000000
+      internalID: -7099439157536095809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_25
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 143
+        width: 61
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cafabd78aafde22f0800000000000000
+      internalID: -995612544085545044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_26
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 79
+        width: 98
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4b26ce64998a790800000000000000
+      internalID: -7518591048002390855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_27
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 79
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de3c3352abaed6e0800000000000000
+      internalID: -1810821286486851885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_28
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 111
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d0d0e75a7f5eb60800000000000000
+      internalID: 7774892621881478410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_29
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 79
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e988a9075a160d9e0800000000000000
+      internalID: -1598670504529852258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_30
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 79
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0351e37870b3282b0800000000000000
+      internalID: -5583835684466191056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_31
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 31
+        width: 128
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b12acfa1ce477a70800000000000000
+      internalID: 8824608588640690609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_32
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 31
+        width: 118
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d0ad84a555cdf70800000000000000
+      internalID: 9213332783950859550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_cs_props_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 288
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2018278f7428c4860800000000000000
+      internalID: 7515525123797057794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mp_cs_props_0: 8874627317897224159
+      mp_cs_props_1: -4906571581497132971
+      mp_cs_props_10: -6827230098755849130
+      mp_cs_props_11: -7215786217524715485
+      mp_cs_props_12: 5432044561564297597
+      mp_cs_props_13: 3278405632753803225
+      mp_cs_props_14: -6624604669967325534
+      mp_cs_props_15: 1576393056829636193
+      mp_cs_props_16: 2119746023308073910
+      mp_cs_props_17: -7179984738437500819
+      mp_cs_props_18: -2077328170753668613
+      mp_cs_props_19: 4138846045931614944
+      mp_cs_props_2: 8681617973090585939
+      mp_cs_props_20: -1089120342185744548
+      mp_cs_props_21: 8646519497759594590
+      mp_cs_props_22: -8860510993764695930
+      mp_cs_props_23: 7852733075287069535
+      mp_cs_props_24: -7099439157536095809
+      mp_cs_props_25: -995612544085545044
+      mp_cs_props_26: -7518591048002390855
+      mp_cs_props_27: -1810821286486851885
+      mp_cs_props_28: 7774892621881478410
+      mp_cs_props_29: -1598670504529852258
+      mp_cs_props_3: -6045156114395870260
+      mp_cs_props_30: -5583835684466191056
+      mp_cs_props_31: 8824608588640690609
+      mp_cs_props_32: 9213332783950859550
+      mp_cs_props_33: 7515525123797057794
+      mp_cs_props_4: 3425242967736376773
+      mp_cs_props_5: 9083006732151074936
+      mp_cs_props_6: 3455017415966937453
+      mp_cs_props_7: 1506752619075951106
+      mp_cs_props_8: 4617331950869283471
+      mp_cs_props_9: -7071820198775876219
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

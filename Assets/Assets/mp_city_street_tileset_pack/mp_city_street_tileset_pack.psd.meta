@@ -1,0 +1,6383 @@
+fileFormatVersion: 2
+guid: c7c843edc9a794b7c8ebd10081eefcb4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2793155012251328445
+    second: mp_city_street_tileset_pack_0
+  - first:
+      213: -6727375293495443887
+    second: mp_city_street_tileset_pack_1
+  - first:
+      213: 5093537122827690836
+    second: mp_city_street_tileset_pack_2
+  - first:
+      213: 839735680137237222
+    second: mp_city_street_tileset_pack_3
+  - first:
+      213: -5565289382927250033
+    second: mp_city_street_tileset_pack_4
+  - first:
+      213: -1168620452099222159
+    second: mp_city_street_tileset_pack_5
+  - first:
+      213: -5797834389299761615
+    second: mp_city_street_tileset_pack_6
+  - first:
+      213: -3964675118821126127
+    second: mp_city_street_tileset_pack_7
+  - first:
+      213: -6239222453463371601
+    second: mp_city_street_tileset_pack_8
+  - first:
+      213: 1179446771416640951
+    second: mp_city_street_tileset_pack_9
+  - first:
+      213: 7881071579697687132
+    second: mp_city_street_tileset_pack_10
+  - first:
+      213: 365442697645061313
+    second: mp_city_street_tileset_pack_11
+  - first:
+      213: -536603525050478119
+    second: mp_city_street_tileset_pack_12
+  - first:
+      213: -4438811015096018255
+    second: mp_city_street_tileset_pack_13
+  - first:
+      213: -3552442311326333894
+    second: mp_city_street_tileset_pack_14
+  - first:
+      213: -2813135282373632885
+    second: mp_city_street_tileset_pack_15
+  - first:
+      213: 5092545434083941819
+    second: mp_city_street_tileset_pack_16
+  - first:
+      213: -3422598491804496251
+    second: mp_city_street_tileset_pack_17
+  - first:
+      213: -7780633578960889868
+    second: mp_city_street_tileset_pack_18
+  - first:
+      213: 8638882122187913779
+    second: mp_city_street_tileset_pack_19
+  - first:
+      213: -2992068638452404127
+    second: mp_city_street_tileset_pack_20
+  - first:
+      213: 3392860146527422418
+    second: mp_city_street_tileset_pack_21
+  - first:
+      213: -3715464168603467289
+    second: mp_city_street_tileset_pack_22
+  - first:
+      213: -6806036346615893520
+    second: mp_city_street_tileset_pack_23
+  - first:
+      213: -2390710321664894534
+    second: mp_city_street_tileset_pack_24
+  - first:
+      213: -8593235734087867949
+    second: mp_city_street_tileset_pack_25
+  - first:
+      213: 956079337634700197
+    second: mp_city_street_tileset_pack_26
+  - first:
+      213: 1923076668735762347
+    second: mp_city_street_tileset_pack_27
+  - first:
+      213: 2933978337071630734
+    second: mp_city_street_tileset_pack_28
+  - first:
+      213: -8410576889575034877
+    second: mp_city_street_tileset_pack_29
+  - first:
+      213: 2396650372921246647
+    second: mp_city_street_tileset_pack_30
+  - first:
+      213: 2262410332897409171
+    second: mp_city_street_tileset_pack_31
+  - first:
+      213: 8449920656609009743
+    second: mp_city_street_tileset_pack_32
+  - first:
+      213: -614532913494063236
+    second: mp_city_street_tileset_pack_33
+  - first:
+      213: -5748011198925603542
+    second: mp_city_street_tileset_pack_34
+  - first:
+      213: 4933600634462443106
+    second: mp_city_street_tileset_pack_35
+  - first:
+      213: -7208504919409065387
+    second: mp_city_street_tileset_pack_36
+  - first:
+      213: 8735596635576639202
+    second: mp_city_street_tileset_pack_37
+  - first:
+      213: -4031681435421817708
+    second: mp_city_street_tileset_pack_38
+  - first:
+      213: -7377494481451828594
+    second: mp_city_street_tileset_pack_39
+  - first:
+      213: 2578953101427205287
+    second: mp_city_street_tileset_pack_40
+  - first:
+      213: 3910759847782428825
+    second: mp_city_street_tileset_pack_41
+  - first:
+      213: 1718025789505082022
+    second: mp_city_street_tileset_pack_42
+  - first:
+      213: -8474578965111721132
+    second: mp_city_street_tileset_pack_43
+  - first:
+      213: 6109395418536193745
+    second: mp_city_street_tileset_pack_44
+  - first:
+      213: -3777706934264747280
+    second: mp_city_street_tileset_pack_45
+  - first:
+      213: -4144280950396246239
+    second: mp_city_street_tileset_pack_46
+  - first:
+      213: -7227301120907484063
+    second: mp_city_street_tileset_pack_47
+  - first:
+      213: -1695293504403458317
+    second: mp_city_street_tileset_pack_48
+  - first:
+      213: -6092621809392587931
+    second: mp_city_street_tileset_pack_49
+  - first:
+      213: 4226369266433061045
+    second: mp_city_street_tileset_pack_50
+  - first:
+      213: -7022929467331159168
+    second: mp_city_street_tileset_pack_51
+  - first:
+      213: -9220529542059558914
+    second: mp_city_street_tileset_pack_52
+  - first:
+      213: -31012172182912624
+    second: mp_city_street_tileset_pack_53
+  - first:
+      213: 3922631195826361057
+    second: mp_city_street_tileset_pack_54
+  - first:
+      213: -5989169653701615461
+    second: mp_city_street_tileset_pack_55
+  - first:
+      213: 6487647997720792687
+    second: mp_city_street_tileset_pack_56
+  - first:
+      213: -9186173265492727519
+    second: mp_city_street_tileset_pack_57
+  - first:
+      213: 8254271919540008890
+    second: mp_city_street_tileset_pack_58
+  - first:
+      213: -6242931005589803104
+    second: mp_city_street_tileset_pack_59
+  - first:
+      213: -967851889177299701
+    second: mp_city_street_tileset_pack_60
+  - first:
+      213: -4969774025497531141
+    second: mp_city_street_tileset_pack_61
+  - first:
+      213: -2760700274509282793
+    second: mp_city_street_tileset_pack_62
+  - first:
+      213: 6952017725187725237
+    second: mp_city_street_tileset_pack_63
+  - first:
+      213: -4768752719773049708
+    second: mp_city_street_tileset_pack_64
+  - first:
+      213: -4721236763973161016
+    second: mp_city_street_tileset_pack_65
+  - first:
+      213: -8714069585997708108
+    second: mp_city_street_tileset_pack_66
+  - first:
+      213: 4816479795982361026
+    second: mp_city_street_tileset_pack_67
+  - first:
+      213: 1399390184292575304
+    second: mp_city_street_tileset_pack_68
+  - first:
+      213: 6838956781335566710
+    second: mp_city_street_tileset_pack_69
+  - first:
+      213: -1114041417972324268
+    second: mp_city_street_tileset_pack_70
+  - first:
+      213: -902838138637627723
+    second: mp_city_street_tileset_pack_71
+  - first:
+      213: -837693917905439966
+    second: mp_city_street_tileset_pack_72
+  - first:
+      213: 5117671986665519078
+    second: mp_city_street_tileset_pack_73
+  - first:
+      213: 8509485733398357627
+    second: mp_city_street_tileset_pack_74
+  - first:
+      213: -3143814666497567917
+    second: mp_city_street_tileset_pack_75
+  - first:
+      213: -5405257856511244731
+    second: mp_city_street_tileset_pack_76
+  - first:
+      213: -729682144527579494
+    second: mp_city_street_tileset_pack_77
+  - first:
+      213: 674307590228894010
+    second: mp_city_street_tileset_pack_78
+  - first:
+      213: -7418542392332198812
+    second: mp_city_street_tileset_pack_79
+  - first:
+      213: 5662514796083650856
+    second: mp_city_street_tileset_pack_80
+  - first:
+      213: -6252374509670802098
+    second: mp_city_street_tileset_pack_81
+  - first:
+      213: -4642381224322855529
+    second: mp_city_street_tileset_pack_82
+  - first:
+      213: 2412759681197840927
+    second: mp_city_street_tileset_pack_83
+  - first:
+      213: -3525421220499247905
+    second: mp_city_street_tileset_pack_84
+  - first:
+      213: -7708261808755696476
+    second: mp_city_street_tileset_pack_85
+  - first:
+      213: -6135713646580059401
+    second: mp_city_street_tileset_pack_86
+  - first:
+      213: 9035573605935632353
+    second: mp_city_street_tileset_pack_87
+  - first:
+      213: -3422614369798082533
+    second: mp_city_street_tileset_pack_88
+  - first:
+      213: -8060011988393281120
+    second: mp_city_street_tileset_pack_89
+  - first:
+      213: 6989404097313259991
+    second: mp_city_street_tileset_pack_90
+  - first:
+      213: -389911859152983500
+    second: mp_city_street_tileset_pack_91
+  - first:
+      213: -2408221801961725851
+    second: mp_city_street_tileset_pack_92
+  - first:
+      213: -2290607430490265437
+    second: mp_city_street_tileset_pack_93
+  - first:
+      213: 6695545228948665151
+    second: mp_city_street_tileset_pack_94
+  - first:
+      213: -6208378707325949161
+    second: mp_city_street_tileset_pack_95
+  - first:
+      213: 6181527219560882646
+    second: mp_city_street_tileset_pack_96
+  - first:
+      213: -2228945706107754695
+    second: mp_city_street_tileset_pack_97
+  - first:
+      213: 7116731920978495317
+    second: mp_city_street_tileset_pack_98
+  - first:
+      213: -8005657787243256807
+    second: mp_city_street_tileset_pack_99
+  - first:
+      213: 4032403259327103593
+    second: mp_city_street_tileset_pack_100
+  - first:
+      213: -122148226986692429
+    second: mp_city_street_tileset_pack_101
+  - first:
+      213: -4184907712293375250
+    second: mp_city_street_tileset_pack_102
+  - first:
+      213: 5414137253644966804
+    second: mp_city_street_tileset_pack_103
+  - first:
+      213: -4143244033244691784
+    second: mp_city_street_tileset_pack_104
+  - first:
+      213: 6274608131666095818
+    second: mp_city_street_tileset_pack_105
+  - first:
+      213: -1825175356415623471
+    second: mp_city_street_tileset_pack_106
+  - first:
+      213: 8801326724540337837
+    second: mp_city_street_tileset_pack_107
+  - first:
+      213: 1178809024258862688
+    second: mp_city_street_tileset_pack_108
+  - first:
+      213: 1507720165540112909
+    second: mp_city_street_tileset_pack_109
+  - first:
+      213: 2501392965004901392
+    second: mp_city_street_tileset_pack_110
+  - first:
+      213: -217272746251736858
+    second: mp_city_street_tileset_pack_111
+  - first:
+      213: 6680062863230945773
+    second: mp_city_street_tileset_pack_112
+  - first:
+      213: -2347275218971551074
+    second: mp_city_street_tileset_pack_113
+  - first:
+      213: -8392569162799139848
+    second: mp_city_street_tileset_pack_114
+  - first:
+      213: 664289825251912414
+    second: mp_city_street_tileset_pack_115
+  - first:
+      213: -6395870443297407150
+    second: mp_city_street_tileset_pack_116
+  - first:
+      213: 4706662451841529925
+    second: mp_city_street_tileset_pack_117
+  - first:
+      213: 7971644733823714940
+    second: mp_city_street_tileset_pack_118
+  - first:
+      213: -6621747383357960306
+    second: mp_city_street_tileset_pack_119
+  - first:
+      213: -6046417841953967275
+    second: mp_city_street_tileset_pack_120
+  - first:
+      213: -275168309797857234
+    second: mp_city_street_tileset_pack_121
+  - first:
+      213: -4196689442061236253
+    second: mp_city_street_tileset_pack_122
+  - first:
+      213: -2151184081756753675
+    second: mp_city_street_tileset_pack_123
+  - first:
+      213: -5881718554486556240
+    second: mp_city_street_tileset_pack_124
+  - first:
+      213: 1492523722612261437
+    second: mp_city_street_tileset_pack_125
+  - first:
+      213: 5335199187377696287
+    second: mp_city_street_tileset_pack_126
+  - first:
+      213: 2828100702381089794
+    second: mp_city_street_tileset_pack_127
+  - first:
+      213: -1386209909799882140
+    second: mp_city_street_tileset_pack_128
+  - first:
+      213: -2638697995214167460
+    second: mp_city_street_tileset_pack_129
+  - first:
+      213: 4513287173730204344
+    second: mp_city_street_tileset_pack_130
+  - first:
+      213: -4439804612916091872
+    second: mp_city_street_tileset_pack_131
+  - first:
+      213: 4185468430648274136
+    second: mp_city_street_tileset_pack_132
+  - first:
+      213: -4950701205911424446
+    second: mp_city_street_tileset_pack_133
+  - first:
+      213: -4005001037507784668
+    second: mp_city_street_tileset_pack_134
+  - first:
+      213: 7065239494794301654
+    second: mp_city_street_tileset_pack_135
+  - first:
+      213: 1873463888192277143
+    second: mp_city_street_tileset_pack_136
+  - first:
+      213: 7450822847357075758
+    second: mp_city_street_tileset_pack_137
+  - first:
+      213: 5625383291403003338
+    second: mp_city_street_tileset_pack_138
+  - first:
+      213: -168477709030056510
+    second: mp_city_street_tileset_pack_139
+  - first:
+      213: -8613337671493372471
+    second: mp_city_street_tileset_pack_140
+  - first:
+      213: 124076745942246634
+    second: mp_city_street_tileset_pack_141
+  - first:
+      213: 2182172707889815830
+    second: mp_city_street_tileset_pack_142
+  - first:
+      213: 3057133584631207419
+    second: mp_city_street_tileset_pack_143
+  - first:
+      213: -8592608728126400392
+    second: mp_city_street_tileset_pack_144
+  - first:
+      213: 4715460501567406159
+    second: mp_city_street_tileset_pack_145
+  - first:
+      213: -713621289595906791
+    second: mp_city_street_tileset_pack_146
+  - first:
+      213: 7811751458489935200
+    second: mp_city_street_tileset_pack_147
+  - first:
+      213: -8648267881142739727
+    second: mp_city_street_tileset_pack_148
+  - first:
+      213: -3866630291979742290
+    second: mp_city_street_tileset_pack_149
+  - first:
+      213: 1612631081537928936
+    second: mp_city_street_tileset_pack_150
+  - first:
+      213: -7870782983657125226
+    second: mp_city_street_tileset_pack_151
+  - first:
+      213: -4360814024826777040
+    second: mp_city_street_tileset_pack_152
+  - first:
+      213: 2184202282757258177
+    second: mp_city_street_tileset_pack_153
+  - first:
+      213: 7721545290144808684
+    second: mp_city_street_tileset_pack_154
+  - first:
+      213: 4572693720725459062
+    second: mp_city_street_tileset_pack_155
+  - first:
+      213: -4485405635011441977
+    second: mp_city_street_tileset_pack_156
+  - first:
+      213: -5860775786639339204
+    second: mp_city_street_tileset_pack_157
+  - first:
+      213: 3541023456587139820
+    second: mp_city_street_tileset_pack_158
+  - first:
+      213: -2091842826812236452
+    second: mp_city_street_tileset_pack_159
+  - first:
+      213: 2434219323498037027
+    second: mp_city_street_tileset_pack_160
+  - first:
+      213: 6604849331321896861
+    second: mp_city_street_tileset_pack_161
+  - first:
+      213: 5071032328563962898
+    second: mp_city_street_tileset_pack_162
+  - first:
+      213: 8863014871102628722
+    second: mp_city_street_tileset_pack_163
+  - first:
+      213: 1356113906586182877
+    second: mp_city_street_tileset_pack_164
+  - first:
+      213: 4295915171019118259
+    second: mp_city_street_tileset_pack_165
+  - first:
+      213: -2448455539759179491
+    second: mp_city_street_tileset_pack_166
+  - first:
+      213: 1279682892826602075
+    second: mp_city_street_tileset_pack_167
+  - first:
+      213: -2753883621694750435
+    second: mp_city_street_tileset_pack_168
+  - first:
+      213: -8819275694728482171
+    second: mp_city_street_tileset_pack_169
+  - first:
+      213: 4190895487892773013
+    second: mp_city_street_tileset_pack_170
+  - first:
+      213: 3765113063797739141
+    second: mp_city_street_tileset_pack_171
+  - first:
+      213: -6854238792103157353
+    second: mp_city_street_tileset_pack_172
+  - first:
+      213: -6789278185691952787
+    second: mp_city_street_tileset_pack_173
+  - first:
+      213: -5395060918932934812
+    second: mp_city_street_tileset_pack_174
+  - first:
+      213: -7385389357800545239
+    second: mp_city_street_tileset_pack_175
+  - first:
+      213: -2798093601836729774
+    second: mp_city_street_tileset_pack_176
+  - first:
+      213: 6625077264319301493
+    second: mp_city_street_tileset_pack_177
+  - first:
+      213: -4911236281362903132
+    second: mp_city_street_tileset_pack_178
+  - first:
+      213: 6261049464208633923
+    second: mp_city_street_tileset_pack_179
+  - first:
+      213: 8596255201025961159
+    second: mp_city_street_tileset_pack_180
+  - first:
+      213: -6589650674068128198
+    second: mp_city_street_tileset_pack_181
+  - first:
+      213: 5934578364614420712
+    second: mp_city_street_tileset_pack_182
+  - first:
+      213: 3798052651967546008
+    second: mp_city_street_tileset_pack_183
+  - first:
+      213: -5454473906201204887
+    second: mp_city_street_tileset_pack_184
+  - first:
+      213: -8027496344867965825
+    second: mp_city_street_tileset_pack_185
+  - first:
+      213: -8601391536845179264
+    second: mp_city_street_tileset_pack_186
+  - first:
+      213: -6718288360918342163
+    second: mp_city_street_tileset_pack_187
+  - first:
+      213: -3075108318086707728
+    second: mp_city_street_tileset_pack_188
+  - first:
+      213: -9194076609626852314
+    second: mp_city_street_tileset_pack_189
+  - first:
+      213: -6288923680258220764
+    second: mp_city_street_tileset_pack_190
+  - first:
+      213: -2549248599744951009
+    second: mp_city_street_tileset_pack_191
+  - first:
+      213: -7028506396325407485
+    second: mp_city_street_tileset_pack_192
+  - first:
+      213: -6142933557658501085
+    second: mp_city_street_tileset_pack_193
+  - first:
+      213: 7595324991245368178
+    second: mp_city_street_tileset_pack_194
+  - first:
+      213: 7865370422004696884
+    second: mp_city_street_tileset_pack_195
+  - first:
+      213: 8127326939892719794
+    second: mp_city_street_tileset_pack_196
+  - first:
+      213: 1634327121344324589
+    second: mp_city_street_tileset_pack_197
+  - first:
+      213: -8230222667615564668
+    second: mp_city_street_tileset_pack_198
+  - first:
+      213: 8772203411913001645
+    second: mp_city_street_tileset_pack_199
+  - first:
+      213: 2993978445874835501
+    second: mp_city_street_tileset_pack_200
+  - first:
+      213: -8873016718403618288
+    second: mp_city_street_tileset_pack_201
+  - first:
+      213: 4642653842193129798
+    second: mp_city_street_tileset_pack_202
+  - first:
+      213: -6168571104338292601
+    second: mp_city_street_tileset_pack_203
+  - first:
+      213: 4436491517621925158
+    second: mp_city_street_tileset_pack_204
+  - first:
+      213: 6189249822060027702
+    second: mp_city_street_tileset_pack_205
+  - first:
+      213: 9207218519015492805
+    second: mp_city_street_tileset_pack_206
+  - first:
+      213: 2453546660601832239
+    second: mp_city_street_tileset_pack_207
+  - first:
+      213: 4867567148220324500
+    second: mp_city_street_tileset_pack_208
+  - first:
+      213: 6548218369899669530
+    second: mp_city_street_tileset_pack_209
+  - first:
+      213: -8960327804611571178
+    second: mp_city_street_tileset_pack_210
+  - first:
+      213: 2606513062404254408
+    second: mp_city_street_tileset_pack_211
+  - first:
+      213: -8675935020856953527
+    second: mp_city_street_tileset_pack_212
+  - first:
+      213: 4979522126015559799
+    second: mp_city_street_tileset_pack_213
+  - first:
+      213: -2819450826195166475
+    second: mp_city_street_tileset_pack_214
+  - first:
+      213: 4645303502108638299
+    second: mp_city_street_tileset_pack_215
+  - first:
+      213: -6028378678696595880
+    second: mp_city_street_tileset_pack_216
+  - first:
+      213: 7329212866678003196
+    second: mp_city_street_tileset_pack_217
+  - first:
+      213: 5292786964926975809
+    second: mp_city_street_tileset_pack_218
+  - first:
+      213: -974456603445380525
+    second: mp_city_street_tileset_pack_219
+  - first:
+      213: -5518972348781138046
+    second: mp_city_street_tileset_pack_220
+  - first:
+      213: -4671116315367645795
+    second: mp_city_street_tileset_pack_221
+  - first:
+      213: -1179033556150994682
+    second: mp_city_street_tileset_pack_222
+  - first:
+      213: -7002297881516234598
+    second: mp_city_street_tileset_pack_223
+  - first:
+      213: 3336119764400868602
+    second: mp_city_street_tileset_pack_224
+  - first:
+      213: 9086564358225317789
+    second: mp_city_street_tileset_pack_225
+  - first:
+      213: 2129086571342348326
+    second: mp_city_street_tileset_pack_226
+  - first:
+      213: 1873604474966609836
+    second: mp_city_street_tileset_pack_227
+  - first:
+      213: -5476391225642430202
+    second: mp_city_street_tileset_pack_228
+  - first:
+      213: -1795468539824646222
+    second: mp_city_street_tileset_pack_229
+  - first:
+      213: -7487493984466396482
+    second: mp_city_street_tileset_pack_230
+  - first:
+      213: 4442396080535976386
+    second: mp_city_street_tileset_pack_231
+  - first:
+      213: 734872505115681306
+    second: mp_city_street_tileset_pack_232
+  - first:
+      213: 391334045456080539
+    second: mp_city_street_tileset_pack_233
+  - first:
+      213: 260298414211775882
+    second: mp_city_street_tileset_pack_234
+  - first:
+      213: -7591315168343110270
+    second: mp_city_street_tileset_pack_235
+  - first:
+      213: 5902784143747580981
+    second: mp_city_street_tileset_pack_236
+  - first:
+      213: 3146709867307869814
+    second: mp_city_street_tileset_pack_237
+  - first:
+      213: -8920309575090774434
+    second: mp_city_street_tileset_pack_238
+  - first:
+      213: 9165414623682803858
+    second: mp_city_street_tileset_pack_239
+  - first:
+      213: -3115427908834390041
+    second: mp_city_street_tileset_pack_240
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_0
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 1467
+        width: 34
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf97d35fa743c620800000000000000
+      internalID: 2793155012251328445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_1
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1483
+        width: 290
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ef67050df83a2a0800000000000000
+      internalID: -6727375293495443887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_2
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1555
+        width: 50
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453e868c601efa640800000000000000
+      internalID: 5093537122827690836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_3
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 1555
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e21dc7e62757ab00800000000000000
+      internalID: 839735680137237222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_4
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 1555
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d4e5adace14c2b0800000000000000
+      internalID: -5565289382927250033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_5
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 1555
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1759e53f3e938cfe0800000000000000
+      internalID: -1168620452099222159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_6
+      rect:
+        serializedVersion: 2
+        x: 2138
+        y: 1555
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e6e375754f98fa0800000000000000
+      internalID: -5797834389299761615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_7
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 1555
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11056d43cf4aaf8c0800000000000000
+      internalID: -3964675118821126127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_8
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 1555
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0bca24c34d969a0800000000000000
+      internalID: -6239222453463371601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_9
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 1531
+        width: 80
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd25c1f69c3e5010800000000000000
+      internalID: 1179446771416640951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_10
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1531
+        width: 90
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5aae4598d03f5d60800000000000000
+      internalID: 7881071579697687132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_11
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 1538
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4f4e28230521500800000000000000
+      internalID: 365442697645061313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_12
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 1517
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1d420efe99d88f0800000000000000
+      internalID: -536603525050478119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_13
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 1518
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba5c1c46ec2662c0800000000000000
+      internalID: -4438811015096018255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_14
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 1538
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34835c1a8033bec0800000000000000
+      internalID: -3552442311326333894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_15
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 1535
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c50058d5cb5f8d0800000000000000
+      internalID: -2813135282373632885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_16
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1535
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd5c11471b5ca640800000000000000
+      internalID: 5092545434083941819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_17
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1483
+        width: 482
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e843f2ecc7080d0800000000000000
+      internalID: -3422598491804496251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_18
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 1499
+        width: 80
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f75f86cbf2a50490800000000000000
+      internalID: -7780633578960889868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_19
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1499
+        width: 90
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33abb75f48973e770800000000000000
+      internalID: 8638882122187913779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_20
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 1517
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 160357d0d690a76d0800000000000000
+      internalID: -2992068638452404127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_21
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 1519
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7c85eb35cd51f20800000000000000
+      internalID: 3392860146527422418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_22
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 1519
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1c2b62605007cc0800000000000000
+      internalID: -3715464168603467289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_23
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 1518
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f1ff8fa00a1c81a0800000000000000
+      internalID: -6806036346615893520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_24
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 1499
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9dd4401ad72ded0800000000000000
+      internalID: -2390710321664894534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_25
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 1499
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1ef76f0a1beb880800000000000000
+      internalID: -8593235734087867949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_26
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 1499
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab9ec0971da44d00800000000000000
+      internalID: 956079337634700197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_27
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 1499
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf26d39a0420ba10800000000000000
+      internalID: 1923076668735762347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_28
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1499
+        width: 46
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8988dfa0c597b820800000000000000
+      internalID: 2933978337071630734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_29
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 1456
+        width: 80
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30035cc41e0a74b80800000000000000
+      internalID: -8410576889575034877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_30
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1457
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b347c0f0dc924120800000000000000
+      internalID: 2396650372921246647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_31
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 1460
+        width: 94
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 398f5840632b56f10800000000000000
+      internalID: 2262410332897409171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_32
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1435
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f406a6d4116244570800000000000000
+      internalID: 8449920656609009743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_33
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1435
+        width: 98
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c778664329db877f0800000000000000
+      internalID: -614532913494063236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_34
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 1435
+        width: 130
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d7213d446fa30b0800000000000000
+      internalID: -5748011198925603542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_35
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 1435
+        width: 98
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26696c043aba77440800000000000000
+      internalID: 4933600634462443106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_36
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1451
+        width: 146
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55287f4d7fe36fb90800000000000000
+      internalID: -7208504919409065387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_37
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 1403
+        width: 114
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee94ac5bd21b3970800000000000000
+      internalID: 8735596635576639202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_38
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 1451
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494452268179c08c0800000000000000
+      internalID: -4031681435421817708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_39
+      rect:
+        serializedVersion: 2
+        x: 2186
+        y: 1419
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ab8a45bdfdd9990800000000000000
+      internalID: -7377494481451828594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_40
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1419
+        width: 18
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4e5fe8e284ac320800000000000000
+      internalID: 2578953101427205287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_41
+      rect:
+        serializedVersion: 2
+        x: 2282
+        y: 1419
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990bee88c5fc54630800000000000000
+      internalID: 3910759847782428825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_42
+      rect:
+        serializedVersion: 2
+        x: 2126
+        y: 1440
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a219626a57a7d710800000000000000
+      internalID: 1718025789505082022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_43
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 1439
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453b48bd45f346a80800000000000000
+      internalID: -8474578965111721132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_44
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1441
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1deaf32a3cee8c450800000000000000
+      internalID: 6109395418536193745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_45
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1419
+        width: 258
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0faae95fe83e29bc0800000000000000
+      internalID: -3777706934264747280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_46
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1371
+        width: 242
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127a636de6e8c76c0800000000000000
+      internalID: -4144280950396246239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_47
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 1371
+        width: 146
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164e6832ce773bb90800000000000000
+      internalID: -7227301120907484063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_48
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1419
+        width: 146
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f631003a8b1978e0800000000000000
+      internalID: -1695293504403458317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_49
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 1419
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b6b549eb8a27ba0800000000000000
+      internalID: -6092621809392587931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_50
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 1303
+        width: 30
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b0fe5f947417aa30800000000000000
+      internalID: 4226369266433061045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_51
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 1303
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b5a19cbda898e90800000000000000
+      internalID: -7022929467331159168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_52
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 1351
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef77b84eb391a0080800000000000000
+      internalID: -9220529542059558914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_53
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 1351
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 091035df792d19ff0800000000000000
+      internalID: -31012172182912624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_54
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 1335
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e298142a4cff6630800000000000000
+      internalID: 3922631195826361057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_55
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1335
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90e0939ee132eca0800000000000000
+      internalID: -5989169653701615461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_56
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1335
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e0ceb1b71c80a50800000000000000
+      internalID: 6487647997720792687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_57
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1307
+        width: 242
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129ad11e518248080800000000000000
+      internalID: -9186173265492727519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_58
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 1307
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7f9abe3901d8270800000000000000
+      internalID: 8254271919540008890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_59
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 1340
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af2c8ea357ac59a0800000000000000
+      internalID: -6242931005589803104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_60
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 1344
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05756ea5df7192f0800000000000000
+      internalID: -967851889177299701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_61
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 1344
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfca144dad0d70bb0800000000000000
+      internalID: -4969774025497531141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_62
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1339
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7120d862ab500b9d0800000000000000
+      internalID: -2760700274509282793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_63
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 1339
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b79806a9478a7060800000000000000
+      internalID: 6952017725187725237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_64
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 1339
+        width: 82
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49cdf34daacf1ddb0800000000000000
+      internalID: -4768752719773049708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_65
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 1350
+        width: 242
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cf6dd66d2cca7eb0800000000000000
+      internalID: -4721236763973161016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_66
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 1303
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b4429271e7611780800000000000000
+      internalID: -8714069585997708108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_67
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1303
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1ef5b0bd297d240800000000000000
+      internalID: 4816479795982361026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_68
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 1303
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8486de455f1ab6310800000000000000
+      internalID: 1399390184292575304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_69
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 1307
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67951c155fad8ee50800000000000000
+      internalID: 6838956781335566710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_70
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 1291
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 458efa89b312a80f0800000000000000
+      internalID: -1114041417972324268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_71
+      rect:
+        serializedVersion: 2
+        x: 2154
+        y: 1291
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be44d01f797873f0800000000000000
+      internalID: -902838138637627723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_72
+      rect:
+        serializedVersion: 2
+        x: 2222
+        y: 1328
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 223bdb8e1d9ef54f0800000000000000
+      internalID: -837693917905439966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_73
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 1291
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e77a2aae8f950740800000000000000
+      internalID: 5117671986665519078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_74
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1303
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76a6787034c71670800000000000000
+      internalID: 8509485733398357627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_75
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 1303
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353dfbba73dee54d0800000000000000
+      internalID: -3143814666497567917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_76
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1303
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54602472e9aacf4b0800000000000000
+      internalID: -5405257856511244731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_77
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 1307
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a960d70a4f5afd5f0800000000000000
+      internalID: -729682144527579494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_78
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1275
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3161f04e2f9b5900800000000000000
+      internalID: 674307590228894010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_79
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 1243
+        width: 18
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46cdcd1dffa0c0990800000000000000
+      internalID: -7418542392332198812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_80
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 1291
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 821a5fba43b459e40800000000000000
+      internalID: 5662514796083650856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_81
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 1227
+        width: 82
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d5d5c828a1b39a0800000000000000
+      internalID: -6252374509670802098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_82
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 1311
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d0b447fd2f29fb0800000000000000
+      internalID: -4642381224322855529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_83
+      rect:
+        serializedVersion: 2
+        x: 2222
+        y: 1311
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a9e2e8528db7120800000000000000
+      internalID: 2412759681197840927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_84
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 1311
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdca4841410331fc0800000000000000
+      internalID: -3525421220499247905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_85
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 1275
+        width: 450
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac186d99b0c60590800000000000000
+      internalID: -7708261808755696476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_86
+      rect:
+        serializedVersion: 2
+        x: 2222
+        y: 1296
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2341462f099daa0800000000000000
+      internalID: -6135713646580059401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_87
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 1223
+        width: 85
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef40b3725ec46d70800000000000000
+      internalID: 9035573605935632353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_88
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 1274
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b10b90d4d5e6080d0800000000000000
+      internalID: -3422614369798082533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_89
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1278
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9bd62ecc5152090800000000000000
+      internalID: -8060011988393281120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_90
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1273
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1440cbef95ff060800000000000000
+      internalID: 6989404097313259991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_91
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 1271
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a697dda31c69af0800000000000000
+      internalID: -389911859152983500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_92
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1271
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56068b9c707449ed0800000000000000
+      internalID: -2408221801961725851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_93
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 1271
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8e1c99da02630e0800000000000000
+      internalID: -2290607430490265437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_94
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 1275
+        width: 50
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33fb0549ea5bec50800000000000000
+      internalID: 6695545228948665151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_95
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1223
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71becb6857867d9a0800000000000000
+      internalID: -6208378707325949161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_96
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 1239
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1a55b414239c550800000000000000
+      internalID: 6181527219560882646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_97
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1223
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 937a0d390b13111e0800000000000000
+      internalID: -2228945706107754695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_98
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1239
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5574b9fd9f5b3c260800000000000000
+      internalID: 7116731920978495317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_99
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1223
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914a60688a036e090800000000000000
+      internalID: -8005657787243256807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_100
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1223
+        width: 61
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962c1575669f5f730800000000000000
+      internalID: 4032403259327103593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_101
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1227
+        width: 50
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0b380b5da0e4ef0800000000000000
+      internalID: -122148226986692429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_102
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1227
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2f5f6bb983ce5c0800000000000000
+      internalID: -4184907712293375250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_103
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1227
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b97b89521e22b40800000000000000
+      internalID: 5414137253644966804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_104
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 1227
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b281bce08d3086c0800000000000000
+      internalID: -4143244033244691784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_105
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 1227
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace2cb8f9d2e31750800000000000000
+      internalID: 6274608131666095818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_106
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 1227
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1debc0cfeacaba6e0800000000000000
+      internalID: -1825175356415623471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_107
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 1227
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae01684608942a70800000000000000
+      internalID: 8801326724540337837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_108
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1211
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e69fcdf88fb5010800000000000000
+      internalID: 1178809024258862688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_109
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 1211
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a26b7908f7ce410800000000000000
+      internalID: 1507720165540112909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_110
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 1233
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c37c216abb6b220800000000000000
+      internalID: 2501392965004901392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_111
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 1163
+        width: 130
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8aa44a6971cfcf0800000000000000
+      internalID: -217272746251736858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_112
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 1159
+        width: 98
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9c82818c954bc50800000000000000
+      internalID: 6680062863230945773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_113
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 1159
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a9f1fef9dcc6fd0800000000000000
+      internalID: -2347275218971551074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_114
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 1191
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3b57aefca978b80800000000000000
+      internalID: -8392569162799139848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_115
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1155
+        width: 482
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edaeb069318083900800000000000000
+      internalID: 664289825251912414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_116
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 1183
+        width: 42
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f76d5f7bd4d37a0800000000000000
+      internalID: -6395870443297407150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_117
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 1163
+        width: 82
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548feaf109c615140800000000000000
+      internalID: 4706662451841529925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_118
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 1163
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c760d2b56a8f0ae60800000000000000
+      internalID: 7971644733823714940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_119
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 1163
+        width: 85
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f839e96d3da14a0800000000000000
+      internalID: -6621747383357960306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_120
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 1159
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553ffbe020fc61ca0800000000000000
+      internalID: -6046417841953967275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_121
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 1159
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28dd0151e76e2cf0800000000000000
+      internalID: -275168309797857234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_122
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 1163
+        width: 43
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7ce4dff2d52c5c0800000000000000
+      internalID: -4196689442061236253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_123
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 1111
+        width: 128
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0f960a9757522e0800000000000000
+      internalID: -2151184081756753675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_124
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1111
+        width: 118
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b9310b2320ff5ea0800000000000000
+      internalID: -5881718554486556240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_125
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1123
+        width: 146
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32c5210b6286b410800000000000000
+      internalID: 1492523722612261437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_126
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 1075
+        width: 114
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ea991d46f6a0a40800000000000000
+      internalID: 5335199187377696287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_127
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1123
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204257ada9e6f3720800000000000000
+      internalID: 2828100702381089794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_128
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1091
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46270467e6133cce0800000000000000
+      internalID: -1386209909799882140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_129
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 1091
+        width: 18
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5269bd5726716bd0800000000000000
+      internalID: -2638697995214167460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_130
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 1091
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8baf387a5ca62ae30800000000000000
+      internalID: 4513287173730204344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_131
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1067
+        width: 290
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024eef64a35a262c0800000000000000
+      internalID: -4439804612916091872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_132
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 1122
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dce663bc55c51a30800000000000000
+      internalID: 4185468430648274136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_133
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 1101
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2423d80bb739b4bb0800000000000000
+      internalID: -4950701205911424446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_134
+      rect:
+        serializedVersion: 2
+        x: 2174
+        y: 1102
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420174a96c06b68c0800000000000000
+      internalID: -4005001037507784668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_135
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 1122
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0564423e5cc0260800000000000000
+      internalID: 7065239494794301654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_136
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 1119
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a0933fa71eff910800000000000000
+      internalID: 1873463888192277143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_137
+      rect:
+        serializedVersion: 2
+        x: 2222
+        y: 1119
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21451d47e3a66760800000000000000
+      internalID: 7450822847357075758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_138
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1112
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac56e798c40611e40800000000000000
+      internalID: 5625383291403003338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_139
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 1111
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd11b09a6279adf0800000000000000
+      internalID: -168477709030056510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_140
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1113
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c5b520f507477880800000000000000
+      internalID: -8613337671493372471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_141
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1091
+        width: 146
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae426ce942fc8b100800000000000000
+      internalID: 124076745942246634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_142
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1091
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61123542482a84e10800000000000000
+      internalID: 2182172707889815830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_143
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 1101
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf51cde3cce1d6a20800000000000000
+      internalID: 3057133584631207419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_144
+      rect:
+        serializedVersion: 2
+        x: 2190
+        y: 1103
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878da1a23ebe0c880800000000000000
+      internalID: -8592608728126400392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_145
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 1103
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f408f44b75ea07140800000000000000
+      internalID: 4715460501567406159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_146
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 1102
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 915da71d735b816f0800000000000000
+      internalID: -713621289595906791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_147
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 1079
+        width: 290
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065aee4209ae86c60800000000000000
+      internalID: 7811751458489935200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_148
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 1083
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc111ebe2e2bf780800000000000000
+      internalID: -8648267881142739727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_149
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 1083
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea358c85c38f65ac0800000000000000
+      internalID: -3866630291979742290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_150
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 1083
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ee72d0bc67316610800000000000000
+      internalID: 1612631081537928936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_151
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1083
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a8dead39c55c290800000000000000
+      internalID: -7870782983657125226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_152
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 1083
+        width: 46
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03298aebfb64b73c0800000000000000
+      internalID: -4360814024826777040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_153
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 983
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cbf75d5768df4e10800000000000000
+      internalID: 2184202282757258177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_154
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1025
+        width: 50
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceefb28e780782b60800000000000000
+      internalID: 7721545290144808684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_155
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 887
+        width: 146
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670108a36b8757f30800000000000000
+      internalID: 4572693720725459062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_156
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1011
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca8b93f653a0c1c0800000000000000
+      internalID: -4485405635011441977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_157
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1011
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31d62949775aaea0800000000000000
+      internalID: -5860775786639339204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_158
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1011
+        width: 82
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceac337921e342130800000000000000
+      internalID: 3541023456587139820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_159
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 1022
+        width: 242
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d58e5380848f2e0800000000000000
+      internalID: -2091842826812236452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_160
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1019
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ffd72e39518c120800000000000000
+      internalID: 2434219323498037027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_161
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 1019
+        width: 98
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ffa6c097329ab50800000000000000
+      internalID: 6604849331321896861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_162
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 1019
+        width: 130
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214b39c090def5640800000000000000
+      internalID: 5071032328563962898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_163
+      rect:
+        serializedVersion: 2
+        x: 2154
+        y: 1019
+        width: 98
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273a3172111cffa70800000000000000
+      internalID: 8863014871102628722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_164
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 993
+        width: 50
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4690db962e1d210800000000000000
+      internalID: 1356113906586182877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_165
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 963
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b65ec956182e9b30800000000000000
+      internalID: 4295915171019118259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_166
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 963
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d191158b8a6550ed0800000000000000
+      internalID: -2448455539759179491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_167
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1000
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ae21c9fc852c110800000000000000
+      internalID: 1279682892826602075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_168
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 963
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d114e10df6d38c9d0800000000000000
+      internalID: -2753883621694750435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_169
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 955
+        width: 242
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582f87f6b73ab9580800000000000000
+      internalID: -8819275694728482171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_170
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 955
+        width: 146
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598d2aeed3d092a30800000000000000
+      internalID: 4190895487892773013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_171
+      rect:
+        serializedVersion: 2
+        x: 2266
+        y: 965
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ec8d2126e504430800000000000000
+      internalID: 3765113063797739141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_172
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 947
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7912df6422ad0e0a0800000000000000
+      internalID: -6854238792103157353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_173
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 915
+        width: 18
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69c5841673a7c1a0800000000000000
+      internalID: -6789278185691952787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_174
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 963
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46fe861bda4e025b0800000000000000
+      internalID: -5395060918932934812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_175
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 899
+        width: 82
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92429503283d18990800000000000000
+      internalID: -7385389357800545239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_176
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 983
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a7a3ea1bc2b29d0800000000000000
+      internalID: -2798093601836729774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_177
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 983
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577c445bba001fb50800000000000000
+      internalID: 6625077264319301493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_178
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 983
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af8a597f98c7dbb0800000000000000
+      internalID: -4911236281362903132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_179
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 951
+        width: 146
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3403e43b057b3e650800000000000000
+      internalID: 6261049464208633923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_180
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 968
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cca1c77f880c4770800000000000000
+      internalID: 8596255201025961159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_181
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 947
+        width: 50
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e714a10abdc84a0800000000000000
+      internalID: -6589650674068128198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_182
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 905
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8af82749bdb5250800000000000000
+      internalID: 5934578364614420712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_183
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 835
+        width: 130
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89281c693c465b430800000000000000
+      internalID: 3798052651967546008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_184
+      rect:
+        serializedVersion: 2
+        x: 2266
+        y: 901
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9676d30a1e0dd44b0800000000000000
+      internalID: -5454473906201204887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_185
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 883
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74f5681b9a989090800000000000000
+      internalID: -8027496344867965825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_186
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 891
+        width: 242
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086ba4828f7b1a880800000000000000
+      internalID: -8601391536845179264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_187
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 891
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de522dca458d3c2a0800000000000000
+      internalID: -6718288360918342163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_188
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 924
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f5c79ef6450355d0800000000000000
+      internalID: -3075108318086707728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_189
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 928
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 624b67d2904186080800000000000000
+      internalID: -9194076609626852314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_190
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 928
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d9aa2ab3149b8a0800000000000000
+      internalID: -6288923680258220764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_191
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 883
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d4a00b7ef3f9cd0800000000000000
+      internalID: -2549248599744951009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_192
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 891
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3059671dbaab57e90800000000000000
+      internalID: -7028506396325407485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_193
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 891
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32040f8d97aefbaa0800000000000000
+      internalID: -6142933557658501085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_194
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 855
+        width: 178
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27bb3d876d3086960800000000000000
+      internalID: 7595324991245368178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_195
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 855
+        width: 42
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 437447ee9b8672d60800000000000000
+      internalID: 7865370422004696884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_196
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 835
+        width: 82
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0a4c99ac01ac070800000000000000
+      internalID: 8127326939892719794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_197
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 835
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3e38a9bdb4ea610800000000000000
+      internalID: 1634327121344324589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_198
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 835
+        width: 85
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c0862e61068cd80800000000000000
+      internalID: -8230222667615564668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_199
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 795
+        width: 30
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa4b88a6802db970800000000000000
+      internalID: 8772203411913001645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_200
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 795
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20bb83a88fbc8920800000000000000
+      internalID: 2993978445874835501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_201
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 843
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a337d4e46bcd480800000000000000
+      internalID: -8873016718403618288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_202
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 843
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641260752150e6040800000000000000
+      internalID: 4642653842193129798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_203
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 827
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7805d2a5345d46aa0800000000000000
+      internalID: -6168571104338292601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_204
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 827
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62573ec9785919d30800000000000000
+      internalID: 4436491517621925158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_205
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 715
+        width: 146
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f990ecbe1a4e550800000000000000
+      internalID: 6189249822060027702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_206
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 835
+        width: 43
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc015b067c96cf70800000000000000
+      internalID: 9207218519015492805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_207
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 827
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23a40930bfbc0220800000000000000
+      internalID: 2453546660601832239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_208
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 803
+        width: 514
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a980628821d8340800000000000000
+      internalID: 4867567148220324500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_209
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 795
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18ae89d9e1ffda50800000000000000
+      internalID: 6548218369899669530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_210
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 795
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6125217e55586a380800000000000000
+      internalID: -8960327804611571178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_211
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 795
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca650302d13c2420800000000000000
+      internalID: 2606513062404254408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_212
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 795
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945337bc013e89780800000000000000
+      internalID: -8675935020856953527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_213
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 795
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778fa50bdf0da1540800000000000000
+      internalID: 4979522126015559799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_214
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 795
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fa94f2696c4fd8d0800000000000000
+      internalID: -2819450826195166475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_215
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 715
+        width: 85
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c301d5cee677040800000000000000
+      internalID: 4645303502108638299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_216
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 766
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e20cc0885e65ca0800000000000000
+      internalID: -6028378678696595880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_217
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 770
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf59099354896b560800000000000000
+      internalID: 7329212866678003196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_218
+      rect:
+        serializedVersion: 2
+        x: 1987
+        y: 765
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f4a44c3b1c37940800000000000000
+      internalID: 5292786964926975809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_219
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 763
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35aba9ec1e80a72f0800000000000000
+      internalID: -974456603445380525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_220
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 763
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f62b9b3eba863b0800000000000000
+      internalID: -5518972348781138046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_221
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 763
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ddaf5b57cdc2fb0800000000000000
+      internalID: -4671116315367645795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_222
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 715
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609ba5b3a3b33afe0800000000000000
+      internalID: -1179033556150994682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_223
+      rect:
+        serializedVersion: 2
+        x: 2013
+        y: 731
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9821c03d27d2de90800000000000000
+      internalID: -7002297881516234598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_224
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 715
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc064d00474c4e20800000000000000
+      internalID: 3336119764400868602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_225
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 731
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9fceb02426f91e70800000000000000
+      internalID: 9086564358225317789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_226
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 715
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6204aecc4f80c8d10800000000000000
+      internalID: 2129086571342348326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_227
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 715
+        width: 61
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf87fbd751600a10800000000000000
+      internalID: 1873604474966609836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_228
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 651
+        width: 98
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60154880233fff3b0800000000000000
+      internalID: -5476391225642430202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_229
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 651
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7dc5630e63517e0800000000000000
+      internalID: -1795468539824646222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_230
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 683
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba910e34e3171890800000000000000
+      internalID: -7487493984466396482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_231
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 667
+        width: 168
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c93febc2bf86ad30800000000000000
+      internalID: 4442396080535976386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_232
+      rect:
+        serializedVersion: 2
+        x: 2282
+        y: 603
+        width: 34
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a122f9e56aac23a00800000000000000
+      internalID: 734872505115681306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_233
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 651
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e1defad3c4e6500800000000000000
+      internalID: 391334045456080539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_234
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 651
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8db0b25704cc9300800000000000000
+      internalID: 260298414211775882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_235
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 635
+        width: 168
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28dcfdc231b36a690800000000000000
+      internalID: -7591315168343110270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_236
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 603
+        width: 128
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53402e987e6eae150800000000000000
+      internalID: 5902784143747580981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_237
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 603
+        width: 118
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6762a1cc3fb5bab20800000000000000
+      internalID: 3146709867307869814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_238
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 592
+        width: 168
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5ed23a04b1b43480800000000000000
+      internalID: -8920309575090774434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_239
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 593
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 298b8cf2a08123f70800000000000000
+      internalID: 9165414623682803858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp_city_street_tileset_pack_240
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 555
+        width: 514
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef869ab2d6c3c4d0800000000000000
+      internalID: -3115427908834390041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mp_city_street_tileset_pack_0: 2793155012251328445
+      mp_city_street_tileset_pack_1: -6727375293495443887
+      mp_city_street_tileset_pack_10: 7881071579697687132
+      mp_city_street_tileset_pack_100: 4032403259327103593
+      mp_city_street_tileset_pack_101: -122148226986692429
+      mp_city_street_tileset_pack_102: -4184907712293375250
+      mp_city_street_tileset_pack_103: 5414137253644966804
+      mp_city_street_tileset_pack_104: -4143244033244691784
+      mp_city_street_tileset_pack_105: 6274608131666095818
+      mp_city_street_tileset_pack_106: -1825175356415623471
+      mp_city_street_tileset_pack_107: 8801326724540337837
+      mp_city_street_tileset_pack_108: 1178809024258862688
+      mp_city_street_tileset_pack_109: 1507720165540112909
+      mp_city_street_tileset_pack_11: 365442697645061313
+      mp_city_street_tileset_pack_110: 2501392965004901392
+      mp_city_street_tileset_pack_111: -217272746251736858
+      mp_city_street_tileset_pack_112: 6680062863230945773
+      mp_city_street_tileset_pack_113: -2347275218971551074
+      mp_city_street_tileset_pack_114: -8392569162799139848
+      mp_city_street_tileset_pack_115: 664289825251912414
+      mp_city_street_tileset_pack_116: -6395870443297407150
+      mp_city_street_tileset_pack_117: 4706662451841529925
+      mp_city_street_tileset_pack_118: 7971644733823714940
+      mp_city_street_tileset_pack_119: -6621747383357960306
+      mp_city_street_tileset_pack_12: -536603525050478119
+      mp_city_street_tileset_pack_120: -6046417841953967275
+      mp_city_street_tileset_pack_121: -275168309797857234
+      mp_city_street_tileset_pack_122: -4196689442061236253
+      mp_city_street_tileset_pack_123: -2151184081756753675
+      mp_city_street_tileset_pack_124: -5881718554486556240
+      mp_city_street_tileset_pack_125: 1492523722612261437
+      mp_city_street_tileset_pack_126: 5335199187377696287
+      mp_city_street_tileset_pack_127: 2828100702381089794
+      mp_city_street_tileset_pack_128: -1386209909799882140
+      mp_city_street_tileset_pack_129: -2638697995214167460
+      mp_city_street_tileset_pack_13: -4438811015096018255
+      mp_city_street_tileset_pack_130: 4513287173730204344
+      mp_city_street_tileset_pack_131: -4439804612916091872
+      mp_city_street_tileset_pack_132: 4185468430648274136
+      mp_city_street_tileset_pack_133: -4950701205911424446
+      mp_city_street_tileset_pack_134: -4005001037507784668
+      mp_city_street_tileset_pack_135: 7065239494794301654
+      mp_city_street_tileset_pack_136: 1873463888192277143
+      mp_city_street_tileset_pack_137: 7450822847357075758
+      mp_city_street_tileset_pack_138: 5625383291403003338
+      mp_city_street_tileset_pack_139: -168477709030056510
+      mp_city_street_tileset_pack_14: -3552442311326333894
+      mp_city_street_tileset_pack_140: -8613337671493372471
+      mp_city_street_tileset_pack_141: 124076745942246634
+      mp_city_street_tileset_pack_142: 2182172707889815830
+      mp_city_street_tileset_pack_143: 3057133584631207419
+      mp_city_street_tileset_pack_144: -8592608728126400392
+      mp_city_street_tileset_pack_145: 4715460501567406159
+      mp_city_street_tileset_pack_146: -713621289595906791
+      mp_city_street_tileset_pack_147: 7811751458489935200
+      mp_city_street_tileset_pack_148: -8648267881142739727
+      mp_city_street_tileset_pack_149: -3866630291979742290
+      mp_city_street_tileset_pack_15: -2813135282373632885
+      mp_city_street_tileset_pack_150: 1612631081537928936
+      mp_city_street_tileset_pack_151: -7870782983657125226
+      mp_city_street_tileset_pack_152: -4360814024826777040
+      mp_city_street_tileset_pack_153: 2184202282757258177
+      mp_city_street_tileset_pack_154: 7721545290144808684
+      mp_city_street_tileset_pack_155: 4572693720725459062
+      mp_city_street_tileset_pack_156: -4485405635011441977
+      mp_city_street_tileset_pack_157: -5860775786639339204
+      mp_city_street_tileset_pack_158: 3541023456587139820
+      mp_city_street_tileset_pack_159: -2091842826812236452
+      mp_city_street_tileset_pack_16: 5092545434083941819
+      mp_city_street_tileset_pack_160: 2434219323498037027
+      mp_city_street_tileset_pack_161: 6604849331321896861
+      mp_city_street_tileset_pack_162: 5071032328563962898
+      mp_city_street_tileset_pack_163: 8863014871102628722
+      mp_city_street_tileset_pack_164: 1356113906586182877
+      mp_city_street_tileset_pack_165: 4295915171019118259
+      mp_city_street_tileset_pack_166: -2448455539759179491
+      mp_city_street_tileset_pack_167: 1279682892826602075
+      mp_city_street_tileset_pack_168: -2753883621694750435
+      mp_city_street_tileset_pack_169: -8819275694728482171
+      mp_city_street_tileset_pack_17: -3422598491804496251
+      mp_city_street_tileset_pack_170: 4190895487892773013
+      mp_city_street_tileset_pack_171: 3765113063797739141
+      mp_city_street_tileset_pack_172: -6854238792103157353
+      mp_city_street_tileset_pack_173: -6789278185691952787
+      mp_city_street_tileset_pack_174: -5395060918932934812
+      mp_city_street_tileset_pack_175: -7385389357800545239
+      mp_city_street_tileset_pack_176: -2798093601836729774
+      mp_city_street_tileset_pack_177: 6625077264319301493
+      mp_city_street_tileset_pack_178: -4911236281362903132
+      mp_city_street_tileset_pack_179: 6261049464208633923
+      mp_city_street_tileset_pack_18: -7780633578960889868
+      mp_city_street_tileset_pack_180: 8596255201025961159
+      mp_city_street_tileset_pack_181: -6589650674068128198
+      mp_city_street_tileset_pack_182: 5934578364614420712
+      mp_city_street_tileset_pack_183: 3798052651967546008
+      mp_city_street_tileset_pack_184: -5454473906201204887
+      mp_city_street_tileset_pack_185: -8027496344867965825
+      mp_city_street_tileset_pack_186: -8601391536845179264
+      mp_city_street_tileset_pack_187: -6718288360918342163
+      mp_city_street_tileset_pack_188: -3075108318086707728
+      mp_city_street_tileset_pack_189: -9194076609626852314
+      mp_city_street_tileset_pack_19: 8638882122187913779
+      mp_city_street_tileset_pack_190: -6288923680258220764
+      mp_city_street_tileset_pack_191: -2549248599744951009
+      mp_city_street_tileset_pack_192: -7028506396325407485
+      mp_city_street_tileset_pack_193: -6142933557658501085
+      mp_city_street_tileset_pack_194: 7595324991245368178
+      mp_city_street_tileset_pack_195: 7865370422004696884
+      mp_city_street_tileset_pack_196: 8127326939892719794
+      mp_city_street_tileset_pack_197: 1634327121344324589
+      mp_city_street_tileset_pack_198: -8230222667615564668
+      mp_city_street_tileset_pack_199: 8772203411913001645
+      mp_city_street_tileset_pack_2: 5093537122827690836
+      mp_city_street_tileset_pack_20: -2992068638452404127
+      mp_city_street_tileset_pack_200: 2993978445874835501
+      mp_city_street_tileset_pack_201: -8873016718403618288
+      mp_city_street_tileset_pack_202: 4642653842193129798
+      mp_city_street_tileset_pack_203: -6168571104338292601
+      mp_city_street_tileset_pack_204: 4436491517621925158
+      mp_city_street_tileset_pack_205: 6189249822060027702
+      mp_city_street_tileset_pack_206: 9207218519015492805
+      mp_city_street_tileset_pack_207: 2453546660601832239
+      mp_city_street_tileset_pack_208: 4867567148220324500
+      mp_city_street_tileset_pack_209: 6548218369899669530
+      mp_city_street_tileset_pack_21: 3392860146527422418
+      mp_city_street_tileset_pack_210: -8960327804611571178
+      mp_city_street_tileset_pack_211: 2606513062404254408
+      mp_city_street_tileset_pack_212: -8675935020856953527
+      mp_city_street_tileset_pack_213: 4979522126015559799
+      mp_city_street_tileset_pack_214: -2819450826195166475
+      mp_city_street_tileset_pack_215: 4645303502108638299
+      mp_city_street_tileset_pack_216: -6028378678696595880
+      mp_city_street_tileset_pack_217: 7329212866678003196
+      mp_city_street_tileset_pack_218: 5292786964926975809
+      mp_city_street_tileset_pack_219: -974456603445380525
+      mp_city_street_tileset_pack_22: -3715464168603467289
+      mp_city_street_tileset_pack_220: -5518972348781138046
+      mp_city_street_tileset_pack_221: -4671116315367645795
+      mp_city_street_tileset_pack_222: -1179033556150994682
+      mp_city_street_tileset_pack_223: -7002297881516234598
+      mp_city_street_tileset_pack_224: 3336119764400868602
+      mp_city_street_tileset_pack_225: 9086564358225317789
+      mp_city_street_tileset_pack_226: 2129086571342348326
+      mp_city_street_tileset_pack_227: 1873604474966609836
+      mp_city_street_tileset_pack_228: -5476391225642430202
+      mp_city_street_tileset_pack_229: -1795468539824646222
+      mp_city_street_tileset_pack_23: -6806036346615893520
+      mp_city_street_tileset_pack_230: -7487493984466396482
+      mp_city_street_tileset_pack_231: 4442396080535976386
+      mp_city_street_tileset_pack_232: 734872505115681306
+      mp_city_street_tileset_pack_233: 391334045456080539
+      mp_city_street_tileset_pack_234: 260298414211775882
+      mp_city_street_tileset_pack_235: -7591315168343110270
+      mp_city_street_tileset_pack_236: 5902784143747580981
+      mp_city_street_tileset_pack_237: 3146709867307869814
+      mp_city_street_tileset_pack_238: -8920309575090774434
+      mp_city_street_tileset_pack_239: 9165414623682803858
+      mp_city_street_tileset_pack_24: -2390710321664894534
+      mp_city_street_tileset_pack_240: -3115427908834390041
+      mp_city_street_tileset_pack_25: -8593235734087867949
+      mp_city_street_tileset_pack_26: 956079337634700197
+      mp_city_street_tileset_pack_27: 1923076668735762347
+      mp_city_street_tileset_pack_28: 2933978337071630734
+      mp_city_street_tileset_pack_29: -8410576889575034877
+      mp_city_street_tileset_pack_3: 839735680137237222
+      mp_city_street_tileset_pack_30: 2396650372921246647
+      mp_city_street_tileset_pack_31: 2262410332897409171
+      mp_city_street_tileset_pack_32: 8449920656609009743
+      mp_city_street_tileset_pack_33: -614532913494063236
+      mp_city_street_tileset_pack_34: -5748011198925603542
+      mp_city_street_tileset_pack_35: 4933600634462443106
+      mp_city_street_tileset_pack_36: -7208504919409065387
+      mp_city_street_tileset_pack_37: 8735596635576639202
+      mp_city_street_tileset_pack_38: -4031681435421817708
+      mp_city_street_tileset_pack_39: -7377494481451828594
+      mp_city_street_tileset_pack_4: -5565289382927250033
+      mp_city_street_tileset_pack_40: 2578953101427205287
+      mp_city_street_tileset_pack_41: 3910759847782428825
+      mp_city_street_tileset_pack_42: 1718025789505082022
+      mp_city_street_tileset_pack_43: -8474578965111721132
+      mp_city_street_tileset_pack_44: 6109395418536193745
+      mp_city_street_tileset_pack_45: -3777706934264747280
+      mp_city_street_tileset_pack_46: -4144280950396246239
+      mp_city_street_tileset_pack_47: -7227301120907484063
+      mp_city_street_tileset_pack_48: -1695293504403458317
+      mp_city_street_tileset_pack_49: -6092621809392587931
+      mp_city_street_tileset_pack_5: -1168620452099222159
+      mp_city_street_tileset_pack_50: 4226369266433061045
+      mp_city_street_tileset_pack_51: -7022929467331159168
+      mp_city_street_tileset_pack_52: -9220529542059558914
+      mp_city_street_tileset_pack_53: -31012172182912624
+      mp_city_street_tileset_pack_54: 3922631195826361057
+      mp_city_street_tileset_pack_55: -5989169653701615461
+      mp_city_street_tileset_pack_56: 6487647997720792687
+      mp_city_street_tileset_pack_57: -9186173265492727519
+      mp_city_street_tileset_pack_58: 8254271919540008890
+      mp_city_street_tileset_pack_59: -6242931005589803104
+      mp_city_street_tileset_pack_6: -5797834389299761615
+      mp_city_street_tileset_pack_60: -967851889177299701
+      mp_city_street_tileset_pack_61: -4969774025497531141
+      mp_city_street_tileset_pack_62: -2760700274509282793
+      mp_city_street_tileset_pack_63: 6952017725187725237
+      mp_city_street_tileset_pack_64: -4768752719773049708
+      mp_city_street_tileset_pack_65: -4721236763973161016
+      mp_city_street_tileset_pack_66: -8714069585997708108
+      mp_city_street_tileset_pack_67: 4816479795982361026
+      mp_city_street_tileset_pack_68: 1399390184292575304
+      mp_city_street_tileset_pack_69: 6838956781335566710
+      mp_city_street_tileset_pack_7: -3964675118821126127
+      mp_city_street_tileset_pack_70: -1114041417972324268
+      mp_city_street_tileset_pack_71: -902838138637627723
+      mp_city_street_tileset_pack_72: -837693917905439966
+      mp_city_street_tileset_pack_73: 5117671986665519078
+      mp_city_street_tileset_pack_74: 8509485733398357627
+      mp_city_street_tileset_pack_75: -3143814666497567917
+      mp_city_street_tileset_pack_76: -5405257856511244731
+      mp_city_street_tileset_pack_77: -729682144527579494
+      mp_city_street_tileset_pack_78: 674307590228894010
+      mp_city_street_tileset_pack_79: -7418542392332198812
+      mp_city_street_tileset_pack_8: -6239222453463371601
+      mp_city_street_tileset_pack_80: 5662514796083650856
+      mp_city_street_tileset_pack_81: -6252374509670802098
+      mp_city_street_tileset_pack_82: -4642381224322855529
+      mp_city_street_tileset_pack_83: 2412759681197840927
+      mp_city_street_tileset_pack_84: -3525421220499247905
+      mp_city_street_tileset_pack_85: -7708261808755696476
+      mp_city_street_tileset_pack_86: -6135713646580059401
+      mp_city_street_tileset_pack_87: 9035573605935632353
+      mp_city_street_tileset_pack_88: -3422614369798082533
+      mp_city_street_tileset_pack_89: -8060011988393281120
+      mp_city_street_tileset_pack_9: 1179446771416640951
+      mp_city_street_tileset_pack_90: 6989404097313259991
+      mp_city_street_tileset_pack_91: -389911859152983500
+      mp_city_street_tileset_pack_92: -2408221801961725851
+      mp_city_street_tileset_pack_93: -2290607430490265437
+      mp_city_street_tileset_pack_94: 6695545228948665151
+      mp_city_street_tileset_pack_95: -6208378707325949161
+      mp_city_street_tileset_pack_96: 6181527219560882646
+      mp_city_street_tileset_pack_97: -2228945706107754695
+      mp_city_street_tileset_pack_98: 7116731920978495317
+      mp_city_street_tileset_pack_99: -8005657787243256807
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
