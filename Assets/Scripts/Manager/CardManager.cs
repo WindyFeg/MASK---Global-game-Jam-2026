@@ -4,6 +4,16 @@ using System.Collections.Generic;
 public class CardManager {
     public List<Card> allCards = new List<Card>();
     public List<Card> curCards = new List<Card>();
+
+    public static CardManager Instance;
+
+    private void Start()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
     
     public List<Card> GetAllCards() {
         // Return all card data
