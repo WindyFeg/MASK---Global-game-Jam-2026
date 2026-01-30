@@ -25,7 +25,7 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     private Vector3 originalScale;
     private Vector3 originalPosition;
     private bool originalCaptured; // Layout có thể set position sau Awake → capture khi hover lần đầu
-
+    private Card card;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -46,6 +46,7 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
 
     public void OnSet(Card card)
     {
+        this.card = card;
         UpdateCardUI(card);
     }
 
@@ -126,7 +127,7 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
         if (rectTransform == null) return;
 
         rectTransform.DOPunchScale(new Vector3(0.1f, 0.1f, 0.1f), 0.1f);
-
+        card.useCard();
         // TODO: CardManager.Instance.PlayCard(this);
         Debug.Log($"Card '{gameObject.name}' was clicked/used!");
     }
@@ -138,4 +139,5 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
         rectTransform.localScale = originalScale;
         rectTransform.localPosition = originalPosition;
     }
+
 }
