@@ -52,14 +52,42 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     public void UpdateCardUI(Card card)
     {
         // check null
-        if (cardNameText == null) return;
-        if (cardDescriptionText == null) return;
-        if (cardImage == null) return;
-        if (cardStatHeartTopLeft == null) return;
-        if (cardStatMoneyTopRight == null) return;
-        if (cardStatHeartBottomLeft == null) return;
-        if (cardStatMoneyBottomRight == null) return;
-        
+        if (cardNameText == null)
+        {
+            Debug.LogError("cardNameText is null");
+            return;
+        }
+        if (cardDescriptionText == null)
+        {
+            Debug.LogError("cardDescriptionText is null");
+            return;
+        }
+        if (cardImage == null)
+        {
+            Debug.LogError("cardImage is null");
+            return;
+        }
+        if (cardStatHeartTopLeft == null)
+        {
+            Debug.LogError("cardStatHeartTopLeft is null");
+            return;
+        }
+        if (cardStatMoneyTopRight == null)
+        {
+            Debug.LogError("cardStatMoneyTopRight is null");
+            return;
+        }
+        if (cardStatHeartBottomLeft == null)
+        {
+            Debug.LogError("cardStatHeartBottomLeft is null");
+            return;
+        }
+        if (cardStatMoneyBottomRight == null)
+        {
+            Debug.LogError("cardStatMoneyBottomRight is null");
+            return;
+        }
+
         cardNameText.text = card.cardName;
         cardDescriptionText.text = card.description;
         cardImage.sprite = card.artwork;
