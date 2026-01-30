@@ -18,6 +18,7 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     private RectTransform rectTransform;
     private Vector3 originalScale;
     private Vector3 originalPosition;
+    private bool originalCaptured; // Layout có thể set position sau Awake → capture khi hover lần đầu
 
     private void Awake()
     {
@@ -27,6 +28,14 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
             originalScale = rectTransform.localScale;
             originalPosition = rectTransform.localPosition;
         }
+    }
+
+    private void CaptureOriginal()
+    {
+        if (rectTransform == null || originalCaptured) return;
+        originalScale = rectTransform.localScale;
+        originalPosition = rectTransform.localPosition;
+        originalCaptured = true;
     }
 
     public void OnSet()
@@ -47,6 +56,7 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (rectTransform == null) return;
+        CaptureOriginal(); // Lưu vị trí thật (sau khi layout đã set) trước khi scale/move
         rectTransform.DOKill();
 
         rectTransform.DOScale(originalScale * hoverScaleAmount, animationDuration)

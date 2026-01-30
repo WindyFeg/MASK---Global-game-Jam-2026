@@ -308,31 +308,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672119657}
   m_CullTransparentMesh: 1
---- !u!1 &698988597 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1428929305939172248, guid: 680908221f40246eda5ab81ee5345ce9, type: 3}
-  m_PrefabInstance: {fileID: 5160920689638470693}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &698988598 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3797805368241861939, guid: 680908221f40246eda5ab81ee5345ce9, type: 3}
   m_PrefabInstance: {fileID: 5160920689638470693}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &698988601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698988597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13e9d985b317440c8a0237aa83d3e657, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CardUI
-  cardNameText: {fileID: 0}
-  cardDescriptionText: {fileID: 0}
-  cardImage: {fileID: 0}
 --- !u!1001 &737472026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -661,7 +641,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -679,6 +659,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 672119658}
+  - {fileID: 3865014167895531443}
   - {fileID: 1646131084}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -721,7 +702,6 @@ RectTransform:
   - {fileID: 698988598}
   - {fileID: 186978032}
   - {fileID: 737472027}
-  - {fileID: 3865014167895531443}
   m_Father: {fileID: 819678966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -780,8 +760,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
   m_Padding:
-    m_Left: 0
-    m_Right: 0
+    m_Left: 200
+    m_Right: 200
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 7
@@ -897,17 +877,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352022814538150168}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1646131084}
+  m_Father: {fileID: 819678966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 400}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 200, y: -540}
+  m_SizeDelta: {x: 400, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4734006095185878472
 MonoBehaviour:
@@ -1031,25 +1011,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4658229729037776712, guid: 680908221f40246eda5ab81ee5345ce9, type: 3}
-      propertyPath: m_Color.b
-      value: 0.2249911
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658229729037776712, guid: 680908221f40246eda5ab81ee5345ce9, type: 3}
-      propertyPath: m_Color.g
-      value: 0.2249911
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658229729037776712, guid: 680908221f40246eda5ab81ee5345ce9, type: 3}
-      propertyPath: m_Color.r
-      value: 0.6037736
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1428929305939172248, guid: 680908221f40246eda5ab81ee5345ce9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 698988601}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680908221f40246eda5ab81ee5345ce9, type: 3}
 --- !u!222 &7658862246419559038
 CanvasRenderer:
