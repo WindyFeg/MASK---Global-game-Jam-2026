@@ -9,6 +9,12 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     public TMPro.TextMeshProUGUI cardNameText; // UI Text for card name
     public TMPro.TextMeshProUGUI cardDescriptionText; // UI Text for card description
     public UnityEngine.UI.Image cardImage; // UI Image for card artwork
+    public TMPro.TextMeshProUGUI cardStatHeartTopLeft; // UI Text for card stat
+    public TMPro.TextMeshProUGUI cardStatMoneyTopRight; // UI Text for card stat
+    public TMPro.TextMeshProUGUI cardStatHeartBottomLeft; // UI Text for card stat
+    public TMPro.TextMeshProUGUI cardStatMoneyBottomRight; // UI Text for card stat
+    public Sprite hearthart;
+    public Sprite moneyart;
 
     [Header("Animation Settings")]
     [SerializeField] private float hoverScaleAmount = 1.2f; // How big it grows (1.2 = 120%)
@@ -38,19 +44,29 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
         originalCaptured = true;
     }
 
-    public void OnSet()
+    public void OnSet(Card card)
     {
-        UpdateCardUI();
+        UpdateCardUI(card);
     }
 
-    public void UpdateCardUI()
+    public void UpdateCardUI(Card card)
     {
-        // if (cardNameText != null)
-        //     cardNameText.text = card.cardName;
-        // if (cardDescriptionText != null)
-        //     cardDescriptionText.text = card.description;
-        // if (cardImage != null && card.artwork != null)
-        //     cardImage.sprite = card.artwork;
+        // check null
+        if (cardNameText == null) return;
+        if (cardDescriptionText == null) return;
+        if (cardImage == null) return;
+        if (cardStatHeartTopLeft == null) return;
+        if (cardStatMoneyTopRight == null) return;
+        if (cardStatHeartBottomLeft == null) return;
+        if (cardStatMoneyBottomRight == null) return;
+        
+        cardNameText.text = card.cardName;
+        cardDescriptionText.text = card.description;
+        cardImage.sprite = card.artwork;
+        cardStatHeartTopLeft.text = card.stat.Happiness.ToString();
+        cardStatMoneyTopRight.text = card.stat.Money.ToString();
+        cardStatHeartBottomLeft.text = card.stat.Happiness.ToString();
+        cardStatMoneyBottomRight.text = card.stat.Money.ToString();
     }
 
     public void OnPointerEnter(PointerEventData eventData)

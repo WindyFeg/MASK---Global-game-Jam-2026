@@ -8,6 +8,4 @@ public class BaseCard : ScriptableObject {
     public BaseStat selfStat;
     public BaseStat opponentStat;
     public Sprite artwork;
-    public Sprite hearthart;
-    public Sprite moneyart;
 }
