@@ -17,4 +17,13 @@ public class Player : HumanBase
     {
         return curSanity <= 0;
     }
+    public int GetSanity()
+    {
+        if (IsOutOfSanity())
+        {
+            Debug.Log("na: Player is out of sanity!");
+        }
+        return curSanity;
+    }
+
 }

@@ -29,9 +29,5 @@ public abstract class HumanBase {
         return data.stat.Happiness;
     }
 
-    public int GetSanity() {
-        return data.stat.Sanity;
-    }
-
     public abstract void ValidateStat();
 }

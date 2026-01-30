@@ -10,8 +10,8 @@ public class playerUI : MonoBehaviour
 
     public void SetPlayer(Player player)
     {
-        moneyText.text = player.GetMoney().ToString();
-        happinessText.text = player.GetHappiness().ToString();
-        sanityText.text = player.GetSanity().ToString();
+        moneyText.text = "💰 " + player.GetMoney().ToString() + " / " + BaseStat.MAX_VALUE;
+        happinessText.text = "😊 " + player.GetHappiness().ToString() + " / " + BaseStat.MAX_VALUE;
+        sanityText.text = "🧠 " + player.GetSanity() + "/" + player.maxSanity;
     }
 }
