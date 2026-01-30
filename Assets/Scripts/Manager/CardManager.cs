@@ -16,8 +16,8 @@ public class CardManager {
 
     public Card GetRandomCard() {
         // Get random card from pool
-        if (allCards.count == 0) return null;
-        var rnd = Random.Range(0, allCards.count - 1);
+        if (allCards.Count == 0) return null;
+        var rnd = Random.Range(0, allCards.Count - 1);
         return allCards[rnd];
     }
 }

@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class Player : HumanBase
+public class Npc : HumanBase
 {
-    public Player(string name, int happiness, int money) : base(name, happiness, money)
+    public Npc(string name, int happiness, int money) : base(name, happiness, money)
     {
 
     }
