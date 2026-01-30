@@ -121,7 +121,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 300, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7736749398807255294
 CanvasRenderer:
@@ -176,6 +176,12 @@ MonoBehaviour:
   cardNameText: {fileID: 6999115229447043984}
   cardDescriptionText: {fileID: 8449806218636099573}
   cardImage: {fileID: 4840910199542016698}
+  cardStatHeartTopLeft: {fileID: 3802764085302042893}
+  cardStatMoneyTopRight: {fileID: 3575765691437749575}
+  cardStatHeartBottomLeft: {fileID: 556343194256520131}
+  cardStatMoneyBottomRight: {fileID: 2950488529870495239}
+  hearthart: {fileID: 0}
+  moneyart: {fileID: 0}
   hoverScaleAmount: 1.2
   moveUpAmount: 50
   animationDuration: 0.2
@@ -1216,7 +1222,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -5181877912138065124, guid: 1bb23dde1a961452781e2e78f9604e6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
