@@ -15,6 +15,8 @@ MonoBehaviour:
   id: 4
   name: Boss
   stat:
-    _happiness: 2
-    _money: 4
-  artwork: {fileID: 0}
+    _happiness: 3
+    _money: 6
+  artwork: []
+  bg2D:
+  - {fileID: 2784851056098843448, guid: 17da5e522f5e0467eaf258aa3459b27c, type: 3}

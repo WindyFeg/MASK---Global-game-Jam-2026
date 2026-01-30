@@ -15,6 +15,8 @@ MonoBehaviour:
   id: 2
   name: Wife
   stat:
-    _happiness: 3
-    _money: 3
-  artwork: {fileID: 0}
+    _happiness: 4
+    _money: 4
+  artwork: []
+  bg2D:
+  - {fileID: 9035573605935632353, guid: c7c843edc9a794b7c8ebd10081eefcb4, type: 3}

@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public abstract class HumanBase {
-    BaseHuman data;
+    public BaseHuman data;
 
     public bool IsAlive() {
         return !data.stat.IsEnd();

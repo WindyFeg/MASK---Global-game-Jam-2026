@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class GameManager : MonoBehaviour
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject cardPrefab;
     [SerializeField] private List<CardUI> onHandCards = new List<CardUI>();
     [SerializeField] private GameObject cardLayout;
+    [SerializeField] private Image bgImage;
+    [SerializeField] private Image npcImage;
 
     // private readonly List<CardUI> onHandCards = new List<Card>();
 
@@ -28,6 +31,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         OnStart();
+        LoadNextLevel();
     }
 
     public void OnStart()
@@ -60,6 +64,11 @@ public class GameManager : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        
+        BaseHuman human = LevelManager.instance.LoadLevel();
+
+
+
+        bgImage.sprite = human.bg2D[0];
+
     }
 }

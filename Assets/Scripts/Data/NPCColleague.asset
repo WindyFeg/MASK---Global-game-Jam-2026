@@ -15,6 +15,8 @@ MonoBehaviour:
   id: 3
   name: Colleague
   stat:
-    _happiness: 3
-    _money: 3
-  artwork: {fileID: 0}
+    _happiness: 5
+    _money: 5
+  artwork: []
+  bg2D:
+  - {fileID: -4456456372181780996, guid: fedd7439619a4463faaa9d216ef14081, type: 3}

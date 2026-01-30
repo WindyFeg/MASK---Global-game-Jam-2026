@@ -434,6 +434,7 @@ GameObject:
   - component: {fileID: 319986082}
   - component: {fileID: 319986081}
   - component: {fileID: 319986083}
+  - component: {fileID: 319986084}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -456,6 +457,7 @@ MonoBehaviour:
   cardPrefab: {fileID: 1428929305939172248, guid: 680908221f40246eda5ab81ee5345ce9, type: 3}
   onHandCards: []
   cardLayout: {fileID: 1646131083}
+  bgImage: {fileID: 672119659}
 --- !u!4 &319986082
 Transform:
   m_ObjectHideFlags: 0
