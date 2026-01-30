@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     [SerializeField] private CardManager CardManager;
     [SerializeField] private GameObject cardPrefab;
+    [SerializeField] private List<CardUI> onHandCards = new List<CardUI>();
 
     // private readonly List<CardUI> onHandCards = new List<Card>();
 
@@ -30,9 +31,10 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-            // Card card = CardManager.GetRandomCard();
+            Card card = CardManager.GetRandomCard();
             var obj = Instantiate(cardPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             obj.GetComponent<CardUI>().OnSet();
+            onHandCards.Add(obj.GetComponent<CardUI>());
   
         }
     }
