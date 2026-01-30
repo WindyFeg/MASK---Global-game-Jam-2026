@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASQUERADE: The Cost of Pretending</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --panel-bg: #1e1e2e;
+            --card-bg: #2d2d3a;
+            --text-main: #e0e0e0;
+            --happy-color: #f1c40f;
+            --money-color: #2ecc71;
+            --sanity-color: #9b59b6;
+            /* Màu tím cho Sanity */
+            --danger-color: #e74c3c;
+            --highlight: #00cec9;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            /* Font kiểu máy đánh chữ/tâm lý */
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            user-select: none;
+        }
+
+        /* --- Header & Stats --- */
+        .top-bar {
+            width: 100%;
+            max-width: 650px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            background: var(--panel-bg);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #444;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .stat-group {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #888;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .stat-display {
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        /* Sanity Bar Special Styling */
+        .sanity-container {
+            width: 100%;
+            height: 6px;
+            background: #333;
+            margin-top: 5px;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .sanity-fill {
+            height: 100%;
+            background: var(--sanity-color);
+            width: 100%;
+            transition: width 0.3s;
+            box-shadow: 0 0 10px var(--sanity-color);
+        }
+
+        /* --- NPC Section (The Mask) --- */
+        .npc-container {
+            background: #181825;
+            width: 100%;
+            max-width: 600px;
+            padding: 25px;
+            border-radius: 4px;
+            text-align: center;
+            margin-bottom: 30px;
+            border: 1px solid #333;
+            position: relative;
+        }
+
+        .npc-avatar {
+            font-size: 5rem;
+            margin-bottom: 10px;
+            display: inline-block;
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
+            transition: all 0.5s;
+        }
+
+        .npc-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--highlight);
+            letter-spacing: 1px;
+        }
+
+        /* Hidden Stats Styles */
+        .hidden-stats {
+            font-family: 'Courier New', monospace;
+            background: #000;
+            color: #555;
+            padding: 5px 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 1px dashed #444;
+        }
+
+        .dialog-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-left: 3px solid var(--sanity-color);
+            font-style: italic;
+            color: #ccc;
+            margin: 15px 0;
+            font-size: 1.1rem;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* --- Cards --- */
+        .cards-wrapper {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            color: #ecf0f1;
+            width: 150px;
+            height: 240px;
+            border-radius: 8px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid #444;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--highlight);
+            box-shadow: 0 0 15px rgba(0, 206, 201, 0.3);
+        }
+
+        .card-header {
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #555;
+            color: var(--happy-color);
+            text-transform: uppercase;
+        }
+
+        .card-desc {
+            font-size: 0.75rem;
+            color: #aaa;
+            text-align: center;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .card-body {
+            font-size: 0.85rem;
+        }
+
+        .effect-line {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .stat-val {
+            font-weight: bold;
+        }
+
+        .stat-val.pos {
+            color: #2ecc71;
+        }
+
+        .stat-val.neg {
+            color: #e74c3c;
+        }
+
+        /* Fake/Penalty Warning */
+        .penalty-warning {
+            font-size: 0.7rem;
+            color: var(--sanity-color);
+            text-align: center;
+            font-weight: bold;
+            margin-top: 5px;
+            border: 1px solid var(--sanity-color);
+            padding: 2px;
+            border-radius: 4px;
+            animation: pulse-purple 2s infinite;
+        }
+
+        @keyframes pulse-purple {
+            0% {
+                opacity: 0.6;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.6;
+            }
+        }
+
+        /* --- Overlays --- */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            text-align: center;
+            color: white;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            background: var(--sanity-color);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .reason-text {
+            color: var(--danger-color);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="stat-group">
+            <div class="stat-label">BẢN THÂN (YOU)</div>
+            <div class="stat-display">
+                <span id="pMoneyVal" style="color:var(--money-color)">💰 3</span>
+                <span id="pHappyVal" style="color:var(--happy-color)">😐 3</span>
+            </div>
+            <div style="margin-top:8px; font-size:0.7rem; color:var(--sanity-color)">SANITY (TỈNH TÁO)</div>
+            <div class="sanity-container">
+                <div class="sanity-fill" id="sanityBar" style="width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="npc-container">
+        <div class="npc-avatar" id="npcIcon">😐</div>
+        <div class="npc-name" id="npcName">???</div>
+
+        <div class="hidden-stats" id="npcStats">
+            Tình trạng: <span id="maskStatus">???</span>
+        </div>
+
+        <div class="dialog-box" id="npcDialog">"..."</div>
+
+        <div style="margin-top:10px; font-size: 0.9rem; color:#888;">
+            Họ đang đòi hỏi: <span id="npcRequest" style="color: white; font-weight:bold;">...</span>
+        </div>
+    </div>
+
+    <div class="cards-wrapper" id="cardsArea">
+    </div>
+
+    <div id="gameOverOverlay" class="overlay">
+        <h1 style="color: var(--danger-color)">VỠ MẶT NẠ</h1>
+        <p class="reason-text" id="failReason">...</p>
+        <button class="btn" onclick="initGame()">Đeo lại mặt nạ</button>
+    </div>
+
+    <div id="winOverlay" class="overlay">
+        <h1 style="color: var(--happy-color)">HOÀN HẢO</h1>
+        <p>Bạn đã diễn vai này quá đạt. Mọi người đều sống và bạn có tất cả.</p>
+        <button class="btn" onclick="initGame()">Diễn lại từ đầu</button>
+    </div>
+
+    <script>
+        // --- DATA & THEME ---
+        const DECK_TEMPLATE = [
+            { name: "Cười Gượng", pM: 0, pH: -2, nM: 0, nH: 2, desc: "Giả vờ vui để họ cười" },
+            { name: "Mua Chuộc", pM: -2, pH: 0, nM: 1, nH: 1, desc: "Dùng tiền lấp liếm" },
+            { name: "Lợi Dụng", pM: 2, pH: 0, nM: -1, nH: -1, desc: "Bào mòn họ khi họ yếu" },
+            { name: "Mỉa Mai", pM: 0, pH: 2, nM: 0, nH: -2, desc: "Cười trên nỗi đau của họ" },
+            { name: "Sĩ Diện", pM: -1, pH: 1, nM: 0, nH: 1, desc: "Tỏ ra hào phóng" },
+            { name: "Bán Mạng", pM: 2, pH: -2, nM: 0, nH: 0, desc: "Làm việc quên mình" },
+            { name: "Thác Loạn", pM: -1, pH: 1, nM: -1, nH: 1, desc: "Cả hai cùng điên" },
+            { name: "Đổ Lỗi", pM: 0, pH: -1, nM: 0, nH: -1, desc: "Cả hai cùng khổ" },
+            { name: "Vay Mượn", pM: 2, pH: -1, nM: -2, nH: 0, desc: "Lấy của người nghèo" },
+            { name: "Than Thở", pM: 0, pH: 1, nM: 0, nH: 1, desc: "Tìm sự đồng cảm" }
+        ];
+
+        const NPCS_DATA = [
+            { id: 'mom', name: "Mẹ", money: 3, happy: 3 },
+            { id: 'gf', name: "Bạn Gái", money: 3, happy: 3 },
+            { id: 'friend', name: "Bạn Thân", money: 3, happy: 3 },
+            { id: 'boss', name: "Sếp", money: 3, happy: 3 },
+            { id: 'colleague', name: "Đồng Nghiệp", money: 3, happy: 3 }
+        ];
+
+        // --- STATE VARIABLES ---
+        let player = { money: 3, happy: 3, sanity: 5 };
+        let npcs = [];
+        let currentHand = [];
+        let currentNPC = null;
+        let currentRequest = null;
+
+        // --- INITIALIZATION ---
+        function initGame() {
+            document.getElementById('gameOverOverlay').style.display = 'none';
+            document.getElementById('winOverlay').style.display = 'none';
+
+            player = { money: 3, happy: 3, sanity: 5 };
+
+            // Random Stats for NPCs (Range 1-5) to show variety immediately
+            npcs = NPCS_DATA.map(npc => ({
+                ...npc,
+                money: Math.floor(Math.random() * 4) + 1, // Range 1 to 4
+                happy: Math.floor(Math.random() * 4) + 1  // Range 1 to 4
+            }));
+
+            currentHand = [getRandomCard(), getRandomCard(), getRandomCard()];
+
+            nextTurn();
+        }
+
+        // --- CORE LOOP ---
+        function nextTurn() {
+            currentNPC = npcs[Math.floor(Math.random() * npcs.length)];
+            generateContext(currentNPC);
+            renderUI();
+        }
+
+        function generateContext(npc) {
+            const types = ['money', 'happy'];
+            const type = types[Math.floor(Math.random() * types.length)];
+            let val = Math.random() > 0.4 ? 1 : -1;
+
+            if (npc.id === 'mom') val = Math.random() > 0.6 ? -1 : 1;
+
+            currentRequest = { type, val };
+
+            // --- LOGIC ICON HIỂN THỊ (VISUAL FEEDBACK) ---
+            // Ưu tiên hiển thị trạng thái tồi tệ nhất
+            let icon = "😐"; // Mặc định: Mask
+
+            // Cảnh báo (Level 2)
+            if (npc.happy <= 2) icon = "😟";
+            if (npc.money <= 2) icon = "🤢";
+
+            // Nguy hiểm (Level 1 - Ghi đè lên Level 2)
+            if (npc.happy <= 1) icon = "😭";
+            if (npc.money <= 1) icon = "💀";
+
+            // Tốt (Chỉ hiện khi không bị xấu)
+            if (npc.happy >= 4 && npc.money > 2) icon = "😊";
+            if (npc.money >= 4 && npc.happy > 2) icon = "😎";
+
+            document.getElementById('npcIcon').innerText = icon;
+
+            // --- HỘI THOẠI (DIALOGUE) ---
+            let dialog = "...";
+
+            if (type === 'money') {
+                if (val === 1) dialog = npc.money < 3 ? "Túng thiếu quá, giúp tôi với..." : "Đang cần vốn làm ăn lớn.";
+                else dialog = "Cầm lấy ít tiền đi.";
+            } else {
+                if (val === 1) dialog = npc.happy < 3 ? "Đời buồn quá..." : "Tìm gì đó vui vẻ đi!";
+                else dialog = "Tôi nhường bạn niềm vui này.";
+            }
+
+            // Logic MASK: Giả vờ ổn khi đang bất ổn
+            const isLowStat = npc.money <= 2 || npc.happy <= 2;
+            if (isLowStat && Math.random() > 0.5) {
+                dialog = "Tôi... tôi vẫn ổn. Không cần lo đâu. (Cười gượng)";
+            }
+
+            if (npc.id === 'mom' && npc.happy <= 2) {
+                dialog = "Mẹ khỏe mà, con cứ lo việc của con đi. (Mắt đỏ hoe)";
+            }
+
+            document.getElementById('npcDialog').innerText = `"${dialog}"`;
+        }
+
+        function renderUI() {
+            // Player
+            document.getElementById('pMoneyVal').innerHTML = `💰 ${player.money}`;
+            let pHappyIcon = player.happy >= 3 ? "😊" : "😞";
+            document.getElementById('pHappyVal').innerHTML = `${pHappyIcon} ${player.happy}`;
+
+            // Sanity
+            const sanityPercent = (player.sanity / 5) * 100;
+            const sanityBar = document.getElementById('sanityBar');
+            sanityBar.style.width = `${sanityPercent}%`;
+            if (player.sanity <= 2) sanityBar.style.backgroundColor = '#e74c3c';
+            else sanityBar.style.backgroundColor = '#9b59b6';
+
+            // NPC
+            document.getElementById('npcName').innerText = currentNPC.name;
+
+            const reqEl = document.getElementById('npcRequest');
+            if (currentRequest.type === 'money') {
+                reqEl.innerText = currentRequest.val > 0 ? "Xin Tiền (+)" : "Cho Tiền (-)";
+                reqEl.style.color = currentRequest.val > 0 ? '#e74c3c' : '#2ecc71';
+            } else {
+                reqEl.innerText = currentRequest.val > 0 ? "Cần Vui (+)" : "Muốn Buồn (-)";
+                reqEl.style.color = currentRequest.val > 0 ? '#f1c40f' : '#9b59b6';
+            }
+
+            renderCards();
+        }
+
+        function renderCards() {
+            const area = document.getElementById('cardsArea');
+            area.innerHTML = '';
+
+            currentHand.forEach((card, index) => {
+                const el = document.createElement('div');
+                const isPretending = checkPretending(card);
+
+                el.className = `card`;
+                if (isPretending) el.style.borderColor = 'var(--sanity-color)';
+
+                el.onclick = () => playCard(index);
+
+                el.innerHTML = `
+                <div class="card-header">${card.name}</div>
+                <div class="card-desc">"${card.desc}"</div>
+                <div class="card-body">
+                    <div class="effect-line">
+                        <span>BẠN</span>
+                        <span class="stat-val ${card.pM >= 0 ? 'pos' : 'neg'}">${formatStat(card.pM, '💰')}</span>
+                        <span class="stat-val ${card.pH >= 0 ? 'pos' : 'neg'}">${formatStat(card.pH, '😊')}</span>
+                    </div>
+                    <div class="effect-line">
+                        <span>HỌ</span>
+                        <span class="stat-val ${card.nM >= 0 ? 'pos' : 'neg'}">${formatStat(card.nM, '💰')}</span>
+                        <span class="stat-val ${card.nH >= 0 ? 'pos' : 'neg'}">${formatStat(card.nH, '😊')}</span>
+                    </div>
+                    ${isPretending ? '<div class="penalty-warning">⚠️ MẤT 1 SANITY</div>' : ''}
+                </div>
+            `;
+                area.appendChild(el);
+            });
+        }
+
+        function getRandomCard() {
+            return DECK_TEMPLATE[Math.floor(Math.random() * DECK_TEMPLATE.length)];
+        }
+
+        function formatStat(val, icon) {
+            if (val === 0) return "-";
+            return `${val > 0 ? '+' : ''}${val}${icon}`;
+        }
+
+        function checkPretending(card) {
+            if (player.happy < 3 && card.pH > 0) return true;
+            if (player.happy >= 3 && card.pH < 0) return true;
+            return false;
+        }
+
+        function playCard(index) {
+            const card = currentHand[index];
+
+            if (checkPretending(card)) {
+                player.sanity -= 1;
+            }
+
+            let satisfied = false;
+            if (currentRequest.type === 'money') {
+                if (currentRequest.val > 0 && card.nM > 0) satisfied = true;
+                if (currentRequest.val < 0 && card.nM < 0) satisfied = true;
+            } else {
+                if (currentRequest.val > 0 && card.nH > 0) satisfied = true;
+                if (currentRequest.val < 0 && card.nH < 0) satisfied = true;
+            }
+
+            if (!satisfied) {
+                currentNPC.happy -= 1;
+            }
+
+            player.money += card.pM;
+            player.happy += card.pH;
+            currentNPC.money += card.nM;
+            currentNPC.happy += card.nH;
+
+            clampStats(player);
+            clampStats(currentNPC);
+
+            if (checkEndGame()) return;
+
+            currentHand[index] = getRandomCard();
+            nextTurn();
+        }
+
+        function clampStats(entity) {
+            if (entity.money > 5) entity.money = 5;
+            if (entity.money < 0) entity.money = 0;
+            if (entity.happy > 5) entity.happy = 5;
+            if (entity.happy < 0) entity.happy = 0;
+            if (entity.sanity !== undefined) {
+                if (entity.sanity > 5) entity.sanity = 5;
+                if (entity.sanity < 0) entity.sanity = 0;
+            }
+        }
+
+        function checkEndGame() {
+            let reason = null;
+
+            if (player.sanity <= 0) reason = "Bạn bị phát điên vì phải giả tạo quá nhiều.";
+            else if (player.money <= 0) reason = "Bạn đã chết đói.";
+            else if (player.happy <= 0) reason = "Bạn đã tự tử vì tuyệt vọng.";
+
+            npcs.forEach(npc => {
+                if (npc.money <= 0) reason = `${npc.name} đã chết (Hết tiền).`;
+                if (npc.happy <= 0) reason = `${npc.name} đã chết (Trầm cảm).`;
+            });
+
+            if (player.money === 5 && player.happy === 5 && player.sanity === 5) {
+                document.getElementById('winOverlay').style.display = 'flex';
+                return true;
+            }
+
+            if (reason) {
+                document.getElementById('failReason').innerText = reason;
+                document.getElementById('gameOverOverlay').style.display = 'flex';
+                return true;
+            }
+            return false;
+        }
+
+        initGame();
+    </script>
+</body>
+
+</html>
