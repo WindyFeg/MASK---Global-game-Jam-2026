@@ -308,11 +308,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672119657}
   m_CullTransparentMesh: 1
+--- !u!1 &698988597 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1428929305939172248, guid: 680908221f40246eda5ab81ee5345ce9, type: 3}
+  m_PrefabInstance: {fileID: 5160920689638470693}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &698988598 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3797805368241861939, guid: 680908221f40246eda5ab81ee5345ce9, type: 3}
   m_PrefabInstance: {fileID: 5160920689638470693}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &698988601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698988597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e9d985b317440c8a0237aa83d3e657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardUI
+  cardNameText: {fileID: 0}
+  cardDescriptionText: {fileID: 0}
+  cardImage: {fileID: 0}
 --- !u!1001 &737472026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1026,7 +1046,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1428929305939172248, guid: 680908221f40246eda5ab81ee5345ce9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 698988601}
   m_SourcePrefab: {fileID: 100100000, guid: 680908221f40246eda5ab81ee5345ce9, type: 3}
 --- !u!222 &7658862246419559038
 CanvasRenderer:
