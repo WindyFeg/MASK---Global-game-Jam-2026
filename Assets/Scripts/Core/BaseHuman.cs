@@ -23,7 +23,7 @@ public abstract class HumanBase {
     }
 
     public void AddMoney(int value) {
-        Stats.Money += value
+        Stats.Money += value;
     }
 
     public void ValidateStat() {
