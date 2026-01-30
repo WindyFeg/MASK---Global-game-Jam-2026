@@ -1,30 +1,23 @@
 using UnityEngine;
 
 public abstract class HumanBase {
-    public string Name;
-    public BaseStat Stats; // Dùng chung cho cả Player và NPC
-
-    // Constructor cơ bản
-    public HumanBase(string name, int happiness, int money) {
-        this.Name = name;
-        this.Stats = new BaseStat(happiness, money);
-    }
+    BaseHuman data;
 
     public bool IsAlive() {
-        return !Stats.IsEnd();
+        return !data.stat.IsEnd();
     }
 
     public bool IsFullStats() {
-        return Stats.IsFull();
+        return data.stat.IsFull();
     }
 
     public void AddHappiness(int value) {
-        Stats.Happiness += value;
+        data.stat.Happiness += value;
         ValidateStat();
     }
 
     public void AddMoney(int value) {
-        Stats.Money += value;
+        data.stat.Money += value;
         ValidateStat();
     }
 
