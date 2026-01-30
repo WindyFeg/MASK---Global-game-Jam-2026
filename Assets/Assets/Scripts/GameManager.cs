@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CardManager CardManager;
     [SerializeField] private GameObject cardPrefab;
     [SerializeField] private List<CardUI> onHandCards = new List<CardUI>();
+    [SerializeField] private GameObject cardLayout;
 
     // private readonly List<CardUI> onHandCards = new List<Card>();
 
@@ -33,7 +34,8 @@ public class GameManager : MonoBehaviour
         {
             Card card = CardManager.GetRandomCard();
             var obj = Instantiate(cardPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-            obj.GetComponent<CardUI>().OnSet();
+            obj.transform.SetParent(cardLayout.transform, false);
+            obj.GetComponent<CardUI>().OnSet(card);
             onHandCards.Add(obj.GetComponent<CardUI>());
   
         }
