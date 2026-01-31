@@ -26,4 +26,11 @@ public class Player : HumanBase
         return curSanity;
     }
 
+    /// <summary>
+    /// Trừ Sanity khi "pretending" (giả vờ vui/buồn). GDD: Sanity range [0, 5].
+    /// </summary>
+    public void LoseSanity(int amount)
+    {
+        curSanity = Mathf.Clamp(curSanity - amount, 0, maxSanity);
+    }
 }

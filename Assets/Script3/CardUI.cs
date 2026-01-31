@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems; // Required for mouse events
 using DG.Tweening;              // Required for DOTween
@@ -20,17 +21,30 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     [SerializeField] private float hoverScaleAmount = 1.2f; // How big it grows (1.2 = 120%)
     [SerializeField] private float moveUpAmount = 50f;      // How many pixels to move up
     [SerializeField] private float animationDuration = 0.2f;
+    [Header("Throw (Use Card)")]
+    [SerializeField] private float throwMoveUp = 400f;
+    [SerializeField] private float throwScaleEnd = 0.2f;
+    [SerializeField] private float throwRotationZ = 35f;
+    [SerializeField] private float throwDuration = 0.4f;
+    [Header("Entrance (New Card)")]
+    [SerializeField] private float entranceDuration = 0.35f;
 
     private RectTransform rectTransform;
+    private CanvasGroup canvasGroup;
     private Vector3 originalScale;
     private Vector3 originalPosition;
     public Card card;
+    private bool isThrowing;
+    private bool isPlayingEntrance;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         if (rectTransform != null)
             CaptureOriginal();
+        if (GetComponent<CanvasGroup>() == null)
+            gameObject.AddComponent<CanvasGroup>();
+        canvasGroup = GetComponent<CanvasGroup>();
     }
 
     /// <summary>
@@ -100,7 +114,7 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (rectTransform == null) return;
+        if (rectTransform == null || isThrowing || isPlayingEntrance) return;
         CaptureOriginal(); // Lưu vị trí thật (sau khi layout đã set) trước khi scale/move
         rectTransform.DOKill();
 
@@ -112,7 +126,7 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (rectTransform == null) return;
+        if (rectTransform == null || isThrowing || isPlayingEntrance) return;
         rectTransform.DOKill();
 
         rectTransform.DOScale(originalScale, animationDuration)
@@ -124,12 +138,64 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     public void OnPointerClick(PointerEventData eventData)
     {
         if (eventData.button != PointerEventData.InputButton.Left) return;
-        if (rectTransform == null) return;
+        if (rectTransform == null || isThrowing || isPlayingEntrance) return;
 
-        rectTransform.DOPunchScale(new Vector3(0.1f, 0.1f, 0.1f), 0.1f);
-        GameManager.instance.UseCard(this);
-        // TODO: CardManager.Instance.PlayCard(this);
-        Debug.Log($"Card '{gameObject.name}' was clicked/used!");
+        PlayThrowAnimation(() =>
+        {
+            if (this != null && gameObject != null)
+                GameManager.instance.UseCard(this);
+        });
+    }
+
+    /// <summary>
+    /// Animation ném lá lên (move up, scale down, fade out, xoay) rồi gọi onComplete.
+    /// </summary>
+    public void PlayThrowAnimation(Action onComplete)
+    {
+        if (rectTransform == null || canvasGroup == null) return;
+        isThrowing = true;
+        rectTransform.DOKill();
+        canvasGroup.DOKill();
+
+        CaptureOriginal();
+        float targetY = originalPosition.y + throwMoveUp;
+
+        Sequence throwSeq = DOTween.Sequence();
+        throwSeq.Join(rectTransform.DOLocalMoveY(targetY, throwDuration).SetEase(Ease.InQuad));
+        throwSeq.Join(rectTransform.DOScale(originalScale * throwScaleEnd, throwDuration).SetEase(Ease.InQuad));
+        throwSeq.Join(canvasGroup.DOFade(0f, throwDuration));
+        throwSeq.Join(rectTransform.DOLocalRotate(new Vector3(0f, 0f, throwRotationZ), throwDuration).SetEase(Ease.InQuad));
+        throwSeq.OnComplete(() =>
+        {
+            isThrowing = false;
+            onComplete?.Invoke();
+        });
+    }
+
+    /// <summary>
+    /// Animation lá mới vào tay: scale từ nhỏ + fade in (OutBack).
+    /// Bỏ qua hover trong lúc chạy để chuột đè lên không làm sai vị trí.
+    /// </summary>
+    public void PlayEntranceAnimation()
+    {
+        if (rectTransform == null || canvasGroup == null) return;
+        rectTransform.DOKill();
+        canvasGroup.DOKill();
+
+        isPlayingEntrance = true;
+        CaptureOriginal();
+        Vector3 startScale = originalScale * 0.3f;
+        rectTransform.localScale = startScale;
+        canvasGroup.alpha = 0f;
+
+        Sequence entranceSeq = DOTween.Sequence();
+        entranceSeq.Append(rectTransform.DOScale(originalScale, entranceDuration).SetEase(Ease.OutBack));
+        entranceSeq.Join(canvasGroup.DOFade(1f, entranceDuration * 0.7f));
+        entranceSeq.OnComplete(() =>
+        {
+            isPlayingEntrance = false;
+            CaptureOriginal();
+        });
     }
 
     private void OnDisable()

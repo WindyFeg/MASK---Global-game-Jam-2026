@@ -3,13 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[System.Serializable]
-public class RequirementData
-{ // Class này để hứng { "money": 2, "happiness": 0 }
-    public int money;
-    public int happiness;
-}
-
 public class ScenarioManager : MonoBehaviour
 {
     public static ScenarioManager Instance;
