@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02760aea024e74fa59a73e122a240eca, type: 3}
-  m_Name: LiarMask 6
+  m_Name: Learn
   m_EditorClassIdentifier: Assembly-CSharp::BaseCard
   id: 0
-  cardName: Collaborate
-  description: Collaborate together
+  cardName: "S\u0129 Di\u1EC7n"
+  description: "Th\u1EC3 hi\u1EC7n, khoe khoang \u0111\u1EC3 l\u1EA5y ti\u1EBFng."
   selfStat:
-    _happiness: 0
-    _money: 1
+    _happiness: 1
+    _money: -1
   opponentStat:
-    _happiness: 0
-    _money: 1
+    _happiness: 1
+    _money: 0
   artwork: {fileID: 6983358275279283047, guid: 1bb23dde1a961452781e2e78f9604e6a, type: 3}
