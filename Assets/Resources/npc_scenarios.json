@@ -61,7 +61,7 @@
       "state": "HappyPoor",
       "context": "Garden harvest.",
       "dialogue": "Look at these tomatoes from the garden! Free food for us!",
-      "requirement": { "money": -1, "happiness": -1 },
+      "requirement": { "money": -1, "happiness": 0 },
       "ratio": 5
     },
     {
@@ -93,7 +93,7 @@
       "state": "LonelyRich",
       "context": "Buying affection.",
       "dialogue": "I transferred money to your account. Please come visit me this weekend?",
-      "requirement": { "money": -2, "happiness": 1 },
+      "requirement": { "money": -1, "happiness": 1 },
       "ratio": 5
     },
     {
@@ -101,16 +101,8 @@
       "state": "LonelyRich",
       "context": "Health paranoia.",
       "dialogue": "I think I have a rare disease. Take me to the expensive specialist.",
-      "requirement": { "money": 1, "happiness": 1 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 8
-    },
-    {
-      "npcType": "Mom",
-      "state": "LonelyRich",
-      "context": "Show-off party.",
-      "dialogue": "I'm hosting a gala. Wear your best suit and stand by my side all night.",
-      "requirement": { "money": 1, "happiness": 2 },
-      "ratio": 5
     },
     {
       "npcType": "Mom",
@@ -125,7 +117,7 @@
       "state": "Fulfilled",
       "context": "Family Vacation.",
       "dialogue": "I booked a cruise for us! Everything is paid for, just pack!",
-      "requirement": { "money": -1, "happiness": -2 },
+      "requirement": { "money": 0, "happiness": -1 },
       "ratio": 5
     },
     {
@@ -133,7 +125,7 @@
       "state": "Fulfilled",
       "context": "Charity.",
       "dialogue": "Life is good. Let's donate some money to the orphanage together.",
-      "requirement": { "money": 1, "happiness": -2 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 8
     },
     {
@@ -141,7 +133,7 @@
       "state": "Fulfilled",
       "context": "Feast.",
       "dialogue": "I bought premium wagyu beef! Let's have a feast tonight!",
-      "requirement": { "money": 0, "happiness": -2 },
+      "requirement": { "money": 0, "happiness": -1 },
       "ratio": 10
     },
     {
@@ -149,7 +141,7 @@
       "state": "Fulfilled",
       "context": "Investment gift.",
       "dialogue": "I bought a small apartment in your name. It's yours.",
-      "requirement": { "money": -2, "happiness": -1 },
+      "requirement": { "money": -1, "happiness": 0 },
       "ratio": 1
     },
     {
@@ -165,7 +157,7 @@
       "state": "Crisis",
       "context": "Lost job.",
       "dialogue": "They fired me today... I can't afford rent this month. Help me!",
-      "requirement": { "money": 2, "happiness": 1 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 5
     },
     {
@@ -173,7 +165,7 @@
       "state": "Crisis",
       "context": "Broken laptop.",
       "dialogue": "My laptop died and I have a deadline! I need a new one now!",
-      "requirement": { "money": 2, "happiness": 1 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 5
     },
     {
@@ -181,7 +173,7 @@
       "state": "Crisis",
       "context": "Sick.",
       "dialogue": "I have a high fever... buy me medicine and stay with me?",
-      "requirement": { "money": 1, "happiness": 1 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 10
     },
     {
@@ -189,7 +181,7 @@
       "state": "Crisis",
       "context": "Car breakdown.",
       "dialogue": "My car broke down. I need money for the tow truck.",
-      "requirement": { "money": 1, "happiness": 0 },
+      "requirement": { "money": 2, "happiness": 0 },
       "ratio": 8
     },
     {
@@ -213,7 +205,7 @@
       "state": "HappyPoor",
       "context": "Street food.",
       "dialogue": "This cheap noodle bowl is delicious because I'm with you.",
-      "requirement": { "money": 1, "happiness": -1 },
+      "requirement": { "money": 0, "happiness": -1 },
       "ratio": 10
     },
     {
@@ -243,26 +235,10 @@
     {
       "npcType": "Girlfriend",
       "state": "LonelyRich",
-      "context": "Luxury dinner.",
-      "dialogue": "Stop looking at your phone! We are at a 5-star restaurant!",
-      "requirement": { "money": 1, "happiness": 1 },
-      "ratio": 10
-    },
-    {
-      "npcType": "Girlfriend",
-      "state": "LonelyRich",
       "context": "Shopping spree.",
       "dialogue": "I'm bored. I'm going shopping. Give me your credit card.",
-      "requirement": { "money": 2, "happiness": 0 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 5
-    },
-    {
-      "npcType": "Girlfriend",
-      "state": "LonelyRich",
-      "context": "Jealousy.",
-      "dialogue": "Why did you like her photo? Buy me a gift to apologize.",
-      "requirement": { "money": 1, "happiness": 1 },
-      "ratio": 8
     },
     {
       "npcType": "Girlfriend",
@@ -277,7 +253,7 @@
       "state": "LonelyRich",
       "context": "Existential.",
       "dialogue": "Is money all we have? Talk to me about something real.",
-      "requirement": { "money": 0, "happiness": 2 },
+      "requirement": { "money": 0, "happiness": 1 },
       "ratio": 5
     },
     {
@@ -285,7 +261,7 @@
       "state": "Fulfilled",
       "context": "iPhone 17.",
       "dialogue": "Baby, I really want the new iPhone 17. Can you get it for me?",
-      "requirement": { "money": 2, "happiness": -1 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 3
     },
     {
@@ -293,7 +269,7 @@
       "state": "Fulfilled",
       "context": "Paris Trip.",
       "dialogue": "I booked tickets to Paris for us! My treat!",
-      "requirement": { "money": -1, "happiness": -2 },
+      "requirement": { "money": 0, "happiness": -1 },
       "ratio": 3
     },
     {
@@ -301,7 +277,7 @@
       "state": "Fulfilled",
       "context": "Coffee Shop.",
       "dialogue": "Let's open that coffee shop we talked about. I have the capital.",
-      "requirement": { "money": -2, "happiness": 0 },
+      "requirement": { "money": -1, "happiness": 0 },
       "ratio": 1
     },
     {
@@ -309,7 +285,7 @@
       "state": "Fulfilled",
       "context": "Puppy.",
       "dialogue": "Let's adopt a puppy! We can afford the best care for it.",
-      "requirement": { "money": 1, "happiness": -2 },
+      "requirement": { "money": 1, "happiness": -1 },
       "ratio": 5
     },
     {
@@ -325,7 +301,7 @@
       "state": "Crisis",
       "context": "Gambling debt.",
       "dialogue": "I owe bad people money. Help me or I'm dead meat.",
-      "requirement": { "money": 2, "happiness": 0 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 3
     },
     {
@@ -333,7 +309,7 @@
       "state": "Crisis",
       "context": "Evicted.",
       "dialogue": "Landlord kicked me out. Lend me deposit money?",
-      "requirement": { "money": 2, "happiness": 0 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 5
     },
     {
@@ -351,14 +327,6 @@
       "dialogue": "My rig died. I can't work or game. Lend me cash?",
       "requirement": { "money": 1, "happiness": 0 },
       "ratio": 8
-    },
-    {
-      "npcType": "Friend",
-      "state": "Crisis",
-      "context": "Bail.",
-      "dialogue": "I'm in jail... don't ask. Please post bail.",
-      "requirement": { "money": 2, "happiness": 0 },
-      "ratio": 1
     },
     {
       "npcType": "Friend",
@@ -413,7 +381,7 @@
       "state": "LonelyRich",
       "context": "Fake friends.",
       "dialogue": "They only like my money. You are my only real friend.",
-      "requirement": { "money": 0, "happiness": 2 },
+      "requirement": { "money": 0, "happiness": 1 },
       "ratio": 5
     },
     {
@@ -421,7 +389,7 @@
       "state": "LonelyRich",
       "context": "VIP Club.",
       "dialogue": "I booked the VIP table. Come drink, I don't want to be alone.",
-      "requirement": { "money": 0, "happiness": 2 },
+      "requirement": { "money": 0, "happiness": 1 },
       "ratio": 5
     },
     {
@@ -437,7 +405,7 @@
       "state": "LonelyRich",
       "context": "Bored.",
       "dialogue": "I've traveled everywhere. It's all boring. Entertain me.",
-      "requirement": { "money": 1, "happiness": 1 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 5
     },
     {
@@ -445,7 +413,7 @@
       "state": "Fulfilled",
       "context": "App success.",
       "dialogue": "My app went viral! Drinks on me tonight!",
-      "requirement": { "money": 0, "happiness": -2 },
+      "requirement": { "money": 0, "happiness": -1 },
       "ratio": 5
     },
     {
@@ -453,15 +421,15 @@
       "state": "Fulfilled",
       "context": "Investment.",
       "dialogue": "I have a golden investment opportunity. Want in?",
-      "requirement": { "money": 2, "happiness": -2 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 3
     },
     {
       "npcType": "Friend",
       "state": "Fulfilled",
-      "context": "Gift PC.",
-      "dialogue": "You helped me when I was poor. Here's a new Gaming PC.",
-      "requirement": { "money": -2, "happiness": -1 },
+      "context": "Gift",
+      "dialogue": "You helped me when I was poor. Here's a gift for you.",
+      "requirement": { "money": -1, "happiness": 0 },
       "ratio": 1
     },
     {
@@ -469,7 +437,7 @@
       "state": "Fulfilled",
       "context": "Road trip.",
       "dialogue": "I rented a convertible. Let's go on a road trip!",
-      "requirement": { "money": 1, "happiness": -2 },
+      "requirement": { "money": 1, "happiness": -1 },
       "ratio": 5
     },
     {
@@ -485,7 +453,7 @@
       "state": "Crisis",
       "context": "Bankruptcy.",
       "dialogue": "The bank is seizing assets. I can't pay you this month.",
-      "requirement": { "money": 2, "happiness": 0 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 3
     },
     {
@@ -493,7 +461,7 @@
       "state": "Crisis",
       "context": "Lawsuit.",
       "dialogue": "We are being sued. Work overtime for free to save us?",
-      "requirement": { "money": 0, "happiness": 2 },
+      "requirement": { "money": 0, "happiness": 1 },
       "ratio": 5
     },
     {
@@ -509,7 +477,7 @@
       "state": "Crisis",
       "context": "Rent due.",
       "dialogue": "I'm short on office rent. Can you chip in?",
-      "requirement": { "money": 2, "happiness": 0 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 1
     },
     {
@@ -517,7 +485,7 @@
       "state": "Crisis",
       "context": "Data loss.",
       "dialogue": "We lost client data! Stay all night to fix it!",
-      "requirement": { "money": 0, "happiness": 2 },
+      "requirement": { "money": 0, "happiness": 1 },
       "ratio": 5
     },
     {
@@ -531,14 +499,6 @@
     {
       "npcType": "Boss",
       "state": "HappyPoor",
-      "context": "Casual.",
-      "dialogue": "Forget the suits. Let's work in shorts today.",
-      "requirement": { "money": 0, "happiness": 0 },
-      "ratio": 8
-    },
-    {
-      "npcType": "Boss",
-      "state": "HappyPoor",
       "context": "DIY.",
       "dialogue": "Table broke. Help me fix it with duct tape?",
       "requirement": { "money": 0, "happiness": 1 },
@@ -548,7 +508,7 @@
       "npcType": "Boss",
       "state": "HappyPoor",
       "context": "Sandwiches.",
-      "dialogue": "I made sandwiches for the team. Let's eat.",
+      "dialogue": "I buy sandwiches for the team. Let's eat together.",
       "requirement": { "money": 0, "happiness": -1 },
       "ratio": 8
     },
@@ -564,8 +524,8 @@
       "npcType": "Boss",
       "state": "LonelyRich",
       "context": "Workaholic.",
-      "dialogue": "I have millions but no family. Talk to me?",
-      "requirement": { "money": 0, "happiness": 2 },
+      "dialogue": "I have millions but no happiness. Talk to me?",
+      "requirement": { "money": 0, "happiness": 1 },
       "ratio": 10
     },
     {
@@ -589,7 +549,7 @@
       "state": "LonelyRich",
       "context": "Distrust.",
       "dialogue": "Everyone wants my job. Spy on them for me.",
-      "requirement": { "money": 0, "happiness": 2 },
+      "requirement": { "money": 0, "happiness": 1 },
       "ratio": 5
     },
     {
@@ -605,7 +565,7 @@
       "state": "Fulfilled",
       "context": "IPO.",
       "dialogue": "We went public! Massive bonus for you!",
-      "requirement": { "money": -2, "happiness": -2 },
+      "requirement": { "money": -1, "happiness": 0 },
       "ratio": 3
     },
     {
@@ -621,7 +581,7 @@
       "state": "Fulfilled",
       "context": "Tokyo.",
       "dialogue": "Opening a branch in Tokyo. You're leading it!",
-      "requirement": { "money": 0, "happiness": -2 },
+      "requirement": { "money": 0, "happiness": -1 },
       "ratio": 3
     },
     {
@@ -629,7 +589,7 @@
       "state": "Fulfilled",
       "context": "Gala.",
       "dialogue": "Represent us at the charity ball. Buy a nice suit.",
-      "requirement": { "money": 1, "happiness": -1 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 5
     },
     {
@@ -637,7 +597,7 @@
       "state": "Fulfilled",
       "context": "Retire.",
       "dialogue": "I'm retiring. The company is in good hands with you.",
-      "requirement": { "money": 0, "happiness": -2 },
+      "requirement": { "money": 0, "happiness": -1 },
       "ratio": 1
     },
     {
@@ -653,7 +613,7 @@
       "state": "Crisis",
       "context": "Deleted DB.",
       "dialogue": "I deleted the database! Help me fix it!",
-      "requirement": { "money": 0, "happiness": 2 },
+      "requirement": { "money": 0, "happiness": 1 },
       "ratio": 5
     },
     {
@@ -717,7 +677,7 @@
       "state": "HappyPoor",
       "context": "Drinks.",
       "dialogue": "Happy hour! Cheap beers nearby!",
-      "requirement": { "money": 1, "happiness": -1 },
+      "requirement": { "money": 0, "happiness": -1 },
       "ratio": 8
     },
     {
@@ -773,7 +733,7 @@
       "state": "Fulfilled",
       "context": "Wedding.",
       "dialogue": "I'm getting married! Here is an invite.",
-      "requirement": { "money": 1, "happiness": -1 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 5
     },
     {
@@ -781,24 +741,140 @@
       "state": "Fulfilled",
       "context": "Debt paid.",
       "dialogue": "Thanks for lending me money before. Here it is back.",
-      "requirement": { "money": -1, "happiness": -1 },
+      "requirement": { "money": -1, "happiness": 0 },
       "ratio": 3
     },
     {
       "npcType": "Colleague",
       "state": "Fulfilled",
-      "context": "Recommend.",
-      "dialogue": "I recommended you for a raise.",
-      "requirement": { "money": -1, "happiness": -1 },
+      "context": "Relax.",
+      "dialogue": "The project has been done. Let's take a long break.",
+      "requirement": { "money": 0, "happiness": -1 },
+      "ratio": 10
+    },
+    {
+  "data": [
+    {
+      "npcType": "Mom",
+      "state": "Crisis",
+      "context": "Phone Scam.",
+      "dialogue": "A nice man called from the bank and... I think I gave him my savings. Help!",
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 5
     },
     {
-      "npcType": "Colleague",
+      "npcType": "Mom",
+      "state": "LonelyRich",
+      "context": "Antique Auction.",
+      "dialogue": "I saw a Ming vase. I must have it to show off to the neighbors. Buy it for me?",
+      "requirement": { "money": 1, "happiness": 0 },
+      "ratio": 5
+    },
+    {
+      "npcType": "Mom",
       "state": "Fulfilled",
-      "context": "Relax.",
-      "dialogue": "Everything is done. Let's take a long break.",
-      "requirement": { "money": 0, "happiness": -1 },
-      "ratio": 10
+      "context": "Community Garden.",
+      "dialogue": "We are building a garden for the neighborhood. I need a donation from you.",
+      "requirement": { "money": 1, "happiness": 0 },
+      "ratio": 8
+    },
+    {
+      "npcType": "Girlfriend",
+      "state": "Crisis",
+      "context": "Dress ruined.",
+      "dialogue": "I spilled wine on my rental dress! I have to pay the full price for it!",
+      "requirement": { "money": 1, "happiness": 0 },
+      "ratio": 8
+    },
+    {
+      "npcType": "Girlfriend",
+      "state": "LonelyRich",
+      "context": "Fine Dining.",
+      "dialogue": "I'm tired of cooking. Take me to that 3-star Michelin restaurant tonight.",
+      "requirement": { "money": 1, "happiness": 0 },
+      "ratio": 5
+    },
+    {
+      "npcType": "Girlfriend",
+      "state": "HappyPoor",
+      "context": "Concert Tickets.",
+      "dialogue": "My favorite band is playing! The tickets are pricey, but it's a once-in-a-lifetime chance!",
+      "requirement": { "money": 1, "happiness": 0 },
+      "ratio": 8
+    },
+    {
+      "npcType": "Friend",
+      "state": "Crisis",
+      "context": "Bail Money.",
+      "dialogue": "Don't ask why, but I'm at the police station. I need you to post bail.",
+      "requirement": { "money": 1, "happiness": 0 },
+      "ratio": 3
+    },
+    {
+      "npcType": "Friend",
+      "state": "HappyPoor",
+      "context": "MLM Scheme.",
+      "dialogue": "Bro, I started a business selling essential oils. Please buy a starter kit to support me?",
+      "requirement": { "money": 1, "happiness": 0 },
+      "ratio": 5
+    },
+    {
+      "npcType": "Friend",
+      "state": "LonelyRich",
+      "context": "NFT loss.",
+      "dialogue": "My apes are worthless! I can't pay my club tab. Cover me?",
+      "requirement": { "money": 1, "happiness": 1 },
+      "ratio": 5
+    },
+    {
+      "npcType": "Boss",
+      "state": "Crisis",
+      "context": "Hush Money.",
+      "dialogue": "The health inspector found rats. Pay him off from your account, I'll reimburse you... later.",
+      "requirement": { "money": 1, "happiness": 0 },
+      "ratio": 3
+    },
+    {
+      "npcType": "Boss",
+      "state": "LonelyRich",
+      "context": "Ghostwriter.",
+      "dialogue": "I'm writing a book about my genius. Spend your weekend editing it for me.",
+      "requirement": { "money": 0, "happiness": 1 },
+      "ratio": 5
+    },
+    {
+      "npcType": "Boss",
+      "state": "Fulfilled",
+      "context": "Golf Membership.",
+      "dialogue": "To be a partner here, you need to buy a membership at my country club.",
+      "requirement": { "money": 1, "happiness": 0 },
+      "ratio": 3
+    },
+    {
+      "npcType": "Colleague",
+      "state": "Crisis",
+      "context": "Baby Shower.",
+      "dialogue": "We are collecting $50 from everyone for HR's baby shower. You can't say no.",
+      "requirement": { "money": 1, "happiness": 0 },
+      "ratio": 8
+    },
+    {
+      "npcType": "Colleague",
+      "state": "HappyPoor",
+      "context": "Lost Bet.",
+      "dialogue": "I lost a bet on the game. Can I borrow some cash to pay the bookie?",
+      "requirement": { "money": 1, "happiness": 0 },
+      "ratio": 8
+    },
+    {
+      "npcType": "Colleague",
+      "state": "LonelyRich",
+      "context": "Therapist.",
+      "dialogue": "My life is so empty. Listen to me complain about my ex-wife for 2 hours?",
+      "requirement": { "money": 0, "happiness": 1 },
+      "ratio": 5
     }
+  ]
+}
   ]
 }
