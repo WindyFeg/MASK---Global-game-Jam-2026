@@ -77,11 +77,11 @@ public class GameManager : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        BaseHuman human = LevelManager.instance.LoadLevel();
-
-        npcUI.SetNpc(human);
-
+        Npc human = LevelManager.instance.LoadLevel();
+        ScenarioEntry scenario = ScenarioManager.Instance.GetRandomScenario((NPCType)human.id, human.GetCurrentEmotion());
+        var requirement = scenario.requirement;
         bgImage.sprite = human.bg2D[0];
+        npcUI.SetNpc(human, scenario.context + "\n" + scenario.dialogue, requirement);
 
     }
     public void LoadPlayer()

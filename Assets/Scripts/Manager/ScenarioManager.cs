@@ -14,7 +14,7 @@ public class ScenarioManager : MonoBehaviour {
 
     private void LoadScenarios() {
         _scenarioDict = new Dictionary<(NPCType, Emotion), List<ScenarioEntry>>();
-        TextAsset jsonFile = Resources.Load<TextAsset>("npc_scenarios_v2"); // Tên file json mới
+        TextAsset jsonFile = Resources.Load<TextAsset>("npc_scenarios"); // Tên file json mới
 
         if (jsonFile == null) return;
 

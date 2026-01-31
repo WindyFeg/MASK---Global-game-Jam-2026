@@ -8,12 +8,14 @@ public class NpcUI : MonoBehaviour
 {
     public BaseHuman baseHuman;
     public TextMeshProUGUI nameText;
+    public TextMeshProUGUI contextText;
     public Image npcImage;
 
-    public void SetNpc(BaseHuman baseHuman)
+    public void SetNpc(BaseHuman baseHuman, string context, BaseStat requirement)
     {
         this.baseHuman = baseHuman;
         nameText.text = baseHuman.name;
+        contextText.text = context + "\n" + "Asked for: " + requirement.Money + " money, " + requirement.Happiness + " happiness";
         npcImage.sprite = GetNpcArtwork();
 
         // DOtween it appear from right to left
