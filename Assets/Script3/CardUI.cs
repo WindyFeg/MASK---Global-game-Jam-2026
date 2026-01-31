@@ -55,14 +55,22 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     }
 
     /// <summary>
-    /// Luôn capture lại vị trí/scale hiện tại. Gọi mỗi lần hover để sau khi layout đổi
-    /// (ví dụ có lá bị destroy) lá còn lại vẫn animate về đúng chỗ.
+    /// Capture scale and position. Use when at rest (e.g. after exit animation) so we never save a hover-inflated scale.
     /// </summary>
     private void CaptureOriginal()
     {
         if (rectTransform == null) return;
         originalScale = rectTransform.localScale;
         originalPosition = rectTransform.localPosition;
+    }
+
+    /// <summary>
+    /// True if card is at rest (scale matches original), so it's safe to capture without drift.
+    /// </summary>
+    private bool IsAtRest()
+    {
+        if (rectTransform == null) return false;
+        return (rectTransform.localScale - originalScale).sqrMagnitude < 0.0001f;
     }
 
     public void OnSet(Card card)
@@ -145,7 +153,9 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (rectTransform == null || isThrowing || isPlayingEntrance) return;
-        CaptureOriginal(); // Lưu vị trí thật (sau khi layout đã set) trước khi scale/move
+        // Only capture when at rest (scale back to normal), else we drift scale up or position up
+        if (IsAtRest())
+            CaptureOriginal();
         rectTransform.DOKill();
 
         rectTransform.DOScale(originalScale * hoverScaleAmount, animationDuration)
@@ -162,7 +172,8 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
         rectTransform.DOScale(originalScale, animationDuration)
             .SetEase(Ease.OutQuad);
         rectTransform.DOLocalMove(originalPosition, animationDuration)
-            .SetEase(Ease.OutQuad);
+            .SetEase(Ease.OutQuad)
+            .OnComplete(CaptureOriginal); // Save rest state only when fully returned, so scale never drifts
     }
 
     public void OnPointerClick(PointerEventData eventData)
