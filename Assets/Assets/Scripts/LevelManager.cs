@@ -4,7 +4,8 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public List<BaseHuman> humanPool = new List<BaseHuman>();
+    public List<Npc> humanPool = new List<Npc>();
+    public Player player;
     public static LevelManager instance;
     private void Awake()
     {
@@ -20,7 +21,7 @@ public class LevelManager : MonoBehaviour
         // Giữ object này khi chuyển scene
         DontDestroyOnLoad(gameObject);
     }
-    public BaseHuman LoadLevel()
+    public Npc LoadLevel()
     {
         return humanPool[Random.Range(0, 3)];
         

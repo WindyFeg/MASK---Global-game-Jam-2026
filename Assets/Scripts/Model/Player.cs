@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player : HumanBase
+public class Player : BaseHuman
 {
     public int maxSanity;
     public int curSanity;

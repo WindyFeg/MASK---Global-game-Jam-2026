@@ -12,9 +12,7 @@ public class Npc : HumanBase
 
     public void RandomEmotion()
     {
-        var rnd = Random.Range(0, 5);
-        curEmotion = (Emotion)rnd;
-        Debug.Log("na: NPC Emotion changed to " + curEmotion.ToString());
+        
     }
 
     public Emotion GetCurrentEmotion()

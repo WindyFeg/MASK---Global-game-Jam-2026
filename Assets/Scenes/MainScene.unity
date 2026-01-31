@@ -458,6 +458,7 @@ MonoBehaviour:
   onHandCards: []
   cardLayout: {fileID: 1646131083}
   bgImage: {fileID: 672119659}
+  npcUI: {fileID: 178325054}
 --- !u!4 &319986082
 Transform:
   m_ObjectHideFlags: 0
@@ -498,6 +499,23 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bba655a9d531349d09fb89792129e37c, type: 2}
   - {fileID: 11400000, guid: 437da892b022a4dbea37de780a48d97e, type: 2}
   curCards: []
+--- !u!114 &319986084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319986080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0713fab25ea4f42dd9722566ece22ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
+  humanPool:
+  - {fileID: 11400000, guid: af31850847c714bb0bb9dee25d840d40, type: 2}
+  - {fileID: 11400000, guid: bee067ec129c74e41b5a422b66eeec06, type: 2}
+  - {fileID: 11400000, guid: d59c62fd2fabc400482ec0ad7be31060, type: 2}
+  - {fileID: 11400000, guid: 16efcdb914bb940c48f0325457a7749f, type: 2}
 --- !u!1 &330475502
 GameObject:
   m_ObjectHideFlags: 0

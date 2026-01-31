@@ -10,7 +10,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<CardUI> onHandCards = new List<CardUI>();
     [SerializeField] private GameObject cardLayout;
     [SerializeField] private Image bgImage;
-    [SerializeField] private Image npcImage;
+    [SerializeField] private NpcUI npcUI;
+    [SerializeField] private Player player;
+    [SerializeField] private List<NPc> humanPool;
 
     // private readonly List<CardUI> onHandCards = new List<Card>();
 
@@ -66,7 +68,7 @@ public class GameManager : MonoBehaviour
     {
         BaseHuman human = LevelManager.instance.LoadLevel();
 
-
+        npcUI.SetNpc(human);
 
         bgImage.sprite = human.bg2D[0];
 
