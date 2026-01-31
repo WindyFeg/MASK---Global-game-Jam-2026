@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: -7373445250198163253, guid: deadffe6e19fa46c98dfa6348fab0685, type: 3}
   - {fileID: 3937715417407901024, guid: 04535fdc4d8ab4b77b6c519eaaa75512, type: 3}
   bg2D:
-  - {fileID: 2784851056098843448, guid: 17da5e522f5e0467eaf258aa3459b27c, type: 3}
+  - {fileID: 7865950875882123165, guid: 8c70e95ba4b2e41e78ca583ce2d31d03, type: 3}
   curEmotion: 0

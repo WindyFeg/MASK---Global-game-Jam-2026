@@ -22,5 +22,6 @@ MonoBehaviour:
   - {fileID: 7496430579478527828, guid: a78774bf5fdec46378a981df1b3f4889, type: 3}
   - {fileID: -8198693747152453459, guid: 45fbe38f1a1de45af9cbd0ba5c517789, type: 3}
   - {fileID: 7453236362669762780, guid: 4f09e0f7daa934e44b5a09ac78509fbf, type: 3}
-  bg2D: []
+  bg2D:
+  - {fileID: 5185929150802749778, guid: 9d868446c56a645958ea574ac4740a62, type: 3}
   curEmotion: 0
