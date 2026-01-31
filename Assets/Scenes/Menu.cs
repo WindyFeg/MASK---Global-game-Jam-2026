@@ -1,37 +1,75 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;  // NEW Input System
 
-public class Menu : MonoBehaviour {
-
+public class Menu : MonoBehaviour
+{
     public GameObject tipContainer;
-    public Button startBtn;
     public Button tipInteractBtn;
     public bool isShowTip = true;
 
+    private bool started = false;
+
     private void Start()
     {
-        tipContainer.SetActive(false);
+        if (tipContainer != null) tipContainer.SetActive(false);
+
         if (tipInteractBtn != null)
         {
             tipInteractBtn.onClick.AddListener(() =>
             {
-                // Hide the menu
                 gameObject.SetActive(false);
             });
         }
-        startBtn.onClick.AddListener(() =>
+    }
+
+    private void Update()
+    {
+        if (started) return;
+
+        if (AnyStartInputThisFrame())
         {
-            ShowTipContainer();
-        });
+            started = true;
+            gameObject.SetActive(false);
+        }
+    }
+
+    private bool AnyStartInputThisFrame()
+    {
+        // Keyboard: any key
+        if (Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame)
+            return true;
+
+        // Mouse: click
+        if (Mouse.current != null &&
+            (Mouse.current.leftButton.wasPressedThisFrame ||
+             Mouse.current.rightButton.wasPressedThisFrame ||
+             Mouse.current.middleButton.wasPressedThisFrame))
+            return true;
+
+        // Touch: tap (mobile)
+        if (Touchscreen.current != null &&
+            Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
+            return true;
+
+        // Gamepad: vài nút phổ biến
+        if (Gamepad.current != null &&
+            (Gamepad.current.startButton.wasPressedThisFrame ||
+             Gamepad.current.buttonSouth.wasPressedThisFrame ||
+             Gamepad.current.buttonEast.wasPressedThisFrame))
+            return true;
+
+        return false;
     }
 
     private void ShowTipContainer()
     {
-        if (!isShowTip)
-        {
-            this.gameObject.SetActive(false);
-        }
-        tipContainer.SetActive(true);
-    }
+        // if (!isShowTip)
+        // {
+        //     gameObject.SetActive(false);
+        //     return;
+        // }
 
+        // if (tipContainer != null) tipContainer.SetActive(true);
+    }
 }
