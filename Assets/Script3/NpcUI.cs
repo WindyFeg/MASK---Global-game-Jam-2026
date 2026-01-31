@@ -1,11 +1,12 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using System;
 using DG.Tweening;
 using System.Collections.Generic;
 
-public class NpcUI : MonoBehaviour
+public class NpcUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public BaseHuman baseHuman;
     public TextMeshProUGUI nameText;
@@ -13,7 +14,12 @@ public class NpcUI : MonoBehaviour
     public Image npcImage;
     public List<Image> offerImage = new List<Image>();
     public List<Sprite> offerSprites = new List<Sprite>();
-    
+
+    [Header("Hover status tooltip")]
+    [Tooltip("GO shown on hover; assign a panel with statusTooltipText inside.")]
+    [SerializeField] private GameObject statusTooltipGO;
+    [SerializeField] private TextMeshProUGUI statusTooltipText;
+    [SerializeField] private float tooltipZoomDuration = 0.2f;
 
     [Header("Entrance (right to left)")]
     [SerializeField] private float entranceOffsetX = 800f;
@@ -33,6 +39,91 @@ public class NpcUI : MonoBehaviour
             displayAnchoredPos = rectTransform.anchoredPosition;
             displayPosCaptured = true;
         }
+        if (statusTooltipGO != null)
+        {
+            statusTooltipGO.SetActive(false);
+            var rt = statusTooltipGO.GetComponent<RectTransform>();
+            if (rt != null) rt.localScale = Vector3.zero;
+        }
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (statusTooltipGO == null || baseHuman == null) return;
+        if (statusTooltipText != null)
+            statusTooltipText.text = GetNpcStatusText();
+        statusTooltipGO.SetActive(true);
+        RectTransform rt = statusTooltipGO.GetComponent<RectTransform>();
+        if (rt != null)
+        {
+            rt.DOKill();
+            rt.localScale = Vector3.zero;
+            rt.DOScale(Vector3.one, tooltipZoomDuration).SetEase(Ease.OutBack);
+        }
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (statusTooltipGO == null) return;
+        RectTransform rt = statusTooltipGO.GetComponent<RectTransform>();
+        if (rt != null)
+        {
+            rt.DOKill();
+            rt.DOScale(Vector3.zero, tooltipZoomDuration).SetEase(Ease.InBack)
+                .OnComplete(() => { if (statusTooltipGO != null) statusTooltipGO.SetActive(false); });
+        }
+        else
+            statusTooltipGO.SetActive(false);
+    }
+
+    /// <summary>
+    /// Status text for tooltip: sad/poor, sad/wealthy, happy/poor, happy/wealthy (same logic as GetNpcArtwork).
+    /// </summary>
+    private string GetNpcStatusText()
+    {
+        if (baseHuman?.stat == null) return "";
+        int mid = (BaseStat.MIN_VALUE + BaseStat.MAX_VALUE) / 2;
+        bool lowHappy = baseHuman.stat.Happiness < mid;
+        bool lowMoney = baseHuman.stat.Money < mid;
+        if (lowHappy && lowMoney) return "looks sad and tired.";
+        if (lowHappy && !lowMoney) return "seems sad but has enough.";
+        if (!lowHappy && lowMoney) return "looks happy but has little.";
+        return "seems happy and is doing well.";
+    }
+
+    /// <summary>
+    /// Build requirement: "asked for" (&gt; 0), "wanted to give you" (only &lt; 0), or "asked for" + "and in exchange give you" (mixed).
+    /// </summary>
+    private static string BuildRequirementText(string npcName, int money, int happiness)
+    {
+        var lines = new List<string>();
+        bool hasAsked = money > 0 || happiness > 0;
+        bool hasGive = money < 0 || happiness < 0;
+
+        if (hasAsked)
+        {
+            var asked = new List<string>();
+            if (money > 0) asked.Add(money + " money");
+            if (happiness > 0) asked.Add(happiness + " happiness");
+            if (asked.Count > 0)
+                lines.Add(npcName + " asked for " + string.Join(", ", asked));
+        }
+
+        if (hasGive)
+        {
+            var give = new List<string>();
+            if (money < 0) give.Add(Mathf.Abs(money) + " money");
+            if (happiness < 0) give.Add(Mathf.Abs(happiness) + " happiness");
+            if (give.Count > 0)
+            {
+                if (hasAsked)
+                    lines.Add("and in exchange give you " + string.Join(", ", give));
+                else
+                    lines.Add(npcName + " wanted to give you " + string.Join(", ", give));
+            }
+        }
+
+        return lines.Count > 0 ? string.Join("\n", lines) : "";
     }
 
     /// <summary>
@@ -42,7 +133,8 @@ public class NpcUI : MonoBehaviour
     {
         this.baseHuman = baseHuman;
         nameText.text = baseHuman.name;
-        contextText.text = context + "\n" + "Asked for: " + money + " money, " + happiness + " happiness";
+        string requirement = BuildRequirementText(baseHuman.name, money, happiness);
+        contextText.text = string.IsNullOrEmpty(requirement) ? context : context + "\n" + requirement;
         npcImage.sprite = GetNpcArtwork();
 
         if (rectTransform == null) rectTransform = GetComponent<RectTransform>();
@@ -83,7 +175,8 @@ public class NpcUI : MonoBehaviour
     {
         this.baseHuman = baseHuman;
         nameText.text = baseHuman.name;
-        contextText.text = context + "\n" + "Asked for: " + money + " money, " + happiness + " happiness";
+        string requirement = BuildRequirementText(baseHuman.name, money, happiness);
+        contextText.text = string.IsNullOrEmpty(requirement) ? context : context + "\n" + requirement;
         npcImage.sprite = GetNpcArtwork();
         if (rectTransform == null) rectTransform = GetComponent<RectTransform>();
         if (rectTransform != null)

@@ -283,7 +283,7 @@ public class GameManager : MonoBehaviour
         ScenarioEntry scenario = ScenarioManager.Instance.GetRandomScenario((NPCType)human.id, human.GetCurrentEmotion());
         bgImage.sprite = human.bg2D[0];
         requirement = scenario.requirement;
-        npcUI.SetNpc(human, scenario.context + "\n" + scenario.dialogue, requirement.Happiness, requirement.Money);
+        npcUI.SetNpc(human, "<size=80><b>" + scenario.context + "</b></size>\n" + scenario.dialogue, requirement.Happiness, requirement.Money);
         npcUI.SetOffer(requirement.Happiness, requirement.Money);
         LoadPlayer();
         SoundManager.Instance.PlaySFX("LevelTransition");

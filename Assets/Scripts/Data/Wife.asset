@@ -15,13 +15,13 @@ MonoBehaviour:
   id: 0
   name: Wife
   stat:
-    _happiness: 2
-    _money: 4
+    _happiness: 3
+    _money: 2
   artwork:
   - {fileID: 7413678562939524429, guid: d929e83d2da3a4893a6878a540154f71, type: 3}
   - {fileID: 7496430579478527828, guid: a78774bf5fdec46378a981df1b3f4889, type: 3}
   - {fileID: -8198693747152453459, guid: 45fbe38f1a1de45af9cbd0ba5c517789, type: 3}
   - {fileID: 7453236362669762780, guid: 4f09e0f7daa934e44b5a09ac78509fbf, type: 3}
   bg2D:
-  - {fileID: 5185929150802749778, guid: 9d868446c56a645958ea574ac4740a62, type: 3}
+  - {fileID: 390319983529545756, guid: 33db863602e7948269698d0fbed56273, type: 3}
   curEmotion: 0

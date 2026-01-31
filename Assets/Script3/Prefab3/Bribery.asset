@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BaseCard
   id: 0
   cardName: Bribery
-  description: Money talks
+  description: To throw money at a problem
   selfStat:
     _happiness: 1
     _money: -2
   opponentStat:
     _happiness: 1
     _money: 0
-  artwork: {fileID: 6983358275279283047, guid: 1bb23dde1a961452781e2e78f9604e6a, type: 3}
+  artwork: {fileID: 2060842909968406497, guid: bbeeb3c1f19fd4e199075539342d51a9, type: 3}

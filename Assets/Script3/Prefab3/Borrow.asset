@@ -21,4 +21,4 @@ MonoBehaviour:
   opponentStat:
     _happiness: 1
     _money: -1
-  artwork: {fileID: 6983358275279283047, guid: 1bb23dde1a961452781e2e78f9604e6a, type: 3}
+  artwork: {fileID: 3324888312998090165, guid: 9c82f9f0bb98b45caa4cbcbfaedeea1f, type: 3}

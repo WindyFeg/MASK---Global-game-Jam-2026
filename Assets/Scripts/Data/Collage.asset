@@ -16,12 +16,12 @@ MonoBehaviour:
   name: Collage
   stat:
     _happiness: 4
-    _money: 1
+    _money: 3
   artwork:
   - {fileID: -589012917511210679, guid: 3b378de086d2b4ed089c3731eba548fc, type: 3}
   - {fileID: 6145706766821628359, guid: d5091d58d72464e5cb0fecb9189fe87f, type: 3}
   - {fileID: -7373445250198163253, guid: deadffe6e19fa46c98dfa6348fab0685, type: 3}
   - {fileID: 3937715417407901024, guid: 04535fdc4d8ab4b77b6c519eaaa75512, type: 3}
   bg2D:
-  - {fileID: 7865950875882123165, guid: 8c70e95ba4b2e41e78ca583ce2d31d03, type: 3}
+  - {fileID: 4815654543044014392, guid: 402674894c28d445db4805bdef0cedd6, type: 3}
   curEmotion: 0

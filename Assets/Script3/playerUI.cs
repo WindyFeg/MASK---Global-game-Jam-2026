@@ -19,7 +19,7 @@ public class playerUI : MonoBehaviour
     {
         moneyText.text = player.GetMoney().ToString() + " / " + BaseStat.MAX_VALUE;
         happinessText.text = player.GetHappiness().ToString() + " / " + BaseStat.MAX_VALUE;
-        sanityText.text = player.GetSanity() + "/" + player.maxSanity;
+        sanityText.text = "Current Sanity: "+ player.GetSanity() + "/" + player.maxSanity;
         this.player = player;
 
         UpdateSanityStageImage(player.GetSanity());
