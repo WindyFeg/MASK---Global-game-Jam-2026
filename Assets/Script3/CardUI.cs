@@ -202,7 +202,10 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
         PlayThrowAnimation(() =>
         {
             if (this != null && gameObject != null)
+            {
                 GameManager.instance.UseCard(this);
+                SoundManager.Instance.PlaySFX("SelectCard");
+            }
         });
     }
 
