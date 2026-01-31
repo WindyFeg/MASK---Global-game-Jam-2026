@@ -46,6 +46,8 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        // Reset ScriptableObject data so each Play session starts fresh (assets persist in Editor otherwise)
+        ResetScriptableObjectState();
         OnStart();
         LoadNextLevel();
     }
@@ -345,9 +347,13 @@ public class GameManager : MonoBehaviour
     /// Reset game trong cùng scene: Player 3/3/5, NPC random [1,4], xóa bài rồi rút 3 lá, load NPC mới.
     /// Gọi từ ResultPanelUI khi bấm Replay (không load scene).
     /// </summary>
-    public void ResetGame()
+    /// <summary>
+    /// Reset Player and NPC ScriptableObject data to initial values. Call on game start and on Replay
+    /// so data always starts fresh (ScriptableObjects persist in Editor and would keep last run values).
+    /// </summary>
+    private void ResetScriptableObjectState()
     {
-        resultPanel?.Hide();
+        if (LevelManager.instance == null) return;
 
         // Player: Money 3, Happy 3, Sanity 5 (GDD)
         Player p = LevelManager.instance.player;
@@ -359,8 +365,8 @@ public class GameManager : MonoBehaviour
             p.maxSanity = 5;
         }
 
-        // NPC: random [1, 4] mỗi stat (GDD)
-        if (LevelManager.instance != null && LevelManager.instance.humanPool != null)
+        // NPC: random [1, 4] per stat (GDD)
+        if (LevelManager.instance.humanPool != null)
         {
             foreach (Npc npc in LevelManager.instance.humanPool)
             {
@@ -371,6 +377,12 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void ResetGame()
+    {
+        resultPanel?.Hide();
+        ResetScriptableObjectState();
 
         // Xóa bài trên tay, rút lại 3 lá
         foreach (CardUI c in onHandCards)
