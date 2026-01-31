@@ -85,10 +85,10 @@ public class NpcUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         int mid = (BaseStat.MIN_VALUE + BaseStat.MAX_VALUE) / 2;
         bool lowHappy = baseHuman.stat.Happiness < mid;
         bool lowMoney = baseHuman.stat.Money < mid;
-        if (lowHappy && lowMoney) return "He looks sad and tired.";
-        if (lowHappy && !lowMoney) return "He seems sad but has enough.";
-        if (!lowHappy && lowMoney) return "He looks happy but has little.";
-        return "He seems happy and is doing well.";
+        if (lowHappy && lowMoney) return "looks sad and tired.";
+        if (lowHappy && !lowMoney) return "seems sad but has enough.";
+        if (!lowHappy && lowMoney) return "looks happy but has little.";
+        return "seems happy and is doing well.";
     }
 
     /// <summary>
