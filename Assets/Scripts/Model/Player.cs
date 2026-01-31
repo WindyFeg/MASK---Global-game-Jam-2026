@@ -1,5 +1,5 @@
 using UnityEngine;
-
+[CreateAssetMenu(fileName = "NewHuman", menuName = "Cards/Player")]
 public class Player : HumanBase
 {
     public int maxSanity;

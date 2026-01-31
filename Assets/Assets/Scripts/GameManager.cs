@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject cardLayout;
     [SerializeField] private Image bgImage;
     [SerializeField] private NpcUI npcUI;
-    [SerializeField] private Player player;
+    [SerializeField] private playerUI playerUI;
+    // [SerializeField] private Player player;
     // [SerializeField] private List<NPc> humanPool;
 
     // private readonly List<CardUI> onHandCards = new List<Card>();
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour
     {
         OnStart();
         LoadNextLevel();
+        LoadPlayer();
     }
 
     public void OnStart()
@@ -52,17 +54,26 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // public void UseCard(Card card)
-    // {
-    //     // card.Use();
-    //     // onHandCards.Remove(card);
-    //     // onHandCards.Add(CardManager.GetRandomCard());
-    // }
+    public void UseCard(Card card)
+    {
+        // onHandCards.Remove(card);
+        // onHandCards.Add(CardManager.GetRandomCard());
+    }
 
     // public List<Card> GetOnHandCards()
     // {
     //     return onHandCards;
     // }
+    public void DrawCard()
+    {
+        BaseCard card = CardManager.Instance.GetRandomCard();
+        Card newCard = new Card();
+        newCard.cardData = card;
+        var obj = Instantiate(cardPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        obj.transform.SetParent(cardLayout.transform, false);
+        obj.GetComponent<CardUI>().OnSet(newCard);
+        onHandCards.Add(obj.GetComponent<CardUI>());
+    }
 
     public void LoadNextLevel()
     {
@@ -72,5 +83,9 @@ public class GameManager : MonoBehaviour
 
         bgImage.sprite = human.bg2D[0];
 
+    }
+    public void LoadPlayer()
+    {
+        playerUI.SetPlayer(LevelManager.instance.player);
     }
 }
