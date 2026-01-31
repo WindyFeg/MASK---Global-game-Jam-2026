@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: ShowOff
   m_EditorClassIdentifier: Assembly-CSharp::BaseCard
   id: 0
-  cardName: ShowOff
+  cardName: Show Off
   description: Show off myself
   selfStat:
     _happiness: 1
-    _money: -1
+    _money: -2
   opponentStat:
-    _happiness: 1
-    _money: 0
-  artwork: {fileID: 6983358275279283047, guid: 1bb23dde1a961452781e2e78f9604e6a, type: 3}
+    _happiness: -1
+    _money: 1
+  artwork: {fileID: 1469909420425255736, guid: cd2a8bd0d33ab4952be2bde6487c8b92, type: 3}
