@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,6 +24,9 @@ public class GameManager : MonoBehaviour
     [Header("Transition (NPC exit / enter)")]
     [SerializeField] private float npcExitDuration = 0.4f;
     [SerializeField] private float npcEnterDuration = 0.8f;
+    [Header("Requirement feedback (history log)")]
+    [Tooltip("Text that shows requirement fulfilled / not fulfilled; new lines appended with \\n.")]
+    [SerializeField] private TextMeshProUGUI requirementFeedbackText;
 
     private Requirement requirement;
     // [SerializeField] private Player player;
@@ -77,23 +81,18 @@ public class GameManager : MonoBehaviour
 
         int reqMoney = requirement.Money;
         int reqHappiness = requirement.Happiness;
-        if (cardUI.card.cardData.opponentStat.Money - reqMoney >= 0)
-        {
+        bool moneyFulfilled = cardUI.card.cardData.opponentStat.Money - reqMoney >= 0;
+        bool happinessFulfilled = cardUI.card.cardData.opponentStat.Happiness - reqHappiness >= 0;
 
-        }
+        if (moneyFulfilled) { }
         else
-        {
             npcUI.baseHuman.stat.Money -= reqMoney;
-        }
-        if (cardUI.card.cardData.opponentStat.Happiness - reqHappiness >= 0)
-        {
-
-        }
+        if (happinessFulfilled) { }
         else
-        {
             npcUI.baseHuman.stat.Happiness -= reqHappiness;
 
-        }
+        AppendRequirementFeedback(moneyFulfilled, happinessFulfilled, reqMoney, reqHappiness);
+
         npcUI.baseHuman.stat.Happiness += cardUI.card.cardData.opponentStat.Happiness;
         npcUI.baseHuman.stat.Money += cardUI.card.cardData.opponentStat.Money;
 
@@ -190,6 +189,43 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("[GAME OVER] " + reason);
         resultPanel?.ShowGameOver(reason);
+    }
+
+    /// <summary>
+    /// "lost X" if value &gt; 0, "gained X" if value &lt; 0 (so "lost -1" becomes "gained 1").
+    /// </summary>
+    private static string LostOrGained(int value, string statName)
+    {
+        if (value > 0) return "lost " + value + " " + statName;
+        if (value < 0) return "gained " + Mathf.Abs(value) + " " + statName;
+        return "";
+    }
+
+    /// <summary>
+    /// Prepend one line to requirementFeedbackText (newest at top). Font size 24.
+    /// </summary>
+    private void AppendRequirementFeedback(bool moneyFulfilled, bool happinessFulfilled, int reqMoney, int reqHappiness)
+    {
+        if (requirementFeedbackText == null) return;
+        requirementFeedbackText.fontSize = 24f;
+        string npcName = npcUI?.baseHuman?.name ?? "NPC";
+        string line;
+        if (moneyFulfilled && happinessFulfilled)
+            line = "Requirement fulfilled.";
+        else if (!moneyFulfilled && !happinessFulfilled)
+        {
+            var parts = new List<string>();
+            string m = LostOrGained(reqMoney, "Money");
+            string h = LostOrGained(reqHappiness, "Happiness");
+            if (!string.IsNullOrEmpty(m)) parts.Add(m);
+            if (!string.IsNullOrEmpty(h)) parts.Add(h);
+            line = "Because requirement was not fulfilled, " + npcName + " " + (parts.Count > 0 ? string.Join(" and ", parts) + "." : "was affected.");
+        }
+        else if (!moneyFulfilled)
+            line = "Because money requirement was not fulfilled, " + npcName + " " + LostOrGained(reqMoney, "Money") + ".";
+        else
+            line = "Because happiness requirement was not fulfilled, " + npcName + " " + LostOrGained(reqHappiness, "Happiness") + ".";
+        requirementFeedbackText.text = line + (string.IsNullOrEmpty(requirementFeedbackText.text) ? "" : "\n\n" + requirementFeedbackText.text);
     }
 
     private void OnWin(string reason)
