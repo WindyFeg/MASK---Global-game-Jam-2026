@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Image bgImage;
     [SerializeField] private NpcUI npcUI;
     [SerializeField] private Player player;
-    [SerializeField] private List<NPc> humanPool;
+    // [SerializeField] private List<NPc> humanPool;
 
     // private readonly List<CardUI> onHandCards = new List<Card>();
 

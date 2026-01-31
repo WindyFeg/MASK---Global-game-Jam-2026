@@ -1,32 +1,30 @@
 using UnityEngine;
 
-public abstract class HumanBase {
-    public BaseHuman data;
-
+public abstract class HumanBase : BaseHuman {
     public bool IsAlive() {
-        return !data.stat.IsEnd();
+        return !stat.IsEnd();
     }
 
     public bool IsFullStats() {
-        return data.stat.IsFull();
+        return stat.IsFull();
     }
 
     public void AddHappiness(int value) {
-        data.stat.Happiness += value;
+        stat.Happiness += value;
         ValidateStat();
     }
 
     public void AddMoney(int value) {
-        data.stat.Money += value;
+        stat.Money += value;
         ValidateStat();
     }
 
     public int GetMoney() {
-        return data.stat.Money;
+        return stat.Money;
     }
 
     public int GetHappiness() {
-        return data.stat.Happiness;
+        return stat.Happiness;
     }
 
     public abstract void ValidateStat();
