@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Image bgImage;
     [SerializeField] private NpcUI npcUI;
     [SerializeField] private playerUI playerUI;
+    private BaseStat requirement;
     // [SerializeField] private Player player;
     // [SerializeField] private List<NPc> humanPool;
 
@@ -54,10 +55,61 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void UseCard(Card card)
+    public void UseCard(CardUI cardUI)
     {
-        // onHandCards.Remove(card);
-        // onHandCards.Add(CardManager.GetRandomCard());
+        onHandCards.Remove(cardUI);
+        Destroy(cardUI.gameObject);
+
+        int reqMoney = requirement.Money;
+        int reqHappiness = requirement.Happiness;
+        if (cardUI.card.cardData.opponentStat.Money - reqMoney >= 0)
+        {
+
+        }
+        else
+        {
+            npcUI.baseHuman.stat.Money -= reqMoney;
+        }
+        if (cardUI.card.cardData.opponentStat.Happiness - reqHappiness >= 0)
+        {
+
+        }
+        else
+        {
+            npcUI.baseHuman.stat.Happiness -= reqHappiness;
+
+        }
+        npcUI.baseHuman.stat.Happiness += cardUI.card.cardData.opponentStat.Happiness;
+        npcUI.baseHuman.stat.Money += cardUI.card.cardData.opponentStat.Money;
+
+        playerUI.player.AddHappiness(cardUI.card.cardData.selfStat.Happiness);
+        playerUI.player.AddMoney(cardUI.card.cardData.selfStat.Money);
+        bool isHappy = playerUI.player.stat.Happiness > (BaseStat.MIN_VALUE + BaseStat.MAX_VALUE) / 2;
+        if (isHappy && cardUI.card.cardData.selfStat.Happiness > 0)
+        {
+
+        }
+        else if (!isHappy && cardUI.card.cardData.selfStat.Happiness < 0)
+        {
+
+        }
+        else
+        {
+            playerUI.player.stat.Money -= 1;
+        }
+        // if (cardUI.card.cardData.selfStat.Money > reqMoney)
+        // {
+        //     money = cardUI.card.cardData.selfStat.Money;
+        // }
+        // if (cardUI.card.cardData.selfStat.Happiness > reqHappiness)
+        // {
+        //     happiness = cardUI.card.cardData.selfStat.Happiness;
+        // }
+
+        // dose it cost sanity?
+        // yes
+        LoadNextLevel();
+
     }
 
     // public List<Card> GetOnHandCards()
@@ -80,7 +132,8 @@ public class GameManager : MonoBehaviour
         Npc human = LevelManager.instance.LoadLevel();
         ScenarioEntry scenario = ScenarioManager.Instance.GetRandomScenario((NPCType)human.id, human.GetCurrentEmotion());
         bgImage.sprite = human.bg2D[0];
-        npcUI.SetNpc(human, scenario.context + "\n" + scenario.dialogue, scenario.requirement.happiness, scenario.requirement.money);
+        npcUI.SetNpc(human, scenario.context + "\n" + scenario.dialogue, requirement.Happiness, requirement.Money);
+        DrawCard();
 
     }
     public void LoadPlayer()

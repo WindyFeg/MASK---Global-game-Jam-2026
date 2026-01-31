@@ -7,11 +7,13 @@ public class playerUI : MonoBehaviour
     public TextMeshProUGUI moneyText;
     public TextMeshProUGUI happinessText;
     public TextMeshProUGUI sanityText;
+    public Player player;
 
     public void SetPlayer(Player player)
     {
         moneyText.text = "💰 " + player.GetMoney().ToString() + " / " + BaseStat.MAX_VALUE;
         happinessText.text = "😊 " + player.GetHappiness().ToString() + " / " + BaseStat.MAX_VALUE;
         sanityText.text = "🧠 " + player.GetSanity() + "/" + player.maxSanity;
+        this.player = player;
     }
 }
