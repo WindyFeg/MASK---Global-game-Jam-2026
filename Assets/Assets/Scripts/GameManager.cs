@@ -79,9 +79,8 @@ public class GameManager : MonoBehaviour
     {
         Npc human = LevelManager.instance.LoadLevel();
         ScenarioEntry scenario = ScenarioManager.Instance.GetRandomScenario((NPCType)human.id, human.GetCurrentEmotion());
-        var requirement = scenario.requirement;
         bgImage.sprite = human.bg2D[0];
-        npcUI.SetNpc(human, scenario.context + "\n" + scenario.dialogue, requirement);
+        npcUI.SetNpc(human, scenario.context + "\n" + scenario.dialogue, scenario.requirement.happiness, scenario.requirement.money);
 
     }
     public void LoadPlayer()

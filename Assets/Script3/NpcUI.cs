@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.UI;
 using System;
 using DG.Tweening;
+using UnityEditor;
 
 public class NpcUI : MonoBehaviour
 {
@@ -11,11 +12,11 @@ public class NpcUI : MonoBehaviour
     public TextMeshProUGUI contextText;
     public Image npcImage;
 
-    public void SetNpc(BaseHuman baseHuman, string context, BaseStat requirement)
+    public void SetNpc(BaseHuman baseHuman, string context, int happiness, int money)
     {
         this.baseHuman = baseHuman;
         nameText.text = baseHuman.name;
-        contextText.text = context + "\n" + "Asked for: " + requirement.Money + " money, " + requirement.Happiness + " happiness";
+        contextText.text = context + "\n" + "Asked for: " + money + " money, " + happiness + " happiness";
         npcImage.sprite = GetNpcArtwork();
 
         // DOtween it appear from right to left
