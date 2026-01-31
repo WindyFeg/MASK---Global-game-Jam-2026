@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8fa31933fbc934b649c43263fc6dfd45
+guid: 5a43d232914fd468ca48bd5abf3ee572
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7641589105147185702
-    second: UI_Flat_ButtonPlay01a_0
+      213: 6627631714405055083
+    second: MenuStart_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 6, y: 3, z: 4, w: 3}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_Flat_ButtonPlay01a_0
+      name: MenuStart_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 17
-        height: 16
+        width: 320
+        height: 180
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 62a0bc3edc06c0a60800000000000000
-      internalID: 7641589105147185702
+      spriteID: b6af937fde31afb50800000000000000
+      internalID: 6627631714405055083
       vertices: []
       indices: 
       edges: []
@@ -139,7 +139,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UI_Flat_ButtonPlay01a_0: 7641589105147185702
+      MenuStart_0: 6627631714405055083
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
