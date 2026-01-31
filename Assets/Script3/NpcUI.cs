@@ -13,7 +13,7 @@ public class NpcUI : MonoBehaviour
     public void SetNpc(BaseHuman baseHuman)
     {
         this.baseHuman = baseHuman;
-        // nameText.text = baseHuman.name;
+        nameText.text = baseHuman.name;
         npcImage.sprite = GetNpcArtwork();
 
         // DOtween it appear from right to left
