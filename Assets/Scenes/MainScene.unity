@@ -606,7 +606,7 @@ MonoBehaviour:
   npcUI: {fileID: 178325054}
   playerUI: {fileID: 7658862246419559039}
   resultPanel: {fileID: 319986086}
-  shakeCamera: {fileID: 0}
+  shakeTarget: {fileID: 819678966}
   sanityShakeDuration: 0.35
   sanityShakeStrength: 0.2
   npcExitDuration: 0.75

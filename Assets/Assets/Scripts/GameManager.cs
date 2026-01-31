@@ -16,9 +16,10 @@ public class GameManager : MonoBehaviour
     [Header("Result (Win / Game Over)")]
     [SerializeField] private ResultPanelUI resultPanel;
     [Header("Screen Shake (lose sanity)")]
-    [SerializeField] private Camera shakeCamera;
-    [SerializeField] private float sanityShakeDuration = 0.35f;
-    [SerializeField] private float sanityShakeStrength = 0.2f;
+    [Tooltip("Assign a Panel (child under Canvas) that contains your game UI. If you assign the Canvas, we shake its first child. Overlay Canvas root does not move.")]
+    [SerializeField] private RectTransform shakeTarget;
+    [SerializeField] private float sanityShakeDuration = 0.4f;
+    [SerializeField] private float sanityShakeStrength = 25f;
     [Header("Transition (NPC exit / enter)")]
     [SerializeField] private float npcExitDuration = 0.4f;
     [SerializeField] private float npcEnterDuration = 0.8f;
@@ -309,9 +310,26 @@ public class GameManager : MonoBehaviour
 
     private void ShakeScreen()
     {
-        Camera cam = shakeCamera != null ? shakeCamera : Camera.main;
-        if (cam != null && cam.transform != null)
-            cam.transform.DOShakePosition(sanityShakeDuration, sanityShakeStrength, 20, 90f, false, true);
+        if (shakeTarget == null)
+        {
+            Camera cam = Camera.main;
+            if (cam != null && cam.transform != null)
+                cam.transform.DOShakePosition(sanityShakeDuration, sanityShakeStrength * 0.01f, 20, 90f, false, true);
+            return;
+        }
+
+        // With Overlay Canvas, the Canvas root often doesn't move; shake a child Panel instead.
+        RectTransform target = shakeTarget;
+        Canvas c = shakeTarget.GetComponent<Canvas>();
+        if (c != null && shakeTarget.childCount > 0)
+        {
+            Transform firstChild = shakeTarget.GetChild(0);
+            RectTransform rt = firstChild as RectTransform;
+            if (rt != null) target = rt;
+        }
+
+        target.DOKill(false);
+        target.DOShakeAnchorPos(sanityShakeDuration, sanityShakeStrength, 25, 90f, false, true);
     }
 
     /// <summary>
