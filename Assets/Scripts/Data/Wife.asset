@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Wife
   m_EditorClassIdentifier: Assembly-CSharp::Npc
   id: 0
-  name: 
+  name: Wife
   stat:
-    _happiness: 3
-    _money: 3
+    _happiness: 2
+    _money: 4
   artwork:
   - {fileID: 7413678562939524429, guid: d929e83d2da3a4893a6878a540154f71, type: 3}
   - {fileID: 7496430579478527828, guid: a78774bf5fdec46378a981df1b3f4889, type: 3}

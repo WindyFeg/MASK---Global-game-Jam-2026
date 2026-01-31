@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Bribery
   m_EditorClassIdentifier: Assembly-CSharp::BaseCard
   id: 0
-  cardName: "Mua chu\u1ED9c"
-  description: "H\u1ED1i l\u1ED9, d\xF9ng ti\u1EC1n \u0111\u1EC3 gi\u1EA3i quy\u1EBFt"
+  cardName: Bribery
+  description: Money talks
   selfStat:
     _happiness: 1
     _money: -2
   opponentStat:
     _happiness: 1
-    _money: 1
+    _money: 0
   artwork: {fileID: 6983358275279283047, guid: 1bb23dde1a961452781e2e78f9604e6a, type: 3}

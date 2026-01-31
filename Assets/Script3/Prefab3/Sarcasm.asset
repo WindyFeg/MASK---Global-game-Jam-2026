@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Sarcasm
   m_EditorClassIdentifier: Assembly-CSharp::BaseCard
   id: 5
-  cardName: "M\u1EC9a Mai"
-  description: "S\u1EF1 ch\xE2m bi\u1EBFm, m\u1EC9a mai."
+  cardName: Sarcasm
+  description: A sharp tongue cuts deep
   selfStat:
     _happiness: 2
     _money: 0

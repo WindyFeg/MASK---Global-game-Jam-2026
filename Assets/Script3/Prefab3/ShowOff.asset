@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ShowOff
   m_EditorClassIdentifier: Assembly-CSharp::BaseCard
   id: 0
-  cardName: "S\u0129 Di\u1EC7n"
-  description: "Th\u1EC3 hi\u1EC7n, khoe khoang \u0111\u1EC3 l\u1EA5y ti\u1EBFng."
+  cardName: ShowOff
+  description: Show off myself
   selfStat:
     _happiness: 1
     _money: -1

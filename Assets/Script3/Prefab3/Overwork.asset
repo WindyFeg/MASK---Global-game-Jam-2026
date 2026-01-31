@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Overwork
   m_EditorClassIdentifier: Assembly-CSharp::BaseCard
   id: 0
-  cardName: "B\xE1n M\u1EA1ng"
-  description: "L\xE0m vi\u1EC7c qu\xE1 s\u1EE9c."
+  cardName: Overwork
+  description: Work beyond your limits
   selfStat:
     _happiness: -2
     _money: 1

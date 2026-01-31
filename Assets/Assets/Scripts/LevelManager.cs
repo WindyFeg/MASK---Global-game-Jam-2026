@@ -23,7 +23,7 @@ public class LevelManager : MonoBehaviour
     }
     public Npc LoadLevel()
     {
-        return humanPool[Random.Range(0, 3)];
+        return humanPool[Random.Range(0, 4)];
         
     }
 }

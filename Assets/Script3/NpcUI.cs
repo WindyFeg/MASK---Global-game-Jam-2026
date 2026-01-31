@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.UI;
 using System;
 using DG.Tweening;
+using System.Collections.Generic;
 
 public class NpcUI : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class NpcUI : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI contextText;
     public Image npcImage;
+    public List<Image> offerImage = new List<Image>();
+    public List<Sprite> offerSprites = new List<Sprite>();
+    
 
     [Header("Entrance (right to left)")]
     [SerializeField] private float entranceOffsetX = 800f;
@@ -84,6 +88,37 @@ public class NpcUI : MonoBehaviour
         if (rectTransform == null) rectTransform = GetComponent<RectTransform>();
         if (rectTransform != null)
             rectTransform.anchoredPosition = displayAnchoredPos + Vector2.right * entranceOffsetX;
+    }
+    public void SetOffer(int happiness, int money)
+    {
+        offerImage[0].gameObject.SetActive(true);
+        offerImage[1].gameObject.SetActive(true);
+        Debug.Log("Setting offer: happiness " + happiness + ", money " + money);
+        
+        if (happiness > 0)
+        {
+            offerImage[0].sprite = offerSprites[0];
+        }
+        else if (happiness < 0)
+        {
+            offerImage[0].sprite = offerSprites[1];
+        }
+        else
+        {
+            offerImage[0].gameObject.SetActive(false);
+        }
+        if (money > 0)
+        {
+            offerImage[1].sprite = offerSprites[2];
+        }
+        else if (money < 0)
+        {
+            offerImage[1].sprite = offerSprites[3];
+        }
+        else
+        {
+            offerImage[1].gameObject.SetActive(false);
+        }
     }
 
     /// <summary>

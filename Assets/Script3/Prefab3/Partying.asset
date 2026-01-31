@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Partying
   m_EditorClassIdentifier: Assembly-CSharp::BaseCard
   id: 0
-  cardName: "Ho\xE0 nh\xE3"
-  description: "Ho\xE0 nh\xE3 v\u1EDBi m\u1ECDi ng\u01B0\u1EDDi"
+  cardName: Friendly
+  description: Keep the peace
   selfStat:
     _happiness: 1
     _money: -1

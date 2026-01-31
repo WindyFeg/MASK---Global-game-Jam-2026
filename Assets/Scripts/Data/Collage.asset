@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Collage
   m_EditorClassIdentifier: Assembly-CSharp::Npc
   id: 0
-  name: 
+  name: Collage
   stat:
-    _happiness: 2
+    _happiness: 4
     _money: 1
   artwork:
   - {fileID: -589012917511210679, guid: 3b378de086d2b4ed089c3731eba548fc, type: 3}

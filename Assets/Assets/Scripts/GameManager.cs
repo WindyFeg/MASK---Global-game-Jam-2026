@@ -163,7 +163,7 @@ public class GameManager : MonoBehaviour
         }
 
         // Win: Player 5/5/5 and all NPCs alive
-        bool playerFull = p.GetMoney() == BaseStat.MAX_VALUE && p.GetHappiness() == BaseStat.MAX_VALUE && p.GetSanity() == p.maxSanity;
+        bool playerFull = p.GetMoney() == BaseStat.MAX_VALUE && p.GetHappiness() == BaseStat.MAX_VALUE && p.GetSanity() >= p.maxSanity - 2;
         if (!playerFull) return false;
 
         if (LevelManager.instance != null && LevelManager.instance.humanPool != null)
@@ -284,6 +284,7 @@ public class GameManager : MonoBehaviour
         bgImage.sprite = human.bg2D[0];
         requirement = scenario.requirement;
         npcUI.SetNpc(human, scenario.context + "\n" + scenario.dialogue, requirement.Happiness, requirement.Money);
+        npcUI.SetOffer(requirement.Happiness, requirement.Money);
         LoadPlayer();
     }
 
@@ -299,6 +300,7 @@ public class GameManager : MonoBehaviour
             bgImage.sprite = human.bg2D[0];
             requirement = scenario.requirement;
             npcUI.SetNpcContentOnly(human, scenario.context + "\n" + scenario.dialogue, requirement.Happiness, requirement.Money);
+            npcUI.SetOffer(requirement.Happiness, requirement.Money);
 
             npcUI.EnterFromRight(npcEnterDuration);
             LoadPlayer();

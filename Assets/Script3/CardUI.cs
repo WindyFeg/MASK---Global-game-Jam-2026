@@ -125,6 +125,22 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
         cardStatMoneyTopRight.text = card.cardData.opponentStat.Money.ToString();
         cardStatHeartBottomLeft.text = card.cardData.selfStat.Happiness.ToString();
         cardStatMoneyBottomRight.text = card.cardData.selfStat.Money.ToString();
+        if (card.cardData.opponentStat.Happiness > 0)
+        {
+             cardStatHeartTopLeft.text = "+" + cardStatHeartTopLeft.text;
+        }
+        if (card.cardData.opponentStat.Money > 0)
+        {
+             cardStatMoneyTopRight.text = "+" + cardStatMoneyTopRight.text;
+        }
+        if (card.cardData.selfStat.Happiness > 0)
+        {
+             cardStatHeartBottomLeft.text = "+" + cardStatHeartBottomLeft.text;
+        }
+        if (card.cardData.selfStat.Money > 0)
+        {
+             cardStatMoneyBottomRight.text = "+" + cardStatMoneyBottomRight.text;
+        }
 
         // Card frame: use sanity-damage sprite if playing this card would cost -1 Sanity (pretending)
         if (cardFrameImage != null && (defaultCardSprite != null || sanityDamageCardSprite != null))

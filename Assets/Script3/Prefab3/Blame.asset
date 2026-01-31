@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Blame
   m_EditorClassIdentifier: Assembly-CSharp::BaseCard
   id: 0
-  cardName: "S\u0129 Di\u1EC7n"
-  description: "Th\u1EC3 hi\u1EC7n, khoe khoang \u0111\u1EC3 l\u1EA5y ti\u1EBFng."
+  cardName: Blame
+  description: Let them take the fall
   selfStat:
     _happiness: 1
-    _money: -1
+    _money: 0
   opponentStat:
-    _happiness: 1
+    _happiness: -2
     _money: 0
   artwork: {fileID: 6983358275279283047, guid: 1bb23dde1a961452781e2e78f9604e6a, type: 3}

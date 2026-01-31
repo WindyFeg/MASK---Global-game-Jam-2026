@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: ForcedSmile
   m_EditorClassIdentifier: Assembly-CSharp::BaseCard
   id: 1
-  cardName: "C\u01B0\u1EDDi G\u01B0\u1EE3ng"
-  description: "N\u1EE5 c\u01B0\u1EDDi g\u01B0\u1EE3ng g\u1EA1o, kh\xF4ng th\u1EADt
-    l\xF2ng."
+  cardName: Forced Smile
+  description: Pretend to be happy
   selfStat:
-    _happiness: 0
-    _money: 2
+    _happiness: -1
+    _money: 0
   opponentStat:
-    _happiness: 0
-    _money: 2
+    _happiness: 1
+    _money: 0
   artwork: {fileID: 6983358275279283047, guid: 1bb23dde1a961452781e2e78f9604e6a, type: 3}
