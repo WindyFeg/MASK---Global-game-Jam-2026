@@ -286,6 +286,7 @@ public class GameManager : MonoBehaviour
         npcUI.SetNpc(human, scenario.context + "\n" + scenario.dialogue, requirement.Happiness, requirement.Money);
         npcUI.SetOffer(requirement.Happiness, requirement.Money);
         LoadPlayer();
+        SoundManager.Instance.PlaySFX("LevelTransition");
     }
 
     /// <summary>

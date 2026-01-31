@@ -22,6 +22,7 @@ public class ResultPanelUI : MonoBehaviour
 
     public void ShowGameOver(string reason)
     {
+        SoundManager.Instance.PlaySFX("Lose");
         if (messageText != null)
             messageText.text = "GAME OVER\n\n" + reason;
         if (panel != null)
@@ -32,6 +33,7 @@ public class ResultPanelUI : MonoBehaviour
 
     public void ShowWin(string reason)
     {
+        SoundManager.Instance.PlaySFX("Win");
         if (messageText != null)
             messageText.text = "YOU WIN\n\n" + reason;
         if (panel != null)

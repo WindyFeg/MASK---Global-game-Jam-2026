@@ -174,6 +174,8 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
             CaptureOriginal();
         rectTransform.DOKill();
 
+        SoundManager.Instance.PlaySFX("HoverCard");
+
         rectTransform.DOScale(originalScale * hoverScaleAmount, animationDuration)
             .SetEase(Ease.OutBack);
         rectTransform.DOLocalMoveY(originalPosition.y + moveUpAmount, animationDuration)
