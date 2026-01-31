@@ -15,8 +15,8 @@ public class Menu : MonoBehaviour {
         {
             tipInteractBtn.onClick.AddListener(() =>
             {
-                this.gameObject.SetActive(true);
-                tipContainer.SetActive(false);
+                // Hide the menu
+                gameObject.SetActive(false);
             });
         }
         startBtn.onClick.AddListener(() =>
