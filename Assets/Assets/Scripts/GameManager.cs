@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private playerUI playerUI;
     [Header("Result (Win / Game Over)")]
     [SerializeField] private ResultPanelUI resultPanel;
+    [Header("Screen Shake (lose sanity)")]
+    [SerializeField] private Camera shakeCamera;
+    [SerializeField] private float sanityShakeDuration = 0.35f;
+    [SerializeField] private float sanityShakeStrength = 0.2f;
     [Header("Transition (NPC exit / enter)")]
     [SerializeField] private float npcExitDuration = 0.4f;
     [SerializeField] private float npcEnterDuration = 0.8f;
@@ -101,7 +106,10 @@ public class GameManager : MonoBehaviour
         // Condition 2 (Fake Sad): Player Happy (Happy >= 3) mà lá trừ Happy (<0) -> -1 Sanity
         bool fakeSad = (playerHappyBefore >= 3 && cardPlayerHappyDelta < 0);
         if (fakeHappy || fakeSad)
+        {
             playerUI.player.LoseSanity(1);
+            ShakeScreen();
+        }
 
         playerUI.SetPlayer(playerUI.player); // Cập nhật UI (Sanity, Money, Happy)
 
@@ -297,6 +305,13 @@ public class GameManager : MonoBehaviour
     public void LoadPlayer()
     {
         playerUI.SetPlayer(LevelManager.instance.player);
+    }
+
+    private void ShakeScreen()
+    {
+        Camera cam = shakeCamera != null ? shakeCamera : Camera.main;
+        if (cam != null && cam.transform != null)
+            cam.transform.DOShakePosition(sanityShakeDuration, sanityShakeStrength, 20, 90f, false, true);
     }
 
     /// <summary>

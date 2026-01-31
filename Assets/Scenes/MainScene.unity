@@ -606,6 +606,9 @@ MonoBehaviour:
   npcUI: {fileID: 178325054}
   playerUI: {fileID: 7658862246419559039}
   resultPanel: {fileID: 319986086}
+  shakeCamera: {fileID: 0}
+  sanityShakeDuration: 0.35
+  sanityShakeStrength: 0.2
   npcExitDuration: 0.75
   npcEnterDuration: 0.75
 --- !u!4 &319986082
@@ -2228,6 +2231,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035098363}
   m_CullTransparentMesh: 1
+--- !u!1 &2129923556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2129923557}
+  - component: {fileID: 2129923559}
+  - component: {fileID: 2129923558}
+  m_Layer: 5
+  m_Name: sanity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2129923557
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129923556}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3865014167895531443}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 159}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2129923558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129923556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1194042834896831455, guid: ec2b8f5421c2c41f0bd17ed24edc0bd6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2129923559
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129923556}
+  m_CullTransparentMesh: 1
 --- !u!1 &1352022814538150168
 GameObject:
   m_ObjectHideFlags: 0
@@ -2262,6 +2340,7 @@ RectTransform:
   - {fileID: 1334715833}
   - {fileID: 330475503}
   - {fileID: 19033249}
+  - {fileID: 2129923557}
   m_Father: {fileID: 819678966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -2323,6 +2402,13 @@ MonoBehaviour:
   happinessText: {fileID: 330475504}
   sanityText: {fileID: 19033250}
   player: {fileID: 0}
+  sanityStageSprites:
+  - {fileID: 4931869880570927398, guid: 2bab8caea966f41caa092ecd571408be, type: 3}
+  - {fileID: 1980055288620243598, guid: 3e231469c23f14ed4b4a7991a55f113f, type: 3}
+  - {fileID: -3791757884622399077, guid: 7503dcef2cb7d4321be52c5adec53f55, type: 3}
+  - {fileID: 6241846986576242995, guid: aca4141bf012447339a82b5b0a557c3d, type: 3}
+  - {fileID: 1194042834896831455, guid: ec2b8f5421c2c41f0bd17ed24edc0bd6, type: 3}
+  sanityStageImage: {fileID: 2129923558}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
