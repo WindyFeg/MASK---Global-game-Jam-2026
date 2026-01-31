@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems; // Required for mouse events
 using DG.Tweening;              // Required for DOTween
 
@@ -17,6 +18,10 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     public Sprite hearthart;
     public Sprite moneyart;
 
+    [Header("Card Frame (sanity warning)")]
+    [SerializeField] private Sprite defaultCardSprite;
+    [SerializeField] private Sprite sanityDamageCardSprite;
+
     [Header("Animation Settings")]
     [SerializeField] private float hoverScaleAmount = 1.2f; // How big it grows (1.2 = 120%)
     [SerializeField] private float moveUpAmount = 50f;      // How many pixels to move up
@@ -31,6 +36,7 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
 
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
+    private Image cardFrameImage;
     private Vector3 originalScale;
     private Vector3 originalPosition;
     public Card card;
@@ -45,6 +51,7 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
         if (GetComponent<CanvasGroup>() == null)
             gameObject.AddComponent<CanvasGroup>();
         canvasGroup = GetComponent<CanvasGroup>();
+        cardFrameImage = GetComponent<Image>();
     }
 
     /// <summary>
@@ -110,6 +117,29 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
         cardStatMoneyTopRight.text = card.cardData.opponentStat.Money.ToString();
         cardStatHeartBottomLeft.text = card.cardData.selfStat.Happiness.ToString();
         cardStatMoneyBottomRight.text = card.cardData.selfStat.Money.ToString();
+
+        // Card frame: use sanity-damage sprite if playing this card would cost -1 Sanity (pretending)
+        if (cardFrameImage != null && (defaultCardSprite != null || sanityDamageCardSprite != null))
+        {
+            bool causesSanityDamage = WouldCauseSanityDamage(card);
+            if (causesSanityDamage && sanityDamageCardSprite != null)
+                cardFrameImage.sprite = sanityDamageCardSprite;
+            else if (defaultCardSprite != null)
+                cardFrameImage.sprite = defaultCardSprite;
+        }
+    }
+
+    /// <summary>
+    /// Same logic as GameManager: Fake Happy (player &lt; 3 and card +Happy) or Fake Sad (player >= 3 and card -Happy) = -1 Sanity.
+    /// </summary>
+    private static bool WouldCauseSanityDamage(Card card)
+    {
+        if (card?.cardData == null) return false;
+        int playerHappy = GameManager.instance != null ? GameManager.instance.GetPlayerHappiness() : 3;
+        int cardSelfHappy = card.cardData.selfStat.Happiness;
+        bool fakeHappy = playerHappy < 3 && cardSelfHappy > 0;
+        bool fakeSad = playerHappy >= 3 && cardSelfHappy < 0;
+        return fakeHappy || fakeSad;
     }
 
     public void OnPointerEnter(PointerEventData eventData)

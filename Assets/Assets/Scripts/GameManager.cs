@@ -300,6 +300,15 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
+    /// Current player Happiness (for CardUI sanity-damage check). Returns 3 if player not set.
+    /// </summary>
+    public int GetPlayerHappiness()
+    {
+        if (playerUI?.player == null) return 3;
+        return playerUI.player.GetHappiness();
+    }
+
+    /// <summary>
     /// Reset game trong cùng scene: Player 3/3/5, NPC random [1,4], xóa bài rồi rút 3 lá, load NPC mới.
     /// Gọi từ ResultPanelUI khi bấm Replay (không load scene).
     /// </summary>

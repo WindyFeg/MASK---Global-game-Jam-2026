@@ -180,8 +180,10 @@ MonoBehaviour:
   cardStatMoneyTopRight: {fileID: 3575765691437749575}
   cardStatHeartBottomLeft: {fileID: 556343194256520131}
   cardStatMoneyBottomRight: {fileID: 2950488529870495239}
-  hearthart: {fileID: 0}
-  moneyart: {fileID: 0}
+  hearthart: {fileID: 6321545746213976334, guid: cce0da0306139497abf8030cab852dbe, type: 3}
+  moneyart: {fileID: -8511649000561859162, guid: 893d5fbc269c64727b589da2a88ce22f, type: 3}
+  defaultCardSprite: {fileID: -4456456372181780996, guid: fedd7439619a4463faaa9d216ef14081, type: 3}
+  sanityDamageCardSprite: {fileID: -505430705058690432, guid: 9466329f0397d412a97a240699092436, type: 3}
   hoverScaleAmount: 1.2
   moveUpAmount: 50
   animationDuration: 0.2
