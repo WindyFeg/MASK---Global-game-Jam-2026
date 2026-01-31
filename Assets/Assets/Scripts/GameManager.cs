@@ -111,6 +111,10 @@ public class GameManager : MonoBehaviour
         {
             playerUI.player.LoseSanity(1);
             ShakeScreen();
+            string sanityReason = fakeHappy
+                ? "You were unhappy but pretended to be happy. (−1 Sanity)"
+                : "You were happy but pretended to be unhappy. (−1 Sanity)";
+            PrependToFeedbackLog(sanityReason);
         }
 
         playerUI.SetPlayer(playerUI.player); // Cập nhật UI (Sanity, Money, Happy)
@@ -188,6 +192,7 @@ public class GameManager : MonoBehaviour
     private void OnGameOver(string reason)
     {
         Debug.Log("[GAME OVER] " + reason);
+        PrependToFeedbackLog("[GAME OVER] " + reason);
         resultPanel?.ShowGameOver(reason);
     }
 
@@ -204,10 +209,16 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Prepend one line to requirementFeedbackText (newest at top). Font size 24.
     /// </summary>
-    private void AppendRequirementFeedback(bool moneyFulfilled, bool happinessFulfilled, int reqMoney, int reqHappiness)
+    private void PrependToFeedbackLog(string line)
     {
         if (requirementFeedbackText == null) return;
         requirementFeedbackText.fontSize = 24f;
+        requirementFeedbackText.text = line + (string.IsNullOrEmpty(requirementFeedbackText.text) ? "" : "\n\n" + requirementFeedbackText.text);
+    }
+
+    private void AppendRequirementFeedback(bool moneyFulfilled, bool happinessFulfilled, int reqMoney, int reqHappiness)
+    {
+        if (requirementFeedbackText == null) return;
         string npcName = npcUI?.baseHuman?.name ?? "NPC";
         string line;
         if (moneyFulfilled && happinessFulfilled)
@@ -225,12 +236,13 @@ public class GameManager : MonoBehaviour
             line = "Because money requirement was not fulfilled, " + npcName + " " + LostOrGained(reqMoney, "Money") + ".";
         else
             line = "Because happiness requirement was not fulfilled, " + npcName + " " + LostOrGained(reqHappiness, "Happiness") + ".";
-        requirementFeedbackText.text = line + (string.IsNullOrEmpty(requirementFeedbackText.text) ? "" : "\n\n" + requirementFeedbackText.text);
+        PrependToFeedbackLog(line);
     }
 
     private void OnWin(string reason)
     {
         Debug.Log("[WIN] " + reason);
+        PrependToFeedbackLog("[WIN] " + reason);
         resultPanel?.ShowWin(reason);
     }
 
@@ -421,6 +433,8 @@ public class GameManager : MonoBehaviour
     public void ResetGame()
     {
         resultPanel?.Hide();
+        if (requirementFeedbackText != null)
+            requirementFeedbackText.text = "";
         ResetScriptableObjectState();
 
         // Xóa bài trên tay, rút lại 3 lá
