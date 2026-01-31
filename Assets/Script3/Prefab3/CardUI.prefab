@@ -103,7 +103,7 @@ RectTransform:
   m_GameObject: {fileID: 1428929305939172248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6344301677422482646}
@@ -185,6 +185,12 @@ MonoBehaviour:
   hoverScaleAmount: 1.2
   moveUpAmount: 50
   animationDuration: 0.2
+  throwMoveUp: 400
+  throwScaleEnd: 0.2
+  throwRotationZ: 35
+  throwDuration: 0.4
+  entranceDuration: 0.35
+  card: {fileID: 0}
 --- !u!1 &2359166487506289092
 GameObject:
   m_ObjectHideFlags: 0

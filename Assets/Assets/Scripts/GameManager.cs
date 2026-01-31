@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Image bgImage;
     [SerializeField] private NpcUI npcUI;
     [SerializeField] private playerUI playerUI;
+    [Header("Result (Win / Game Over)")]
+    [SerializeField] private ResultPanelUI resultPanel;
     [Header("Transition (NPC exit / enter)")]
     [SerializeField] private float npcExitDuration = 0.4f;
     [SerializeField] private float npcEnterDuration = 0.8f;
@@ -102,18 +104,136 @@ public class GameManager : MonoBehaviour
             playerUI.player.LoseSanity(1);
 
         playerUI.SetPlayer(playerUI.player); // Cập nhật UI (Sanity, Money, Happy)
-        // if (cardUI.card.cardData.selfStat.Money > reqMoney)
-        // {
-        //     money = cardUI.card.cardData.selfStat.Money;
-        // }
-        // if (cardUI.card.cardData.selfStat.Happiness > reqHappiness)
-        // {
-        //     happiness = cardUI.card.cardData.selfStat.Happiness;
-        // }
+
+        // GDD: Kiểm tra thua / thắng sau khi áp dụng hiệu ứng
+        if (CheckGameOverOrWin(out string endReason))
+        {
+            // Kết thúc turn, không draw/transition (có thể mở UI kết quả / load scene)
+            return;
+        }
 
         // Discard 1, draw 1 vào đúng slot vừa bỏ
         DrawCard(slotIndex);
         RunTransitionSequence();
+    }
+
+    /// <summary>
+    /// GDD: Thua = Player (Money/Happy/Sanity ≤ 0) hoặc bất kỳ NPC (Money/Happy ≤ 0).
+    /// Thắng = Player 5/5/5 và tất cả NPC còn sống.
+    /// </summary>
+    private bool CheckGameOverOrWin(out string reason)
+    {
+        reason = null;
+        Player p = playerUI.player;
+        if (p == null) return false;
+
+        // Lose: Player
+        if (p.GetMoney() <= 0 || p.GetHappiness() <= 0 || p.IsOutOfSanity())
+        {
+            reason = p.IsOutOfSanity()
+                ? GetRandom(PlayerSanityLossLines)
+                : GetRandom(PlayerMoneyHappyLossLines);
+            OnGameOver(reason);
+            return true;
+        }
+
+        // Lose: any NPC is gone
+        if (LevelManager.instance != null && LevelManager.instance.humanPool != null)
+        {
+            foreach (Npc npc in LevelManager.instance.humanPool)
+            {
+                if (npc != null && !npc.IsAlive())
+                {
+                    reason = GetNpcGoneReason(npc);
+                    OnGameOver(reason);
+                    return true;
+                }
+            }
+        }
+
+        // Win: Player 5/5/5 and all NPCs alive
+        bool playerFull = p.GetMoney() == BaseStat.MAX_VALUE && p.GetHappiness() == BaseStat.MAX_VALUE && p.GetSanity() == p.maxSanity;
+        if (!playerFull) return false;
+
+        if (LevelManager.instance != null && LevelManager.instance.humanPool != null)
+        {
+            foreach (Npc npc in LevelManager.instance.humanPool)
+            {
+                if (npc == null || !npc.IsAlive())
+                {
+                    return false;
+                }
+            }
+        }
+        else
+        {
+            return false;
+        }
+
+        reason = "You reached 5/5/5 and everyone close to you is still okay.";
+        OnWin(reason);
+        return true;
+    }
+
+    private void OnGameOver(string reason)
+    {
+        Debug.Log("[GAME OVER] " + reason);
+        resultPanel?.ShowGameOver(reason);
+    }
+
+    private void OnWin(string reason)
+    {
+        Debug.Log("[WIN] " + reason);
+        resultPanel?.ShowWin(reason);
+    }
+
+    // Small pool of funny loss lines (picked at random)
+    private static readonly string[] PlayerSanityLossLines =
+    {
+        "You lost your mind from pretending too much.",
+        "Too many fake smiles. Your brain checked out.",
+        "The masks finally broke you. Sanity: 0.",
+        "You forgot who you really are. Oops.",
+    };
+    private static readonly string[] PlayerMoneyHappyLossLines =
+    {
+        "You ran out of money or happiness. Game over.",
+        "Wallet empty, mood in the basement. Bye.",
+        "No cash, no joy. That's a wrap.",
+    };
+    private static readonly string[] NpcUnhappinessLossSuffixes =
+    {
+        " couldn't fake it anymore and left.",
+        " went to find happiness elsewhere. Good luck with that.",
+        " hit zero happiness and quit the game.",
+        " forgot how to smile. They're gone.",
+    };
+    private static readonly string[] NpcMoneyLossSuffixes =
+    {
+        " ran out of money and left.",
+        "'s wallet said no. They're gone.",
+        " went broke. See you never.",
+        " couldn't afford life anymore. Ouch.",
+    };
+
+    private static string GetRandom(string[] pool)
+    {
+        if (pool == null || pool.Length == 0) return "You lost.";
+        return pool[UnityEngine.Random.Range(0, pool.Length)];
+    }
+
+    /// <summary>
+    /// Returns a short narrative reason: random funny line for NPC gone from unhappiness or from no money.
+    /// </summary>
+    private static string GetNpcGoneReason(Npc npc)
+    {
+        if (npc == null) return "Someone close to you is gone.";
+        string who = string.IsNullOrEmpty(npc.name) ? "Someone close to you" : "Your " + npc.name;
+        if (npc.stat.Happiness <= 0)
+            return who + GetRandom(NpcUnhappinessLossSuffixes);
+        if (npc.stat.Money <= 0)
+            return who + GetRandom(NpcMoneyLossSuffixes);
+        return who + " is gone.";
     }
 
     // public List<Card> GetOnHandCards()
@@ -177,5 +297,49 @@ public class GameManager : MonoBehaviour
     public void LoadPlayer()
     {
         playerUI.SetPlayer(LevelManager.instance.player);
+    }
+
+    /// <summary>
+    /// Reset game trong cùng scene: Player 3/3/5, NPC random [1,4], xóa bài rồi rút 3 lá, load NPC mới.
+    /// Gọi từ ResultPanelUI khi bấm Replay (không load scene).
+    /// </summary>
+    public void ResetGame()
+    {
+        resultPanel?.Hide();
+
+        // Player: Money 3, Happy 3, Sanity 5 (GDD)
+        Player p = LevelManager.instance.player;
+        if (p != null)
+        {
+            p.stat.Money = 3;
+            p.stat.Happiness = 3;
+            p.curSanity = 5;
+            p.maxSanity = 5;
+        }
+
+        // NPC: random [1, 4] mỗi stat (GDD)
+        if (LevelManager.instance != null && LevelManager.instance.humanPool != null)
+        {
+            foreach (Npc npc in LevelManager.instance.humanPool)
+            {
+                if (npc != null)
+                {
+                    npc.stat.Money = UnityEngine.Random.Range(1, 5);
+                    npc.stat.Happiness = UnityEngine.Random.Range(1, 5);
+                }
+            }
+        }
+
+        // Xóa bài trên tay, rút lại 3 lá
+        foreach (CardUI c in onHandCards)
+        {
+            if (c != null && c.gameObject != null)
+                Destroy(c.gameObject);
+        }
+        onHandCards.Clear();
+        OnStart();
+
+        // Hiển thị NPC mới và cập nhật UI player
+        LoadNextLevel();
     }
 }
