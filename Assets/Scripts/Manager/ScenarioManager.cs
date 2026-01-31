@@ -1,75 +1,53 @@
-using UnityEngine;
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class ScenarioManager : MonoBehaviour
-{
+public class ScenarioManager : MonoBehaviour {
     public static ScenarioManager Instance;
+    
+    private Dictionary<(NPCType, Emotion), List<ScenarioEntry>> _scenarioDict;
 
-    #region Private Fields
-
-    private Dictionary<(NPCType, Emotion), List<string>> _scenarioDict;
-
-    private void Awake()
-    {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-
+    private void Awake() {
+        Instance = this;
         LoadScenarios();
     }
 
-    private void LoadScenarios()
-    {
-        _scenarioDict = new Dictionary<(NPCType, Emotion), List<string>>();
+    private void LoadScenarios() {
+        _scenarioDict = new Dictionary<(NPCType, Emotion), List<ScenarioEntry>>();
+        TextAsset jsonFile = Resources.Load<TextAsset>("npc_scenarios_v2"); // Tên file json mới
 
-        // 1. Load file từ Resources (không cần đuôi .json)
-        TextAsset jsonFile = Resources.Load<TextAsset>("npc_scenarios");
+        if (jsonFile == null) return;
 
-        if (jsonFile == null)
-        {
-            Debug.LogError("Không tìm thấy file 'npc_scenarios' trong thư mục Resources!");
-            return;
-        }
-
-        // 2. Parse JSON sang Object Wrapper
         ScenarioList rawData = JsonUtility.FromJson<ScenarioList>(jsonFile.text);
 
-        // 3. Chuyển đổi sang Dictionary và Parse Enum
-        foreach (var entry in rawData.data)
-        {
-            try
-            {
-                // Convert String "Mom" -> Enum NPCType.Mom
+        foreach (var entry in rawData.data) {
+            try {
                 NPCType typeEnum = (NPCType)Enum.Parse(typeof(NPCType), entry.npcType);
+                Emotion stateEnum = (Emotion)Enum.Parse(typeof(Emotion), entry.state);
+
+                var key = (typeEnum, stateEnum);
+
+                if (!_scenarioDict.ContainsKey(key)) {
+                    _scenarioDict[key] = new List<ScenarioEntry>();
+                }
                 
-                // Convert String "Happy" -> Enum Emotion.Happy
-                Emotion emoEnum = (Emotion)Enum.Parse(typeof(Emotion), entry.emotion);
-
-                // Lưu vào Dictionary
-                _scenarioDict[(typeEnum, emoEnum)] = entry.dialogues;
+                // Lưu cả object ScenarioEntry thay vì chỉ string dialogue
+                // Để sau này truy cập được context và requirement
+                _scenarioDict[key].Add(entry);
             }
-            catch (Exception e)
-            {
-                Debug.LogWarning($"Lỗi parse dữ liệu tại dòng: {entry.npcType} - {entry.emotion}. Lỗi: {e.Message}");
+            catch (Exception e) {
+                Debug.LogWarning($"Lỗi parse: {e.Message}");
             }
         }
-
-        Debug.Log("Đã load thành công kịch bản NPC!");
     }
-    
-    #endregion
-    public string GetRandomDialogue(NPCType type, Emotion emotion)
-    {
-        // Kiểm tra xem có key này trong từ điển không
-        if (_scenarioDict.ContainsKey((type, emotion)))
-        {
-            List<string> dialogues = _scenarioDict[(type, emotion)];
-            if (dialogues.Count > 0)
-            {
-                return dialogues[UnityEngine.Random.Range(0, dialogues.Count)];
+
+    // Hàm lấy Scenario ngẫu nhiên
+    public ScenarioEntry GetRandomScenario(NPCType type, Emotion state) {
+        if (_scenarioDict.TryGetValue((type, state), out var list)) {
+            if (list.Count > 0) {
+                return list[UnityEngine.Random.Range(0, list.Count)];
             }
         }
-
-        return "..."; // Trả về mặc định nếu không tìm thấy
+        return null; 
     }
 }

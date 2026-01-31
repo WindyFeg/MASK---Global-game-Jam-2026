@@ -2,16 +2,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class ScenarioEntry
-{
-    // Lưu dưới dạng string để tránh lỗi parse JSON ban đầu
-    public string npcType; 
-    public string emotion;
-    public List<string> dialogues;
+public class Requirement {
+    public int money;      // Số tiền Player cần chi (Cost)
+    public int happiness;  // Số happiness Player cần bỏ ra (Cost)
 }
 
 [System.Serializable]
-public class ScenarioList
-{
+public class ScenarioEntry {
+    public string npcType;
+    public string state;        // Tên Enum mới (Crisis, Fulfilled...)
+    public string context;      // Bối cảnh (để hiển thị tooltip hoặc debug)
+    public string dialogue;     // Câu thoại
+    public Requirement requirement; // Yêu cầu
+}
+
+[System.Serializable]
+public class ScenarioList {
     public List<ScenarioEntry> data;
 }
