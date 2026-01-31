@@ -17,9 +17,9 @@ public class playerUI : MonoBehaviour
 
     public void SetPlayer(Player player)
     {
-        moneyText.text = "💰 " + player.GetMoney().ToString() + " / " + BaseStat.MAX_VALUE;
-        happinessText.text = "😊 " + player.GetHappiness().ToString() + " / " + BaseStat.MAX_VALUE;
-        sanityText.text = "🧠 " + player.GetSanity() + "/" + player.maxSanity;
+        moneyText.text = player.GetMoney().ToString() + " / " + BaseStat.MAX_VALUE;
+        happinessText.text = player.GetHappiness().ToString() + " / " + BaseStat.MAX_VALUE;
+        sanityText.text = player.GetSanity() + "/" + player.maxSanity;
         this.player = player;
 
         UpdateSanityStageImage(player.GetSanity());
@@ -30,7 +30,12 @@ public class playerUI : MonoBehaviour
         if (sanityStageImage == null || sanityStageSprites == null || sanityStageSprites.Length == 0)
             return;
         int index = Mathf.Clamp(sanity - 1, 0, sanityStageSprites.Length - 1);
+
+        var lstColor = new Color[] {Color.white, new Color(1f, 0.8f, 0.8f), new Color(1f, 0.6f, 0.6f), new Color(1f, 0.4f, 0.4f), new Color(1f, 0.2f, 0.2f)};
         if (sanityStageSprites[index] != null)
+        {
             sanityStageImage.sprite = sanityStageSprites[index];
+            sanityStageImage.color = lstColor[4 - index];
+        }
     }
 }
