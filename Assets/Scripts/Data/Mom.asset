@@ -13,10 +13,15 @@ MonoBehaviour:
   m_Name: Mom
   m_EditorClassIdentifier: Assembly-CSharp::Npc
   id: 0
-  name: 
+  name: Mom
   stat:
-    _happiness: 0
-    _money: 0
-  artwork: []
-  bg2D: []
+    _happiness: 4
+    _money: 4
+  artwork:
+  - {fileID: -4605789606612507477, guid: 0d415f1b9033b48c7ad118fc7c411ccc, type: 3}
+  - {fileID: 5952301838163234703, guid: 0554a2885db1c4c1cbb34b490a86ce02, type: 3}
+  - {fileID: -9167944543405683545, guid: 1bc5d1e59e0ef4c17a8efedb500526c5, type: 3}
+  - {fileID: -5480789337776252764, guid: f4270dc9bd0ae4a48bbea140944a7bad, type: 3}
+  bg2D:
+  - {fileID: 2054667672526821626, guid: bba4cb02d7fb2497ba654fa3a8bfa361, type: 3}
   curEmotion: 0

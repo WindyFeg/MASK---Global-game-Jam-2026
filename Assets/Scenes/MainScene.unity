@@ -459,6 +459,7 @@ MonoBehaviour:
   cardLayout: {fileID: 1646131083}
   bgImage: {fileID: 672119659}
   npcUI: {fileID: 178325054}
+  playerUI: {fileID: 7658862246419559039}
 --- !u!4 &319986082
 Transform:
   m_ObjectHideFlags: 0
@@ -512,10 +513,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
   humanPool:
-  - {fileID: 11400000, guid: af31850847c714bb0bb9dee25d840d40, type: 2}
-  - {fileID: 11400000, guid: bee067ec129c74e41b5a422b66eeec06, type: 2}
-  - {fileID: 11400000, guid: d59c62fd2fabc400482ec0ad7be31060, type: 2}
-  - {fileID: 11400000, guid: 16efcdb914bb940c48f0325457a7749f, type: 2}
+  - {fileID: 11400000, guid: c622c883f3d424892b095b3ad172b6f2, type: 2}
+  - {fileID: 11400000, guid: 4fbb1232d612748a4bd18e7a4bd093c7, type: 2}
+  - {fileID: 11400000, guid: c367a2071b70341d193bde7d53c38cad, type: 2}
+  - {fileID: 11400000, guid: ddffad810e7394a3ebe7ddf63a755175, type: 2}
+  player: {fileID: 11400000, guid: ee6607367810443238aa810168595954, type: 2}
 --- !u!1 &330475502
 GameObject:
   m_ObjectHideFlags: 0

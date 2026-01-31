@@ -13,11 +13,16 @@ MonoBehaviour:
   m_Name: Player 1
   m_EditorClassIdentifier: Assembly-CSharp::Player
   id: 0
-  name: 
+  name: Player
   stat:
-    _happiness: 0
-    _money: 0
-  artwork: []
-  bg2D: []
+    _happiness: 5
+    _money: 5
+  artwork:
+  - {fileID: 6983358275279283047, guid: 1bb23dde1a961452781e2e78f9604e6a, type: 3}
+  - {fileID: 6983358275279283047, guid: 1bb23dde1a961452781e2e78f9604e6a, type: 3}
+  - {fileID: 6983358275279283047, guid: 1bb23dde1a961452781e2e78f9604e6a, type: 3}
+  - {fileID: 6983358275279283047, guid: 1bb23dde1a961452781e2e78f9604e6a, type: 3}
+  bg2D:
+  - {fileID: -2356336596638827033, guid: c2efa6c76606044cab8539711e87adba, type: 3}
   maxSanity: 0
   curSanity: 0

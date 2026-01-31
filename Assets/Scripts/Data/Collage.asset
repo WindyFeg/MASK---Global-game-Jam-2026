@@ -15,8 +15,13 @@ MonoBehaviour:
   id: 0
   name: 
   stat:
-    _happiness: 0
-    _money: 0
-  artwork: []
-  bg2D: []
+    _happiness: 6
+    _money: 3
+  artwork:
+  - {fileID: -2596483419343959714, guid: 2fab5cba41f9c41679c290f0fb2e141b, type: 3}
+  - {fileID: -512085591186098451, guid: 34076decc26174c208aba8fdce903e11, type: 3}
+  - {fileID: 6568805534309026721, guid: 9d7455ca9234c460eb890cafb9f0dd1a, type: 3}
+  - {fileID: 3905871356535148628, guid: 0d29cc1fe9d324b5c9aad7d235be10bb, type: 3}
+  bg2D:
+  - {fileID: 2784851056098843448, guid: 17da5e522f5e0467eaf258aa3459b27c, type: 3}
   curEmotion: 0

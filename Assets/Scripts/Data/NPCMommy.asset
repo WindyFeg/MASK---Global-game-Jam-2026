@@ -17,6 +17,10 @@ MonoBehaviour:
   stat:
     _happiness: 7
     _money: 3
-  artwork: []
+  artwork:
+  - {fileID: -521603014617140644, guid: 30d91a07635324fff97a2f2ad08f9faf, type: 3}
+  - {fileID: -521603014617140644, guid: 30d91a07635324fff97a2f2ad08f9faf, type: 3}
+  - {fileID: -521603014617140644, guid: 30d91a07635324fff97a2f2ad08f9faf, type: 3}
+  - {fileID: -521603014617140644, guid: 30d91a07635324fff97a2f2ad08f9faf, type: 3}
   bg2D:
   - {fileID: 2054667672526821626, guid: bba4cb02d7fb2497ba654fa3a8bfa361, type: 3}

@@ -17,4 +17,6 @@ MonoBehaviour:
   stat:
     _happiness: 3
     _money: 3
-  artwork: {fileID: 0}
+  artwork:
+  - {fileID: 0}
+  bg2D: []
