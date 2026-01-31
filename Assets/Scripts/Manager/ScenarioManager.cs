@@ -49,7 +49,7 @@ public class ScenarioManager : MonoBehaviour
 
                 Emotion stateEnum = (Emotion)Enum.Parse(typeof(Emotion), entry.state);
 
-                Debug.Log($"Parsed Context: > {entry.context} < NPCType: {typeEnum}, Emotion: {stateEnum}, Requirement: {entry.requirement.happiness}, {entry.requirement.money}");
+                Debug.Log($"Parsed Context: > {entry.context} < NPCType: {typeEnum}, Emotion: {stateEnum}, Requirement: {entry.requirement.Happiness}, {entry.requirement.Money}");
 
                 if (entry.requirement == null)
                 {

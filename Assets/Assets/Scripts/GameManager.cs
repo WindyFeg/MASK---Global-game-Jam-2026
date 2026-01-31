@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
     {
         OnStart();
         LoadNextLevel();
-        LoadPlayer();
     }
 
     public void OnStart()
@@ -132,9 +131,10 @@ public class GameManager : MonoBehaviour
         Npc human = LevelManager.instance.LoadLevel();
         ScenarioEntry scenario = ScenarioManager.Instance.GetRandomScenario((NPCType)human.id, human.GetCurrentEmotion());
         bgImage.sprite = human.bg2D[0];
+        requirement = scenario.requirement;
         npcUI.SetNpc(human, scenario.context + "\n" + scenario.dialogue, requirement.Happiness, requirement.Money);
         DrawCard();
-
+        LoadPlayer();
     }
     public void LoadPlayer()
     {

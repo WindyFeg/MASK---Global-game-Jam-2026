@@ -13,7 +13,7 @@ public class ScenarioEntry {
     public string state;        // Tên Enum mới (Crisis, Fulfilled...)
     public string context;      // Bối cảnh (để hiển thị tooltip hoặc debug)
     public string dialogue;     // Câu thoại
-    public Requirement requirement; // Yêu cầu
+    public BaseStat requirement; // Yêu cầu
 }
 
 [System.Serializable]
