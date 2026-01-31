@@ -5,7 +5,7 @@
       "state": "Crisis",
       "context": "Surgery needed.",
       "dialogue": "The doctor says I need urgent surgery. It costs a fortune, son...",
-      "requirement": { "money": 2, "happiness": 0 },
+      "requirement": { "money": 1, "happiness": 0 },
       "ratio": 5
     },
     {
@@ -13,7 +13,7 @@
       "state": "Crisis",
       "context": "Debt collectors.",
       "dialogue": "Those scary men came back... please help me pay them off.",
-      "requirement": { "money": 2, "happiness": 1 },
+      "requirement": { "money": 1, "happiness": 1 },
       "ratio": 5
     },
     {
