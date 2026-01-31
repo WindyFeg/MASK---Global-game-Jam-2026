@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
 
     public void UseCard(CardUI cardUI)
     {
+        int slotIndex = cardUI.transform.GetSiblingIndex();
         onHandCards.Remove(cardUI);
         Destroy(cardUI.gameObject);
 
@@ -105,25 +106,31 @@ public class GameManager : MonoBehaviour
         //     happiness = cardUI.card.cardData.selfStat.Happiness;
         // }
 
-        // dose it cost sanity?
-        // yes
+        // Discard 1, draw 1 vào đúng slot vừa bỏ → thứ tự: card 1, card 4, card 3
+        DrawCard(slotIndex);
         LoadNextLevel();
-
     }
 
     // public List<Card> GetOnHandCards()
     // {
     //     return onHandCards;
     // }
-    public void DrawCard()
+    /// <param name="insertIndex">Slot (sibling index) để chèn lá mới. &lt; 0 = thêm vào cuối.</param>
+    public void DrawCard(int insertIndex = -1)
     {
         BaseCard card = CardManager.Instance.GetRandomCard();
         Card newCard = new Card();
         newCard.cardData = card;
         var obj = Instantiate(cardPrefab, new Vector3(0, 0, 0), Quaternion.identity);
         obj.transform.SetParent(cardLayout.transform, false);
-        obj.GetComponent<CardUI>().OnSet(newCard);
-        onHandCards.Add(obj.GetComponent<CardUI>());
+        if (insertIndex >= 0)
+            obj.transform.SetSiblingIndex(insertIndex);
+        var cardUI = obj.GetComponent<CardUI>();
+        cardUI.OnSet(newCard);
+        if (insertIndex >= 0)
+            onHandCards.Insert(insertIndex, cardUI);
+        else
+            onHandCards.Add(cardUI);
     }
 
     public void LoadNextLevel()
@@ -133,7 +140,6 @@ public class GameManager : MonoBehaviour
         bgImage.sprite = human.bg2D[0];
         requirement = scenario.requirement;
         npcUI.SetNpc(human, scenario.context + "\n" + scenario.dialogue, requirement.Happiness, requirement.Money);
-        DrawCard();
         LoadPlayer();
     }
     public void LoadPlayer()

@@ -24,24 +24,24 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     private RectTransform rectTransform;
     private Vector3 originalScale;
     private Vector3 originalPosition;
-    private bool originalCaptured; // Layout có thể set position sau Awake → capture khi hover lần đầu
     public Card card;
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         if (rectTransform != null)
-        {
-            originalScale = rectTransform.localScale;
-            originalPosition = rectTransform.localPosition;
-        }
+            CaptureOriginal();
     }
 
+    /// <summary>
+    /// Luôn capture lại vị trí/scale hiện tại. Gọi mỗi lần hover để sau khi layout đổi
+    /// (ví dụ có lá bị destroy) lá còn lại vẫn animate về đúng chỗ.
+    /// </summary>
     private void CaptureOriginal()
     {
-        if (rectTransform == null || originalCaptured) return;
+        if (rectTransform == null) return;
         originalScale = rectTransform.localScale;
         originalPosition = rectTransform.localPosition;
-        originalCaptured = true;
     }
 
     public void OnSet(Card card)
